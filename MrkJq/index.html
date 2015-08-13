@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Effet Marquee JQuery</title>
+		<script src="jscript/jquery.js"></script>
+		<script src="jscript/jquery.marquee.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('.myMarquee').marquee({
+					duration : 6000, //Permet de marque la duree de passage de chaque bloc
+					delayBeforeStart : 0, //Temps avant le depart de l'animation, ici on commence immediatement si etait 1000 commence apres 1 seconde
+					direction : 'up', // La direction vers laquelle ca va defiler(up,down,left,right)
+					duplicated : true // Permet la repetition des blocs en boucle infinie
+				});
+			});
+		</script>
+
+		<style>
+			.myMarquee{
+				width: 350px;
+				height:80px;
+				overflow: hidden;
+				border: 1px solid red;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="myMarquee">
+			<div class="row">
+					<blockquote class="pull-right">
+						<p>Et voici le second, qui lui est semblable: Tu aimeras ton prochain comme toi-même</p>
+						<small><cite title="Matthieu 22:39">Matthieu 22:39</cite></small>
+					</blockquote>
+					<blockquote class="pull-left">
+						<p>Et Jésus les appela, et dit: Laissez venir à moi les petits enfants, et ne les en empêchez pas; car le royaume de Dieu est pour ceux qui leur ressemblent.p>
+						<small><cite title=" Luc 18:16 "> Luc 18:16 </cite></small>
+					</blockquote>
+					<blockquote class="pull-right">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel metus varius, euismod nibh quis, vulputate eros. 
+						Nunc malesuada quis ex non bibendum. Morbi quam ipsum, facilisis non commodo sit amet, aliquet ac ex.</p>
+						<small><cite title="Lorem ipsum">Lorem ipsum</cite></small>
+					</blockquote>
+					<p class="lead"> Message numero 2222</p>	
+					<p class="lead"> Message autre</p>
+			 </div>
+		</div>
+	</body>
+</html>

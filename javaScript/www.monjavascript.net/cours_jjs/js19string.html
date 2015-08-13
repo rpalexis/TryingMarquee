@@ -1,0 +1,737 @@
+<html>
+
+<!-- Mirrored from www.monjavascript.net/cours_jjs/js19string.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Aug 2015 20:25:22 GMT -->
+<head>
+<title>Mon javascript - Cours de javascript</title>
+<meta name="Description" lang="fr" content="Webmasters, Mon javascript vous propose: des scripts en javascript, mais aussi des cours de javascript, des générateurs, le multimoteur, du PHP et autres astuces..., pour donner de l'attrait à votre site web.">
+
+<meta name="keywords" content="javascript, html, langage, programme, programmation, javascript, site, perso, script, java, astuces, programmes, texte défilant, barre d'état, insérer favoris, heure gmt, javascript menu, script de redirection, javascript heure, javascript menu deroulant, rollover, javascript fenetre, menu déroulant, envoyer mail, formulaire, menu javascript, mail, date, Plein Ecran, pop up">
+<meta name="author" content="Monjavascript - PLF">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../mjs.css" type="text/css">
+<script language="JavaScript">
+<!--
+//PLF- http://www.Monjavascript.net/
+if (parent.frames.length > 0)
+window.top.location.href = location.href;
+//-->
+</script>
+</head>
+<body bgcolor="#FFFFFF">
+<table width="1100" border="0" align="center" bgcolor="#9966FF">
+  <tr>    <td ><table width="1100" border="0" background="../err404.html">
+      <tr> 
+    <td width="240" ><font face="Verdana, Arial, Helvetica, sans-serif"><a href="../index.html"><img src="../im/mjs160x60_2.gif" alt="http://www.monjavascript.net" width="160" height="60" border="0"></a></font></td>
+    <td valign="middle"> 
+      	 <div align="right"><br>
+<!--Code à insérer jjspub --><script type="text/javascript"><!--
+google_ad_client = "pub-2085185646476169";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text_image";
+//2007-05-06: jjshaut
+google_ad_channel = "0643568426";
+google_color_border = "9966FF";
+google_color_bg = "9966FF";
+google_color_link = "FFFFFF";
+google_color_text = "000000";
+google_color_url = "../err404.html";
+//-->
+</script>
+<script type="text/javascript"
+  src="../../pagead2.googlesyndication.com/pagead/f.txt">
+</script><!--Code à insérer jjspub -->
+		</div>
+    </td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr> 
+    <td> 
+      <table width="1100" border="0" align="center">
+        <tr> 
+          <td width="162" valign="top"> 
+<script language="JavaScript">
+<!--
+//PLF-http://www.monjavascript.net/
+  function fenetreCentre(url,largeur,hauteur,options) {
+  var haut=(screen.height -(hauteur+130));
+  var Gauche=(screen.width-(largeur+30));
+  window.open(url,"","top="+haut+",left="+Gauche+",width="+largeur+",height="+hauteur+","+options);
+  }
+  adfav = "'../index.html', 'Mon javascript : Programation en javascript et autres...'"
+  adreco = "'../recomail.html',400,520,'menubar=no,scrollbars=yes,statusbar=no'"
+  adcont = "'../contact.html',600,600,'menubar=no,scrollbars=yes,statusbar=no'" 
+  //-->
+</script>
+
+  
+<div align="center">
+  <table width="160" border="0" align="center" bordercolor="#9966FF">
+    <tr><td>
+    <div align="center">
+	<a href="../index.html"><img src="../menujs/menuaccu.gif" border="0" width="139" height="24"></a></div>
+    <table border="1" width="160"><tr><td align="left" ><p><font size="1"><img src="../im/flechep.gif" width="7" height="7"><a href="../index.html">ACCUEIL</a>
+	  </font></font><br>
+	  
+	<font size="1">
+	  <img src="../im/flechep.gif" width="7" height="7"><a href='javascript:fenetreCentre("../err404.html",600,400,"menubar=no,scrollbars=yes,statusbar=no")'>Contact</a>	<br>
+	  <img src="../im/flechep.gif" width="7" height="7"><a href="../acmoteujjs.html">Rechercher </a><br>
+      <img src="../im/flechep.gif" width="7" height="7"><a href='javascript:window.external.addfavorite("../index.html", "Mon JavaScript : Programation en javascript et autres...")'>Insérez
+      dans vos<br>
+&nbsp; favoris</a></font> <br>
+<!-- Placez cette balise où vous souhaitez faire apparaître le gadget Bouton +1. -->
+</p>
+          <div class="g-plusone" data-size="medium"></div>
+          <!-- Placez cette ballise après la dernière balise Bouton +1. -->
+          <script type="text/javascript">
+  window.___gcfg = {lang: 'fr'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = '../../apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+          </script>
+</td>
+    </tr></table>
+    <div align="center">
+		<a href="../somscript.html"><img src="../menujs/menuscrpt.gif" border="0" width="139" height="24"></a></div>
+    <table border="1" width="160"><tr><td align="left" ><font size="1">
+		<img src="../im/flechep.gif" width="7" height="7"><a href="../somac_visit.html">ACCUEIL DES<br>&nbsp;  VISITEURS </a> <br>
+      <img src="../im/flechep.gif" width="7" height="7"><a href="../somdat_h.html">DATE & HEURE </a><br>
+      <img src="../im/flechep.gif" width="7" height="7"><a href="../somtexte.html">EFFETS
+    DE TEXTE </a><br>
+    <img src="../im/flechep.gif" width="7" height="7"><a href="../somfenetres.html">FENETRES </a><br>
+    <img src="../im/flechep.gif" width="7" height="7"><a href="../somform.html">FORMULAIRES </a><br>
+    <img src="../im/flechep.gif" width="7" height="7"><a href="../somimages.html">IMAGES </a><br>
+    <img src="../im/flechep.gif" width="7" height="7"><a href="../sommenus.html">MENUS</a><br>
+    <img src="../im/flechep.gif" width="7" height="7"><a href="../sompratique.html">PRATIQUE</a><br>
+    <img src="../im/flechep.gif" width="7" height="7"><a href="../sompopup.html">POP UP </a><br>
+    <img src="../im/flechep.gif" width="7" height="7"><a href="../somdivers.html">DIVERS</a><br>
+    <br>
+    <!--
+	<img src="http://www.monjavascript.net/im/flechep.gif" width="7" height="7"><a href="http://www.monjavascript.net/section_php/index.php">PHP</a>
+	  //-->
+		</font></td>
+    </tr></table>
+	
+    <div align="center">  <img src="../menujs/menuplus.gif" width="139" height="24"></div>
+	    <table border="1" width="160"><tr><td align="left" ><font size="1">
+	<div align="center"><a href="index.html">Cours de Javascript</a><a href="index.html">
+</a></div>
+<p>  <img src="../im/flechep.gif" width="7" height="7"><a href="js01intro.html">Introduction au Javascript</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js02implant.html">Implantation du code</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js03var.html">Variables javascript</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js04tab.html">Tableaux javascript</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js05char.html">Cha&icirc;ne de caract&egrave;res</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js06even.html">&Eacute;v&eacute;nements
+  javascript</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js07oper.html">Op&eacute;rateurs</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js08cond.html">Structures conditionnelles</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js09fonc.html">Fonctions</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js10meth.html">M&eacute;thodes</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js11dial.html">Bo&icirc;tes
+  de dialogue</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js12objet.html">La notion d'objet</a><br>
+  <font color="#CCCCCC"><strong>Objets de Javascript</strong></font><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js13noyau.html">Objets du noyau</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js14array.html">Objet Array</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js15boolean.html">Objet Boolean</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js16date.html">Objet Date</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js17math.html">Objet Math</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js18regexp.html">Objet RegExp</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js19string.html">Objet String</a><br>
+  <font color="#CCCCCC"><strong>Objets du navigateur</strong></font><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js20objets.html">Pr&eacute;sentation
+  des objets</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js21window.html">Objet window</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js22navig.html">Objet navigator</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js23history.html">Objet history</a></p>
+<p align="center"><font color="#FFFFFF">- - - - - - - -</font> </p> 
+
+	<img src="../im/flechep.gif" width="7" height="7"><a href="http://www.jecreemonsite.net/html_css/gencss.php" target="_blank">Générer vos Fichiers<br>&nbsp; 
+	
+	CSS</a><br>
+    <img src="../im/flechep.gif" width="7" height="7"><a href="http://www.jecreemonsite.net/html_css/genmetatag.php" target="_blank">Générer vos Meta-Tags</a><br>
+    <img src="../im/flechep.gif" width="7" height="7"><a href="../metadescp.html">Description des Balises<br>&nbsp;  Meta</a><br>
+    <img src="../im/flechep.gif" width="7" height="7"><a href="../couleurs.html">Les Codes Couleur</a> <br>
+	<img src="../im/flechep.gif" width="7" height="7"><a href="../math.html">L'objet Math</a><br>
+	<img src="../im/flechep.gif" width="7" height="7"><a href="../li/lissage.html">Lissage De Pr&ecirc;t</a><br>
+	<img src="../im/flechep.gif" width="7" height="7"><a href="../li/ta.html">Tableau
+	d'Amortissement</a><br>
+		
+    <img src="../im/flechep.gif" width="7" height="7"><a href="../moteur.html">un Multi-Moteurs de recherche sur Votre Site</a><br>
+    <img src="../im/flechep.gif" width="7" height="7"><a href="../mailcryp.html">Cryptez votre e-mail<br>&nbsp;  pour contrer le Spam</a><br>
+    <img src="../im/flechep.gif" width="7" height="7"><a href="../scriptcryp.html">Cryptez vos Scripts</a><br>
+    <img src="../im/flechep.gif" width="7" height="7"><A href="../acmoteu.html">Moteurs de recherches </A><br>
+    <img src="../im/flechep.gif" width="7" height="7"><A href="../acmoteu.html">Référencement </A><br>
+    <img src="../im/flechep.gif" width="7" height="7"><a href="http://www.jecreemonsite.net/" target="_blank" title="javascript, HTML, PHP, tout pour le webmaster">Je
+    Cr&eacute;e Mon Site</a>
+    <br>
+	<img src="../im/flechep.gif" width="7" height="7"><A HREF=http://www.editeurjavascript.com/partenaires/concours.php?id=mjs TARGET=_blank>L'éditeur JavaScript</A>
+    </font></td>
+    </tr></table>
+	
+	
+	
+	
+	
+	<br>
+
+  <div align="center">
+<!--Code à insérer jjspub --><script type="text/javascript"><!--
+google_ad_client = "pub-2085185646476169";
+google_ad_width = 160;
+google_ad_height = 600;
+google_ad_format = "160x600_as";
+google_ad_type = "text_image";
+//2006-11-24: jjsmenu
+google_ad_channel = "6413686093";
+google_color_border = "9966FF";
+google_color_bg = "9966FF";
+google_color_link = "FFFFFF";
+google_color_text = "000000";
+google_color_url = "../err404.html";
+//--></script>
+<script type="text/javascript"
+  src="../../pagead2.googlesyndication.com/pagead/f.txt">
+</script><!--Code à insérer jjspub -->
+
+
+
+
+  </div>
+ <table width="160" border="0" align="center" bordercolor="#9966FF">
+<tr><td>
+
+    <div align="center">	</div>
+    <div align="center">  </div>
+<div align="center"></div>
+
+
+
+
+
+<div align="center">
+<a href="http://www.xiti.com/xiti.asp?s=504527" title="WebAnalytics" target="_top">
+<script type="text/javascript">
+<!--
+Xt_param = 's=504527&p=';
+try {Xt_r = top.document.referrer;}
+catch(e) {Xt_r = document.referrer; }
+Xt_h = new Date();
+Xt_i = '<img width="39" height="25" border="0" alt="" ';
+Xt_i += 'src="http://logv17.xiti.com/hit.xiti?'+Xt_param;
+Xt_i += '&hl='+Xt_h.getHours()+'x'+Xt_h.getMinutes()+'x'+Xt_h.getSeconds();
+if(parseFloat(navigator.appVersion)>=4)
+{Xt_s=screen;Xt_i+='&r='+Xt_s.width+'x'+Xt_s.height+'x'+Xt_s.pixelDepth+'x'+Xt_s.colorDepth;}
+document.write(Xt_i+'&ref='+Xt_r.replace(/[<>"]/g, '').replace(/&/g, '$')+'" title="Internet Audience">');
+//-->
+</script>
+<noscript>
+Mesure d'audience ROI statistique webanalytics par <img width="39" height="25" src="http://logv17.xiti.com/hit.xiti?s=504527&amp;p=" alt="WebAnalytics" />
+</noscript></a>
+</div>
+
+</td></tr></table>
+ 
+  
+    </td></tr>
+  </table>
+</div>
+
+                
+		  </td>          <td valign="top" bgcolor="#CC99FF" colspan="2"> 
+            <div align="left"> 
+              <h2 align="center"> 
+                L'objet String              </h2>
+              <table width="300" border="0" align="right">
+                <tr>
+                  <td width="100"><div align="center"></div>
+                  </td>
+                  <td width="100"><div align="center"><a href="js18regexp.html"><img src="images/flchg.gif" width="40" height="32" border="0"></a></div>
+                  </td>
+                  <td><div align="center"><a href="js20objets.html"><img src="images/flchd.gif" width="40" height="32" border="0"></a></div>
+                  </td>
+                </tr>
+              </table>              
+              <h2>&nbsp;</h2>
+              <h2><br>
+                <a name="string" class="ancre"></a>Les particularit&eacute;s
+                de l'objet <i>String</i></h2>
+              <p align="justify"> <i>string</i> est un mot anglais qui signifie &quot;<i>cha&icirc;ne</i>&quot;,
+                il s'agit en fait de cha&icirc;ne de caract&egrave;res.
+              <p align="justify">L'objet <i>String</i> est un objet qui contient
+                un certain nombre de propri&eacute;t&eacute;s et de m&eacute;thodes
+                permettant la manipulation de <a href="js05char.html">cha&icirc;nes
+                de caract&egrave;res</a>. <a name="propriete" class="ancre"></a>
+              <h2>Les propri&eacute;t&eacute;s de l'objet <i>String</i></h2>
+              <p align="justify">L'objet <i>string</i> a une seule propri&eacute;t&eacute; :
+                la propri&eacute;t&eacute; <i>length</i> qui permet de retourner
+                la longueur d'une cha&icirc;ne de caract&egrave;res. Cette propri&eacute;t&eacute; est
+                tr&egrave;s utile car lorsque l'on traite une cha&icirc;ne de
+                caract&egrave;res on aime g&eacute;n&eacute;ralement savoir &agrave; quel
+                moment s'arr&ecirc;ter. <br/>
+  La syntaxe de la propri&eacute;t&eacute; <i>length</i> est la suivante&nbsp;:
+              <pre class="Code">x = nom_de_la_chaine.length;
+
+<br/>x = ('chaine de caracteres').length;</pre>
+              <p align="justify">On peut donc directement passer la cha&icirc;ne
+                de caract&egrave;res comme objet, en d&eacute;limitant la cha&icirc;ne
+                par des apostrophes et en pla&ccedil;ant le tout entre parenth&egrave;ses. <br/>
+  La m&eacute;thode traditionnelle consistant &agrave; appliquer une propri&eacute;t&eacute; &agrave; une
+  variable de type <i>string</i> fonctionne bien &eacute;videmment aussi. <a name="methode" class="ancre"></a>
+              <h2>Les m&eacute;thodes de l'objet <i>String</i></h2>
+              <p align="justify">Les m&eacute;thodes de l'objet <i>string</i> permettent
+                de r&eacute;cup&eacute;rer une portion d'une cha&icirc;ne de
+                caract&egrave;re, ou bien de la modifier.
+              <p align="justify">Pour comprendre les m&eacute;thodes suivantes,
+                il est tout d'abord n&eacute;cessaire de <a href="js05char.html">comprendre
+                comment est stock&eacute;e une cha&icirc;ne de caract&egrave;res</a>
+              <p align="justify">Le tableau suivant d&eacute;crit les m&eacute;thodes
+                de l'objet <i>String</i> :
+              <p align="justify">
+              <table class="ccm">
+                <tr>
+                  <th>M&eacute;thode</th>
+                  <th>description</th>
+                </tr>
+                <tr>
+                  <td><b>Chaine.anchor("nom_a_donner");</b></td>
+                  <td>Transforme le texte <i>Chaine</i> en <a href="../err404.html">ancrage
+                      HTML</a>.</td>
+                </tr>
+                <tr>
+                  <td><b>Chaine.big()</b></td>
+                  <td>Augmente la taille de la police.</td>
+                </tr>
+                <tr>
+                  <td><b>Chaine.blink()</b></td>
+                  <td>Transforme la cha&icirc;ne en texte clignotant.</td>
+                </tr>
+                <tr>
+                  <td><b>Chaine.bold()</b></td>
+                  <td>Met le texte en <b>gras</b> (balise &lt;B&gt;).</td>
+                </tr>
+                <tr>
+                  <td><b>Chaine.charAt(</b>position<b>)</b></td>
+                  <td>Retourne le caract&egrave;re situ&eacute; &agrave; la position
+                    donn&eacute;e en param&egrave;tre</td>
+                </tr>
+                <tr>
+                  <td><b>Chaine.charCodeAt(</b>position<b>)</b><br/>
+                  </td>
+                  <td>Renvoie le code <i>Unicode</i> du caract&egrave;re situ&eacute; &agrave; la
+                    position donn&eacute;e en param&egrave;tre</td>
+                </tr>
+                <tr>
+                  <td><b>concat(</b>cha&icirc;ne1, cha&icirc;ne2[, ...]<b>)</b></td>
+                  <td>Permet de concat&eacute;ner les cha&icirc;nes pass&eacute;es
+                    en param&egrave;tre, c'est-&agrave;-dire de les joindre bout &agrave; bout.</td>
+                </tr>
+                <tr>
+                  <td><b>Chaine.fixed()</b></td>
+                  <td>Transforme la Chaine en caract&egrave;res de <tt>police
+                      fixe</tt> (balise &lt;TT&gt;)</td>
+                </tr>
+                <tr>
+                  <td><b>Chaine.fontcolor(</b>couleur<b>)</b></td>
+                  <td>Modifie la couleur du texte (admet comme argument la couleur
+                    en hexad&eacute;cimal ou en valeur litt&eacute;rale) </td>
+                </tr>
+                <tr>
+                  <td><b>Chaine.fontsize(</b>Size<b>)</b></td>
+                  <td>Modifie la taille de la police, en afectant la valeur pass&eacute;e
+                    en param&egrave;tre</td>
+                </tr>
+                <tr>
+                  <td><b>Chaine.fromCharCode(</b>code1[, code2, ..]<b>)</b></td>
+                  <td>Renvoie une cha&icirc;ne de caract&egrave;res compos&eacute;e
+                    de caract&egrave;res correspondant au(x) code(s) <i>Unicode</i> donn&eacute;(s)
+                    en param&egrave;tre.</td>
+                </tr>
+                <tr>
+                  <td><b>Chaine.indexOf(</b>sous-cha&icirc;ne, position<b>)</b></td>
+                  <td>Retourne la position d'une sous-cha&icirc;ne (lettre ou
+                    groupe de lettres) dans une cha&icirc;ne de caract&egrave;re,
+                    en effectuant la recherche de gauche &agrave; droite, &agrave; partir
+                    de la position sp&eacute;cifi&eacute;e en param&egrave;tre.</td>
+                </tr>
+                <tr>
+                  <td><b>Chaine.italics()</b></td>
+                  <td>Transforme le texte en <i>italique</i> (balise &lt;I&gt;)</td>
+                </tr>
+                <tr>
+                  <td><b>Chaine.lastIndexOf(</b>sous-cha&icirc;ne, position<b>)</b></td>
+                  <td>La m&eacute;thode est similaire &agrave; <i>indexOf()</i>, &agrave; la
+                    diff&eacute;rence que la recherche se fait de droite &agrave; gauche&nbsp;: <br/>
+                    Retourne la position d'une sous-cha&icirc;ne (lettre ou groupe
+                    de lettres) dans une cha&icirc;ne de caract&egrave;re, en
+                    effectuant la recherche de droite &agrave; gauche, &agrave; partir
+                    de la position sp&eacute;cifi&eacute;e en param&egrave;tre.</td>
+                </tr>
+                <tr>
+                  <td><b>Chaine.link(</b>URL<b>)</b></td>
+                  <td>Transforme le texte en <a href="javascript:;">hypertexte</a> (balise &lt;A
+                    href&gt;)</td>
+                </tr>
+                <tr>
+                  <td><b>Chaine.small()</b></td>
+                  <td>Diminue la taille de la police</td>
+                </tr>
+                <tr>
+                  <td><b>Chaine.strike()</b></td>
+                  <td>Transforme le texte en <strike>texte barr&eacute;</strike> (balise &lt;strike&gt;)</td>
+                </tr>
+                <tr>
+                  <td><b>Chaine.sub()</b></td>
+                  <td>Transforme le texte en <sub>indice</sub> (balise &lt;sub&gt;)</td>
+                </tr>
+                <tr>
+                  <td><b>Chaine.substr(</b>position1, longueur<b>)</b></td>
+                  <td>La m&eacute;thode retourne une sous-cha&icirc;ne commen&ccedil;ant &agrave; l'index
+                    dont la position est donn&eacute;e en argument et de la longueur
+                    donn&eacute;e en param&egrave;tre.</td>
+                </tr>
+                <tr>
+                  <td><b>Chaine.substring(</b>position1, position2<b>)</b></td>
+                  <td>La m&eacute;thode retourne la sous-cha&icirc;ne (lettre
+                    ou groupe de lettres) comprise entre les positions 1 et 2
+                    donn&eacute;es en param&egrave;tre.</td>
+                </tr>
+                <tr>
+                  <td><b>Chaine.sup()</b></td>
+                  <td>Transforme le texte en <sup>exposant</sup> (balise &lt;sup&gt;).</td>
+                </tr>
+                <tr>
+                  <td><b>Chaine.toLowerCase()</b></td>
+                  <td>Convertit tous les caract&egrave;res d'une cha&icirc;ne
+                    en minuscule.</td>
+                </tr>
+                <tr>
+                  <td><b>Chaine.toSource()</b></td>
+                  <td>Renvoie le code source de cr&eacute;ation de l'objet.</td>
+                </tr>
+                <tr>
+                  <td><b>Chaine.toUpperCase()</b></td>
+                  <td>Convertit tous les caract&egrave;res d'une cha&icirc;ne
+                    en majuscule.</td>
+                </tr>
+                <tr>
+                  <td><b>Chaine.valueOf()</b></td>
+                  <td>Renvoie la valeur de l'objet String.</td>
+                </tr>
+              </table>
+              <a name="exemples" class="ancre"></a>
+              <h2>Exemples d'utilisation des m&eacute;thodes de l'objet <i>String</i></h2>
+              <a name="exemples" class="ancre"></a>
+              <h3>M&eacute;thode <i>charAt()</i></h3>
+              <p align="justify">Il existe deux syntaxe pour la m&eacute;thode <i>charAt()</i>
+              <ul>
+                <li>
+                  <pre class="Code">Chaine = "chaine de caract&egrave;res";
+
+Resultat = Chaine.charAt(position);</pre>
+                </li>
+                <li>
+                  <pre class="Code">Resultat = charAt("chaine de caract&egrave;res", position);</pre>
+                </li>
+              </ul>
+              Le param&egrave;tre <i>position</i> est un entier qui repr&eacute;sente
+              la position du caract&egrave;re &agrave; r&eacute;cup&eacute;rer,
+              il doit &ecirc;tre compris entre O et <i>n-1</i> (o&ugrave; <i>n</i> repr&eacute;sente
+              la longueur de la cha&icirc;ne). Dans le cas contraire
+(le param&egrave;tre <i>position</i> n&eacute;gatif ou sup&eacute;rieur ou &eacute;gal &agrave; la
+longueur) <i>charAt()</i> renvoie
+une cha&icirc;ne de longueur nulle.
+<p align="justify">Voici quelques exemples&nbsp;:
+<pre class="Code">var Chaine = 'Comment ça marche?';</pre>
+<ul>
+  <li>
+    <pre class="Code">var Resultat = Chaine.charAt(0);</pre>
+    <br/>
+    <i>donne 'C'</i>
+  <li>
+    <pre class="Code">var Resultat = "Comment ça marche?".charAt(1);</pre>
+    <br/>
+    <i>donne 'o'</i>
+  <li>
+    <pre class="Code">var Resultat = Chaine.charAt(17);</pre>
+    <br/>
+    <i>donne '?'</i>
+  <li>
+    <pre class="Code">var Resultat = ("Comment ça marche?").charAt(18);</pre>
+    <br/>
+    <i>donne ''</i>
+  <li>
+    <pre class="Code">var Resultat = charAt(Chaine, -1);</pre>
+    <br/>
+    <i>donne ''</i>
+</ul>
+<a name="exemples" class="ancre"></a>
+<h3>M&eacute;thode <i>indexOf()</i></h3>
+<p align="justify">La m&eacute;thode <i>indexOf()</i> permet de rechercher (de
+  gauche &agrave; droite) la position d'une sous-cha&icirc;ne dans une cha&icirc;ne
+  de caract&egrave;res.
+<p align="justify">
+<pre class="Code">Chaine = "chaine de caract&egrave;res";
+
+SousChaine = "sous-cha&icirc;ne de caract&egrave;res";
+
+Resultat = Chaine.indexOf(SousChaine, position);</pre>
+<p align="justify">La position indiqu&eacute;e en argument permet de d&eacute;terminer
+  la position du caract&egrave;re &agrave; partir duquel la recherche est effectu&eacute;.
+  L'argument <i>position</i> doit &ecirc;tre compris entre 0 et <i>n-1</i>. Si
+  cet argument est omis la recherche d&eacute;butera &agrave; la position 0. <br/>
+  Lorsque la recherche est infructueuse, la m&eacute;thode <i>indexOf()</i> renvoie
+  la valeur -1.
+<p align="justify">Voici quelques exemples&nbsp;: <br/>
+<pre class="Code">Chaine = 'Comment ça marche?'</pre>
+<br/>
+<pre class="Code">Sous_Chaine = 'mar'</pre>
+<ul>
+  <li>
+    <pre class="Code">var Resultat = Chaine.indexOf(Sous_Chaine, 6)</pre>
+    <br/>
+    <i>donne '11'</i>
+  <li>
+    <pre class="Code">var Resultat = Chaine.indexOf(Sous_Chaine)</pre>
+    <br/>
+    <i>donne '11'</i>
+  <li>
+    <pre class="Code">var Resultat = Chaine.indexOf(Sous_Chaine, 11)</pre>
+    <br/>
+    <i>donne '11'</i>
+  <li>
+    <pre class="Code">var Resultat = Chaine.indexOf(Sous_Chaine, 12)</pre>
+    <br/>
+    <i>donne '-1'</i>
+  <li>
+    <pre class="Code">var Resultat = Chaine.indexOf(Sous_Chaine, -1)</pre>
+    <br/>
+    <i>donne "-1"</i>
+  <li>
+    <pre class="Code">var Resultat = Chaine.indexOf(Sous_Chaine, 15)</pre>
+    <br/>
+    <i>donne "-1"</i>
+  <li>
+    <pre class="Code">var Resultat = Chaine.indexOf(Sous_Chaine, 19)</pre>
+    <br/>
+    <i>donne "-1"</i>
+</ul>
+<a name="exemples" class="ancre"></a>
+<h3>M&eacute;thode <i>lastIndexOf()</i></h3>
+<p align="justify">La m&eacute;thode <i>lastIndexOf()</i> permet de rechercher
+  (de droite &agrave; gauche) la position d'une sous-cha&icirc;ne dans une cha&icirc;ne
+  de caract&egrave;res.
+<p align="justify">
+<pre class="Code">Chaine = "chaine de caract&egrave;res";
+
+<br/>SousChaine = "sous-cha&icirc;ne de caract&egrave;res";
+
+<br/>Resultat = Chaine.lastIndexOf(SousChaine, position);</pre>
+<p align="justify">La position indiqu&eacute;e en argument permet de d&eacute;terminer
+  la position du caract&egrave;re &agrave; partir duquel la recherche est effectu&eacute; (vers
+  la gauche pour cette m&eacute;thode). L'argument <i>position</i> doit &ecirc;tre
+  compris entre 0 et <i>n-1</i>. Si cet argument est omis la recherche d&eacute;butera &agrave; partir
+  de la fin de la cha&icirc;ne. <br/>
+  Lorsque la recherche est infructueuse, la m&eacute;thode <i>lastIndexOf()</i> renvoie
+  la valeur -1.
+<p align="justify">Voici quelques exemples&nbsp;: <br/>
+<pre class="Code">Chaine = 'Comment ça marche?'</pre>
+<br/>
+<pre class="Code">Sous_Chaine = 'mar'</pre>
+<ul>
+  <li>
+    <pre class="Code">var Resultat = Chaine.lastIndexOf(Sous_Chaine, 6)</pre>
+    <br/>
+    <i>donne '-1'</i>
+  <li>
+    <pre class="Code">var Resultat = Chaine.lastIndexOf(Sous_Chaine)</pre>
+    <br/>
+    <i>donne '11'</i>
+  <li>
+    <pre class="Code">var Resultat = Chaine.lastIndexOf(Sous_Chaine, 11)</pre>
+    <br/>
+    <i>donne '11'</i>
+  <li>
+    <pre class="Code">var Resultat = Chaine.lastIndexOf(Sous_Chaine, 12)</pre>
+    <br/>
+    <i>donne '11'</i>
+  <li>
+    <pre class="Code">var Resultat = Chaine.lastIndexOf(Sous_Chaine, -1)</pre>
+    <br/>
+    <i>donne "-1"</i>
+  <li>
+    <pre class="Code">var Resultat = Chaine.lastIndexOf(Sous_Chaine, 19)</pre>
+    <br/>
+    <i>donne "-1"</i>
+</ul>
+<div align="center"><a name="exemples" class="ancre"></a>
+    <!--Code à insérer jjspub -->
+    <script type="text/javascript"><!--
+google_ad_client = "pub-2085185646476169";
+google_ad_width = 468;
+google_ad_height = 60;
+google_ad_format = "468x60_as";
+google_ad_type = "text_image";
+//2006-11-23: jjscentre
+google_ad_channel = "2311992272";
+google_color_border = "CC99FF";
+google_color_bg = "CC99FF";
+google_color_link = "FFFFFF";
+google_color_text = "000000";
+google_color_url = "../err404.html";
+//--></script>
+<script type="text/javascript"
+  src="../../pagead2.googlesyndication.com/pagead/f.txt">
+</script>
+    <!--Code à insérer jjspub -->
+</div>
+<h3>M&eacute;thode <i>substring()</i></h3>
+<p align="justify">La m&eacute;thode <i>substring()</i> permet de r&eacute;cup&eacute;rer
+  une sous-cha&icirc;ne dans une cha&icirc;ne de caract&egrave;res en pr&eacute;cisant
+  en param&egrave;tres les positions des caract&egrave;res entre lesquels la
+  sous-cha&icirc;ne doit &ecirc;tre r&eacute;cup&eacute;r&eacute;e.
+<p align="justify">
+<pre class="Code">Chaine = "chaine de caract&egrave;res";
+
+Resultat = Chaine.substring(position1, position2);</pre>
+<p align="justify">Les positions indiqu&eacute;es en argument permettent de d&eacute;terminer
+  les position des caract&egrave;re entre lesquels la sous-cha&icirc;ne doit &ecirc;tre
+  r&eacute;cup&eacute;r&eacute;e. Les arguments <i>position1</i> et <i>position2</i> doivent &ecirc;tre
+  compris entre 0 et <i>n-1</i>.
+<ul>
+  <li>Si l'argument <i>position1</i> est plus petit que l'argument <i>position2</i>,
+    la m&eacute;thode <i>substring()</i> retourne la sous-cha&icirc;ne commen&ccedil;ant &agrave; la
+    position 1 et s'arr&ecirc;tant au caract&egrave;re situ&eacute; avant position
+    2</li>
+  <li>Si l'argument <i>position1</i> est plus grand que l'argument <i>position2</i>,
+    la m&eacute;thode <i>substring()</i> retourne la sous-cha&icirc;ne commen&ccedil;ant &agrave; la
+    position 2 et s'arr&ecirc;tant au caract&egrave;re situ&eacute; avant position
+    1</li>
+  <li>Si l'argument <i>position1</i> est &eacute;gal &agrave; l'argument <i>position2</i>,
+    la m&eacute;thode <i>substring()</i> retourne une cha&icirc;ne vide</li>
+</ul>
+<p align="justify">Voici quelques exemples&nbsp;:
+<pre class="Code">var Chaine = 'Comment ça marche?';</pre>
+<ul>
+  <li>
+    <pre class="Code">var Resultat = Chaine.substring(1,5);</pre>
+    <br/>
+    <i>donne 'omme'</i>
+  <li>
+    <pre class="Code">var Resultat = Chaine.substring(6,6);</pre>
+    <br/>
+    <i>donne ''</i>
+  <li>
+    <pre class="Code">var Resultat = Chaine.substring(8,2);</pre>
+    <br/>
+    <i>donne 'mment '</i>
+</ul>
+<a name="uppercase" class="ancre"></a>
+<h3>M&eacute;thodes <i>toLowerCase()</i> et <i>toUpperCase()</i></h3>
+<p align="justify">La m&eacute;thode <i>toLowerCase()</i> permet de convertir
+  toutes les lettres d'une cha&icirc;ne en minuscule, les autres caract&egrave;res
+  sont laiss&eacute;s tels quels.
+<p align="justify">Voici quelques exemples&nbsp;:
+<pre class="Code">var Chaine = 'Comment ça Marche?';</pre>
+<ul>
+  <li>
+    <pre class="Code">var Resultat = Chaine.toLowerCase();</pre>
+    <br/>
+    <i>donne 'comment ça marche?'</i>
+</ul>
+La m&eacute;thode <i>toUpperCase()</i> permet de convertir toutes les lettres
+d'une cha&icirc;ne en majuscule,
+les autres caract&egrave;res sont laiss&eacute;s tels quels.
+<p align="justify">Voici quelques exemples&nbsp;: <br/>
+<pre class="Code">var Chaine = 'Comment ça Marche?';</pre>
+<ul>
+  <li>
+    <pre class="Code">var Resultat = Chaine.toUpperCase();</pre>
+    <br/>
+    <i>donne 'COMMENT çA MARCHE?'</i>
+</ul>
+<p align="center">&nbsp;</p>
+              <table width="300" border="0">
+                <tr>
+                  <td width="100"><div align="center"></div>
+                  </td>
+                  <td width="100"><div align="center"><a href="js18regexp.html"><img src="images/flchg.gif" width="40" height="32" border="0"></a></div>
+                  </td>
+                  <td><div align="center"><a href="js20objets.html"><img src="images/flchd.gif" width="40" height="32" border="0"></a></div>
+                  </td>
+                </tr>
+              </table>
+              <hr>
+
+              <p align="justify"> <font size="1" face="Verdana, Arial, Helvetica, sans-serif">Ce
+                  document intitul&eacute; &laquo;Javascript - L'objet String&raquo; issu
+                de l'encyclop&eacute;die
+                informatique Comment &Ccedil;a Marche (<a href="http://www.commentcamarche.net/" target="_blank">www.commentcamarche.net</a>)
+                est mis &agrave; disposition sous les termes de la licence Creative
+                Commons. Vous pouvez copier, modifier des copies de cette page,
+                dans les conditions fix&eacute;es par la licence, tant que cette
+              note appara&icirc;t clairement. </font></p>
+              <p align="center">&nbsp;</p>
+            </div>
+          </td>
+          <td width="6" valign="top">
+            <div align="center">
+<table width="6" border="0" align="center" bordercolor="#9966FF">
+<tr><td>
+
+    <div align="center">	</div>
+    <div align="center">  </div>
+<div align="center"></div>
+<div align="center">&nbsp;</div>
+
+</td></tr></table>
+            </div>
+          </td>
+        </tr>
+        <tr valign="middle"> 
+          <td>&nbsp;</td>
+          <td align="center">
+
+
+                  <table border="0" cellspacing="0" width="700">
+                    <tr bordercolor="#00CCFF"> 
+                      <td width="280">
+					  <div align="center">
+<font color="#FFFFFF" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+<a href='http://www.jecreemonsite.net/php/jcmscompteur.php'>Il y a 3 Visiteurs</a> sur <a href='../index.html'>Mon JavaScript</a><noscript><a href="http://www.jecreemonsite.net/">javascript php html</a></noscript>
+</font>					  </div></td>
+                      <td><div align="center">
+					  
+					   <img src="../im/mjs-minilogo.gif"></div></td>
+                      <td width="280"> 
+                      <div align="center"><font color="#FFFFFF" size="1" face="Verdana, Arial, Helvetica, sans-serif"><a href="../index.html">Mon javascript</a> </font>
+					  &nbsp;&nbsp;<font color="#FFFFFF" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              10-08-2015          
+			  </font>
+					  </div>
+                      </td>
+                    </tr>
+                    <tr align="center"> 
+                      <td bgcolor="#003399" height="2" colspan="2"></td>
+                      <td bgcolor="#003399" height="2"></td>
+                    </tr>
+                  </table>
+				  <br>
+
+          </td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+
+<!-- Mirrored from www.monjavascript.net/cours_jjs/js19string.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Aug 2015 20:25:22 GMT -->
+</html>

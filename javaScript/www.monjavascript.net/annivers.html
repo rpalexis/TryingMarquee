@@ -1,0 +1,643 @@
+<html>
+
+<!-- Mirrored from www.monjavascript.net/annivers.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Aug 2015 20:24:35 GMT -->
+<head>
+<title>Mon JavaScript - Date Anniversaire</title>
+<meta name="Description" lang="fr" content="Webmasters, Mon JavaScript vous propose: des scripts en javascript, mais aussi des cours de javascript, des générateurs, le multimoteur, du PHP et autres astuces..., pour donner de l'attrait à votre site web.">
+
+<meta name="keywords" content="javascript, html, langage, programme, programmation, javascript, site, perso, script, java, astuces, programmes, texte défilant, barre d'état, insérer favoris, heure gmt, javascript menu, script de redirection, javascript heure, javascript menu deroulant, rollover, javascript fenetre, menu déroulant, envoyer mail, formulaire, menu javascript, mail, date, Plein Ecran, pop up">
+<meta name="author" content="monjavascript - PLF">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="mjs.css" type="text/css">
+<script language="JavaScript">
+<!--
+//PLF- http://www.monjavascript.net/
+if (parent.frames.length > 0)
+window.top.location.href = location.href;
+//-->
+</script>
+<script language="javascript">
+// PLF - http://www.monjavascript.net/
+var datedujour, anniv, jour, jour1, année_anniv, mois_anniv, jour_anniv, testopen 
+function calcul() {
+datedujour = new Date();
+année_anniv= document.date_anni.monannee.value;
+mois_anniv= document.date_anni.monmois.value-1;
+jour_anniv= document.date_anni.monjour.value;
+anniv = new Date(année_anniv, mois_anniv, jour_anniv);
+datedujour.setHours(0+((anniv.getTimezoneOffset()-datedujour.getTimezoneOffset())/60))
+datedujour.setMinutes(0)
+datedujour.setSeconds(0)
+jour = anniv.getDay()
+date1=datedujour.getTime()
+date2=anniv.getTime()
+nbrej= date1-date2
+nbrej= Math.round((Math.round(nbrej)/1000)/60/60/24)
+switch(jour){
+case 1 :
+jour1 ="Lundi"
+break;
+case 2 :
+jour1 ="Mardi"
+break;
+case 3 :
+jour1 ="Mercredi"
+break;
+case 4 :
+jour1 ="Jeudi"
+break;
+case 5 :
+jour1 ="Vendredi"
+break;
+case 6 :
+jour1 ="Samedi"
+break;
+case 0 :
+jour1 ="Dimanche"
+break;
+}
+date = anniv.getDate()
+mois = anniv.getMonth()
+switch(mois+1){
+case 1 :
+mois1 ="Janvier"
+break;
+case 2 :
+mois1 ="Février"
+break;
+case 3 :
+mois1 ="Mars"
+break;
+case 4 :
+mois1 ="Avril"
+break;
+case 5 :
+mois1 ="Mai"
+break;
+case 6 :
+mois1 ="Juin"
+break;
+case 7 :
+mois1 ="Juillet"
+break;
+case 8 :
+mois1 ="Août"
+break;
+case 9 :
+mois1 ="Septembre"
+break;
+case 10 :
+mois1 ="Octobre"
+break;
+case 11 :
+mois1 ="Novembre"
+break;
+case 12 :
+mois1 ="Décembre"
+break;
+}
+an = anniv.getFullYear()
+form_date = "Vous avez choisi le "+jour1+" "+date+" "+mois1+" "+an+".<br>C'était il y a "+nbrej+" jours";
+//alert(form_date);
+result=open("","resultat","toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=1,resizable=1,top=1,left=50,width=500,height=200");
+result.document.write('<body BGCOLOR="#CC99FF"><p>&nbsp;</p><p align="center" >'+form_date+'</p><p align="center" ><a href="javascript:window.close();">Fermer cette fenêtre</a></p>')
+if (result.blur) result.focus()
+}
+</script>
+</head>
+<body bgcolor="#FFFFFF">
+<table width="1100" border="0" align="center" bgcolor="#9966FF">
+  <tr>    <td ><table width="1100" border="0" background="im/header_tile.gif">
+      <tr> 
+    <td width="240" ><font face="Verdana, Arial, Helvetica, sans-serif"><a href="index.html"><img src="im/mjs160x60_2.gif" alt="http://www.monjavascript.net" width="160" height="60" border="0"></a></font></td>
+    <td valign="middle"> 
+      	 <div align="right"><br>
+<!--Code à insérer jjspub --><script type="text/javascript"><!--
+google_ad_client = "pub-2085185646476169";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text_image";
+//2007-05-06: jjshaut
+google_ad_channel = "0643568426";
+google_color_border = "9966FF";
+google_color_bg = "9966FF";
+google_color_link = "FFFFFF";
+google_color_text = "000000";
+google_color_url = "err404.html";
+//-->
+</script>
+<script type="text/javascript"
+  src="../pagead2.googlesyndication.com/pagead/f.txt">
+</script><!--Code à insérer jjspub -->
+		</div>
+    </td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr> 
+    <td> 
+      <table width="1100" border="0" align="center">
+        <tr> 
+          <td width="162" valign="top"> 
+<script language="JavaScript">
+<!--
+//PLF-http://www.monjavascript.net/
+  function fenetreCentre(url,largeur,hauteur,options) {
+  var haut=(screen.height -(hauteur+130));
+  var Gauche=(screen.width-(largeur+30));
+  window.open(url,"","top="+haut+",left="+Gauche+",width="+largeur+",height="+hauteur+","+options);
+  }
+  adfav = "'index.html', 'Mon javascript : Programation en javascript et autres...'"
+  adreco = "'recomail.html',400,520,'menubar=no,scrollbars=yes,statusbar=no'"
+  adcont = "'contact.html',600,600,'menubar=no,scrollbars=yes,statusbar=no'" 
+  //-->
+</script>
+
+  
+<div align="center">
+  <table width="160" border="0" align="center" bordercolor="#9966FF">
+    <tr><td>
+    <div align="center">
+	<a href="index.html"><img src="menujs/menuaccu.gif" border="0" width="139" height="24"></a></div>
+    <table border="1" width="160"><tr><td align="left" ><p><font size="1"><img src="im/flechep.gif" width="7" height="7"><a href="index.html">ACCUEIL</a>
+	  </font></font><br>
+	  
+	<font size="1">
+	  <img src="im/flechep.gif" width="7" height="7"><a href='javascript:fenetreCentre("contact.html",600,400,"menubar=no,scrollbars=yes,statusbar=no")'>Contact</a>	<br>
+	  <img src="im/flechep.gif" width="7" height="7"><a href="acmoteujjs.html">Rechercher </a><br>
+      <img src="im/flechep.gif" width="7" height="7"><a href='javascript:window.external.addfavorite("index.html", "Mon JavaScript : Programation en javascript et autres...")'>Insérez
+      dans vos<br>
+&nbsp; favoris</a></font> <br>
+<!-- Placez cette balise où vous souhaitez faire apparaître le gadget Bouton +1. -->
+</p>
+          <div class="g-plusone" data-size="medium"></div>
+          <!-- Placez cette ballise après la dernière balise Bouton +1. -->
+          <script type="text/javascript">
+  window.___gcfg = {lang: 'fr'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = '../apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+          </script>
+</td>
+    </tr></table>
+    <div align="center">
+		<a href="somscript.html"><img src="menujs/menuscrpt.gif" border="0" width="139" height="24"></a></div>
+    <table border="1" width="160"><tr><td align="left" ><font size="1">
+		<img src="im/flechep.gif" width="7" height="7"><a href="somac_visit.html">ACCUEIL DES<br>&nbsp;  VISITEURS </a> <br>
+      <img src="im/flechep.gif" width="7" height="7"><a href="somdat_h.html">DATE & HEURE </a><br>
+      <img src="im/flechep.gif" width="7" height="7"><a href="somtexte.html">EFFETS
+    DE TEXTE </a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="somfenetres.html">FENETRES </a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="somform.html">FORMULAIRES </a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="somimages.html">IMAGES </a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="sommenus.html">MENUS</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="sompratique.html">PRATIQUE</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="sompopup.html">POP UP </a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="somdivers.html">DIVERS</a><br>
+    <br>
+    <!--
+	<img src="http://www.monjavascript.net/im/flechep.gif" width="7" height="7"><a href="http://www.monjavascript.net/section_php/index.php">PHP</a>
+	  //-->
+		</font></td>
+    </tr></table>
+	
+    <div align="center">  <img src="menujs/menuplus.gif" width="139" height="24"></div>
+	    <table border="1" width="160"><tr><td align="left" ><font size="1">
+		
+	<img src="im/flechep.gif" width="7" height="7"><a href="cours_jjs/index.html" >Cours de javascript</a><br>
+		<img src="im/flechep.gif" width="7" height="7"><a href="http://www.jecreemonsite.net/html_css/gencss.php" target="_blank">Générer vos Fichiers<br>&nbsp; 
+	
+	CSS</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="http://www.jecreemonsite.net/html_css/genmetatag.php" target="_blank">Générer vos Meta-Tags</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="metadescp.html">Description des Balises<br>&nbsp;  Meta</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="couleurs.html">Les Codes Couleur</a> <br>
+	<img src="im/flechep.gif" width="7" height="7"><a href="math.html">L'objet Math</a><br>
+	<img src="im/flechep.gif" width="7" height="7"><a href="li/lissage.html">Lissage De Pr&ecirc;t</a><br>
+	<img src="im/flechep.gif" width="7" height="7"><a href="li/ta.html">Tableau
+	d'Amortissement</a><br>
+		
+    <img src="im/flechep.gif" width="7" height="7"><a href="moteur.html">un Multi-Moteurs de recherche sur Votre Site</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="mailcryp.html">Cryptez votre e-mail<br>&nbsp;  pour contrer le Spam</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="scriptcryp.html">Cryptez vos Scripts</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><A href="acmoteu.html">Moteurs de recherches </A><br>
+    <img src="im/flechep.gif" width="7" height="7"><A href="acmoteu.html">Référencement </A><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="http://www.jecreemonsite.net/" target="_blank" title="javascript, HTML, PHP, tout pour le webmaster">Je
+    Cr&eacute;e Mon Site</a>
+    <br>
+	<img src="im/flechep.gif" width="7" height="7"><A HREF=http://www.editeurjavascript.com/partenaires/concours.php?id=mjs TARGET=_blank>L'éditeur JavaScript</A>
+    </font></td>
+    </tr></table>
+	
+	
+	
+	
+	
+	<br>
+
+  <div align="center">
+<!--Code à insérer jjspub --><script type="text/javascript"><!--
+google_ad_client = "pub-2085185646476169";
+google_ad_width = 160;
+google_ad_height = 600;
+google_ad_format = "160x600_as";
+google_ad_type = "text_image";
+//2006-11-24: jjsmenu
+google_ad_channel = "6413686093";
+google_color_border = "9966FF";
+google_color_bg = "9966FF";
+google_color_link = "FFFFFF";
+google_color_text = "000000";
+google_color_url = "err404.html";
+//--></script>
+<script type="text/javascript"
+  src="../pagead2.googlesyndication.com/pagead/f.txt">
+</script><!--Code à insérer jjspub -->
+
+
+
+
+  </div>
+ <table width="160" border="0" align="center" bordercolor="#9966FF">
+<tr><td>
+
+    <div align="center">	</div>
+    <div align="center">  </div>
+<div align="center"></div>
+
+
+
+
+
+<div align="center">
+<a href="http://www.xiti.com/xiti.asp?s=504527" title="WebAnalytics" target="_top">
+<script type="text/javascript">
+<!--
+Xt_param = 's=504527&p=';
+try {Xt_r = top.document.referrer;}
+catch(e) {Xt_r = document.referrer; }
+Xt_h = new Date();
+Xt_i = '<img width="39" height="25" border="0" alt="" ';
+Xt_i += 'src="http://logv17.xiti.com/hit.xiti?'+Xt_param;
+Xt_i += '&hl='+Xt_h.getHours()+'x'+Xt_h.getMinutes()+'x'+Xt_h.getSeconds();
+if(parseFloat(navigator.appVersion)>=4)
+{Xt_s=screen;Xt_i+='&r='+Xt_s.width+'x'+Xt_s.height+'x'+Xt_s.pixelDepth+'x'+Xt_s.colorDepth;}
+document.write(Xt_i+'&ref='+Xt_r.replace(/[<>"]/g, '').replace(/&/g, '$')+'" title="Internet Audience">');
+//-->
+</script>
+<noscript>
+Mesure d'audience ROI statistique webanalytics par <img width="39" height="25" src="http://logv17.xiti.com/hit.xiti?s=504527&amp;p=" alt="WebAnalytics" />
+</noscript></a>
+</div>
+
+</td></tr></table>
+ 
+  
+    </td></tr>
+  </table>
+</div>
+
+                
+		  </td>          <td valign="top" bgcolor="#CC99FF" colspan="2"> 
+            <div align="center"> 
+              <p align="center"> 
+                <br>
+                <font face="Verdana, Arial, Helvetica, sans-serif" size="4">Trouver
+                le Jour de la Semaine et le Nombre de Jours Pass&eacute;s pour une
+                Date</font><font face="Verdana, Arial, Helvetica, sans-serif"> 
+                </font></b></font></p>
+              <p align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Un
+                  petit script qui ne sert pas &agrave; grand chose, mais qui amuse
+                  toujours.</font></p>
+              <p align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">La
+                  r&eacute;ponse s'affiche dans une fen&ecirc;tre popup ou dans une boite
+                  de dialogue.</font></p>
+              <p align="center"><!--Code à insérer jjspub --><script type="text/javascript"><!--
+google_ad_client = "pub-2085185646476169";
+google_ad_width = 468;
+google_ad_height = 60;
+google_ad_format = "468x60_as";
+google_ad_type = "text_image";
+//2006-11-23: jjscentre
+google_ad_channel = "2311992272";
+google_color_border = "CC99FF";
+google_color_bg = "CC99FF";
+google_color_link = "FFFFFF";
+google_color_text = "000000";
+google_color_url = "err404.html";
+//--></script>
+<script type="text/javascript"
+  src="../pagead2.googlesyndication.com/pagead/f.txt">
+</script><!--Code à insérer jjspub -->
+</p>
+              <form name="date_anni" method="post" action="javascript:calcul()">
+                <p>
+                  <!--- <input name="monjour" type="text" value="30">--->
+                  <select name="monjour">
+                  <option value="01">01</option>
+                  <option value="02">02</option>
+                  <option value="03">03</option>
+                  <option value="04">04</option>
+                  <option value="05">05</option>
+                  <option value="06">06</option>
+                  <option value="07">07</option>
+                  <option value="08">08</option>
+                  <option value="09" selected>09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                  <option value="31">31</option>
+                  </select>
+&nbsp;
+                  <!--- <input name="monmois" type="text" value="12">--->
+				    <select name="monmois">
+                  <option value="01">01</option>
+                  <option value="02">02</option>
+                  <option value="03">03</option>
+                  <option value="04">04</option>
+                  <option value="05">05</option>
+                  <option value="06">06</option>
+                  <option value="07">07</option>
+                  <option value="08">08</option>
+                  <option value="09">09</option>
+                  <option value="10">10</option>
+                  <option value="11" selected>11</option>
+                  <option value="12">12</option>
+                  </select>
+&nbsp;
+                  <input name="monannee" type="text" value="1989" size="5" maxlength="4">
+                </p>
+                <p>
+                  <input type="submit" name="Submit" value="Calculer">
+                </p>
+              </form>
+              <p align="center"><font color="#000099" size="4" face="Verdana, Arial, Helvetica, sans-serif">Ins&eacute;rez 
+                le code ci-dessous dans l'ent&ecirc;te de votre page (entre les 
+              balises&lt;head&gt; ... &lt;/head&gt;)</font>              </p>
+              <table width="90%" border="1" bordercolorlight="#000000" bgcolor="#CCCCCC" align="center">
+                <tr> 
+                  <td>&lt;script language=&quot;javascript&quot;&gt;<br>
+                    // PLF - http://www.monjavascript.net/<br>                    
+                    var datedujour, anniv, jour, jour1, ann&eacute;e_anniv, mois_anniv,
+                    jour_anniv <br>
+                    function calcul() {<br>                    
+                    datedujour = new Date();<br>
+                    ann&eacute;e_anniv= document.date_anni.monannee.value;<br>
+                    mois_anniv= document.date_anni.monmois.value-1;<br>
+                    jour_anniv= document.date_anni.monjour.value;<br>
+                    anniv = new Date(ann&eacute;e_anniv, mois_anniv, jour_anniv);<br>
+                    datedujour.setHours(0+((anniv.getTimezoneOffset()-datedujour.getTimezoneOffset())/60))<br>
+                    datedujour.setMinutes(0)<br>
+                    datedujour.setSeconds(0)<br>
+                    jour = anniv.getDay()<br>
+                    date1=datedujour.getTime()<br>
+                    date2=anniv.getTime()<br>
+                    nbrej= date1-date2<br>
+                    nbrej= Math.round((Math.round(nbrej)/1000)/60/60/24)<br>
+                    switch(jour){<br>
+                    case 1 :<br>
+                    jour1 =&quot;Lundi&quot;<br>
+                    break;<br>
+                    case 2 :<br>
+                    jour1 =&quot;Mardi&quot;<br>
+                    break;<br>
+                    case 3 :<br>
+                    jour1 =&quot;Mercredi&quot;<br>
+                    break;<br>
+                    case 4 :<br>
+                    jour1 =&quot;Jeudi&quot;<br>
+                    break;<br>
+                    case 5 :<br>
+                    jour1 =&quot;Vendredi&quot;<br>
+                    break;<br>
+                    case 6 :<br>
+                    jour1 =&quot;Samedi&quot;<br>
+                    break;<br>
+                    case 0 :<br>
+                    jour1 =&quot;Dimanche&quot;<br>
+                    break;<br>
+                    }<br>
+                    date = anniv.getDate()<br>
+                    mois = anniv.getMonth()<br>
+                    switch(mois+1){<br>
+                    case 1 :<br>
+                    mois1 =&quot;Janvier&quot;<br>
+                    break;<br>
+                    case 2 :<br>
+                    mois1 =&quot;F&eacute;vrier&quot;<br>
+                    break;<br>
+                    case 3 :<br>
+                    mois1 =&quot;Mars&quot;<br>
+                    break;<br>
+                    case 4 :<br>
+                    mois1 =&quot;Avril&quot;<br>
+                    break;<br>
+                    case 5 :<br>
+                    mois1 =&quot;Mai&quot;<br>
+                    break;<br>
+                    case 6 :<br>
+                    mois1 =&quot;Juin&quot;<br>
+                    break;<br>
+                    case 7 :<br>
+                    mois1 =&quot;Juillet&quot;<br>
+                    break;<br>
+                    case 8 :<br>
+                    mois1 =&quot;Ao&ucirc;t&quot;<br>
+                    break;<br>
+                    case 9 :<br>
+                    mois1 =&quot;Septembre&quot;<br>
+                    break;<br>
+                    case 10 :<br>
+                    mois1 =&quot;Octobre&quot;<br>
+                    break;<br>
+                    case 11 :<br>
+                    mois1 =&quot;Novembre&quot;<br>
+                    break;<br>
+                    case 12 :<br>
+                    mois1 =&quot;D&eacute;cembre&quot;<br>
+                    break;<br>
+                    }<br>
+                    an = anniv.getFullYear()<br>
+                    form_date = &quot;Vous avez choisi le &quot;+jour1+&quot; &quot;+date+&quot; &quot;+mois1+&quot; &quot;+an+&quot;.&lt;br&gt;C'&eacute;tait
+                    il y a &quot;+nbrej+&quot; jours&quot;;<br>                    
+                    result=open(&quot;&quot;,&quot;resultat&quot;,&quot;toolbar=no,
+                    location=no, directories=no, status=no, menubar=no, scrollbars=1,
+                    resizable=1,<font color="#FF00FF"> top=1, left=50, width=500,
+                    height=200</font>&quot;);<br>
+                    result.document.write('&lt;body BGCOLOR=&quot;<font color="#0000FF">#CC99FF</font>&quot;&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p
+                    align=&quot;center&quot; &gt;'+form_date+'&lt;/p&gt;')<br>                    if (result.blur) result.focus()<br>
+                    }<br>
+                  &lt;/script&gt;<br>
+                  <font size="1" face="Verdana, Arial, Helvetica, sans-serif">&lt;noscript&gt;&lt;a
+                  href=&quot;http://www.monjavascript.net/&quot;&gt;&lt;/a&gt;&lt;/noscript&gt;</font></td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#FFFFFF"><p>Vous pouvez r&eacute;pondre dans une boite
+                      de dialogue en remplacant les lignes :</p>
+                    <p>result=open(&quot;&quot;,&quot;resultat&quot;,&quot;toolbar=no,
+                      location=no, directories=no, status=no, menubar=no, scrollbars=1,
+                      resizable=1, width=500, height=200&quot;);<br>
+                      result.document.write('&lt;body BGCOLOR=&quot;#CC99FF&quot;&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p
+  align=&quot;center&quot; &gt;'+form_date+'&lt;/p&gt;')<br>
+  par<br>
+  alert(form_date);<br>
+  Dans ce cas supprimez &lt;br&gt; dans form_date = &quot;Vous..... </p>
+                    <p><font color="#FF00FF">Bord du haut, bord gauche, largeur,
+                      hauteur de la fen&ecirc;tre r&eacute;ponse.</font></p>
+                    <p><font color="#0000FF"> Couleur de la fen&ecirc;tre r&eacute;ponse.</font></p></td>
+                </tr>
+              </table>
+              <p align="center">&nbsp;</p>
+              <p align="center"><font size="4" color="#000099" face="Verdana, Arial, Helvetica, sans-serif">Ins&eacute;rez
+                  le code ci-dessous dans votre page Web l'endroit<br>
+o&ugrave; vous souhaitez installer le formulaire de choix</font></p>
+              <table width="90%" border="1" bordercolorlight="#000000" bgcolor="#CCCCCC" align="center">
+                <tr>
+                  <td>&lt;form name=&quot;date_anni&quot; method=&quot;post&quot; action=&quot;&quot;&gt;<br>
+&lt;p align=&quot;center&quot;&gt;<br>
+&lt;!--- &lt;input name=&quot;monjour&quot; type=&quot;text&quot; value=&quot;30&quot;&gt;---&gt;<br>
+&lt;select name=&quot;monjour&quot;&gt;<br>
+&lt;option value=&quot;01&quot;&gt;01&lt;/option&gt;<br>
+&lt;option value=&quot;02&quot;&gt;02&lt;/option&gt;<br>
+&lt;option value=&quot;03&quot;&gt;03&lt;/option&gt;<br>
+&lt;option value=&quot;04&quot;&gt;04&lt;/option&gt;<br>
+&lt;option value=&quot;05&quot;&gt;05&lt;/option&gt;<br>
+&lt;option value=&quot;06&quot;&gt;06&lt;/option&gt;<br>
+&lt;option value=&quot;07&quot;&gt;07&lt;/option&gt;<br>
+&lt;option value=&quot;08&quot;&gt;08&lt;/option&gt;<br>
+&lt;option value=&quot;09&quot; <font color="#0000FF">selected</font>&gt;09&lt;/option&gt;<br>
+&lt;option value=&quot;10&quot;&gt;10&lt;/option&gt;<br>
+&lt;option value=&quot;11&quot;&gt;11&lt;/option&gt;<br>
+&lt;option value=&quot;12&quot;&gt;12&lt;/option&gt;<br>
+&lt;option value=&quot;13&quot;&gt;13&lt;/option&gt;<br>
+&lt;option value=&quot;14&quot;&gt;14&lt;/option&gt;<br>
+&lt;option value=&quot;15&quot;&gt;15&lt;/option&gt;<br>
+&lt;option value=&quot;16&quot;&gt;16&lt;/option&gt;<br>
+&lt;option value=&quot;17&quot;&gt;17&lt;/option&gt;<br>
+&lt;option value=&quot;18&quot;&gt;18&lt;/option&gt;<br>
+&lt;option value=&quot;19&quot;&gt;19&lt;/option&gt;<br>
+&lt;option value=&quot;20&quot;&gt;20&lt;/option&gt;<br>
+&lt;option value=&quot;21&quot;&gt;21&lt;/option&gt;<br>
+&lt;option value=&quot;22&quot;&gt;22&lt;/option&gt;<br>
+&lt;option value=&quot;23&quot;&gt;23&lt;/option&gt;<br>
+&lt;option value=&quot;24&quot;&gt;24&lt;/option&gt;<br>
+&lt;option value=&quot;25&quot;&gt;25&lt;/option&gt;<br>
+&lt;option value=&quot;26&quot;&gt;26&lt;/option&gt;<br>
+&lt;option value=&quot;27&quot;&gt;27&lt;/option&gt;<br>
+&lt;option value=&quot;28&quot;&gt;28&lt;/option&gt;<br>
+&lt;option value=&quot;29&quot;&gt;29&lt;/option&gt;<br>
+&lt;option value=&quot;30&quot;&gt;30&lt;/option&gt;<br>
+&lt;option value=&quot;31&quot;&gt;31&lt;/option&gt;<br>
+&lt;/select&gt;<br>
+&amp;nbsp;<br>
+&lt;!--- &lt;input name=&quot;monmois&quot; type=&quot;text&quot; value=&quot;12&quot;&gt;---&gt;<br>
+&lt;select name=&quot;monmois&quot;&gt;<br>
+&lt;option value=&quot;01&quot;&gt;01&lt;/option&gt;<br>
+&lt;option value=&quot;02&quot;&gt;02&lt;/option&gt;<br>
+&lt;option value=&quot;03&quot;&gt;03&lt;/option&gt;<br>
+&lt;option value=&quot;04&quot;&gt;04&lt;/option&gt;<br>
+&lt;option value=&quot;05&quot;&gt;05&lt;/option&gt;<br>
+&lt;option value=&quot;06&quot;&gt;06&lt;/option&gt;<br>
+&lt;option value=&quot;07&quot;&gt;07&lt;/option&gt;<br>
+&lt;option value=&quot;08&quot;&gt;08&lt;/option&gt;<br>
+&lt;option value=&quot;09&quot;&gt;09&lt;/option&gt;<br>
+&lt;option value=&quot;10&quot;&gt;10&lt;/option&gt;<br>
+&lt;option value=&quot;11&quot; <font color="#0000FF">selected</font>&gt;11&lt;/option&gt;<br>
+&lt;option value=&quot;12&quot;&gt;12&lt;/option&gt;<br>
+&lt;/select&gt;<br>
+&amp;nbsp;<br>
+&lt;input name=&quot;monannee&quot; type=&quot;text&quot; <font color="#0000FF">value=&quot;1989&quot;</font> size=&quot;5&quot; maxlength=&quot;4&quot;&gt;<br>
+&lt;/p&gt;<br>
+&lt;p align=&quot;center&quot;&gt;<br>
+&lt;input type=&quot;button&quot; name=&quot;Submit&quot; onClick=&quot;calcul()&quot;value=&quot;Calculer&quot;&gt;<br>
+&lt;/p&gt;<br>
+&lt;/form&gt;</td>
+                </tr>
+                <tr>
+                  <td bgcolor="#FFFFFF"><font color="#0000FF">Valeur initiale</font></td>
+                </tr>
+              </table>
+              <p align="center">&nbsp;</p>              
+              <p align="center"><a href="fairelien.html">Ce site vous a plu ?
+                  Vous avez trouv&eacute; le script que vous cherchiez ?<br>
+                  Faites en profiter vos visiteurs : ins&eacute;rez un lien sur
+                  votre site</a></p>
+            </div>
+          </td>
+          <td width="6" valign="top">
+            <div align="center">
+<table width="6" border="0" align="center" bordercolor="#9966FF">
+<tr><td>
+
+    <div align="center">	</div>
+    <div align="center">  </div>
+<div align="center"></div>
+<div align="center">&nbsp;</div>
+
+</td></tr></table>
+            </div>
+          </td>
+        </tr>
+        <tr valign="middle"> 
+          <td>&nbsp;</td>
+          <td align="center">
+
+
+                  <table border="0" cellspacing="0" width="700">
+                    <tr bordercolor="#00CCFF"> 
+                      <td width="280">
+					  <div align="center">
+<font color="#FFFFFF" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+<a href='http://www.jecreemonsite.net/php/jcmscompteur.php'>Il y a 3 Visiteurs</a> sur <a href='index.html'>Mon JavaScript</a><noscript><a href="http://www.jecreemonsite.net/">javascript php html</a></noscript>
+</font>					  </div></td>
+                      <td><div align="center">
+					  
+					   <img src="im/mjs-minilogo.gif"></div></td>
+                      <td width="280"> 
+                      <div align="center"><font color="#FFFFFF" size="1" face="Verdana, Arial, Helvetica, sans-serif"><a href="index.html">Mon javascript</a> </font>
+					  &nbsp;&nbsp;<font color="#FFFFFF" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              10-08-2015          
+			  </font>
+					  </div>
+                      </td>
+                    </tr>
+                    <tr align="center"> 
+                      <td bgcolor="#003399" height="2" colspan="2"></td>
+                      <td bgcolor="#003399" height="2"></td>
+                    </tr>
+                  </table>
+				  <br>
+
+          </td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+
+<!-- Mirrored from www.monjavascript.net/annivers.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Aug 2015 20:24:35 GMT -->
+</html>

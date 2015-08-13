@@ -1,0 +1,742 @@
+<html>
+
+<!-- Mirrored from www.monjavascript.net/resultform.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Aug 2015 20:24:25 GMT -->
+<head>
+<title>Mon JavaScript - Traiter le r&eacute;sultat d'un formulaire</title>
+<meta name="Description" lang="fr" content="Webmasters, Mon JavaScript vous propose: des scripts en javascript, mais aussi des cours de javascript, des générateurs, le multimoteur, du PHP et autres astuces..., pour donner de l'attrait à votre site web.">
+
+<meta name="keywords" content="javascript, html, langage, programme, programmation, javascript, site, perso, script, java, astuces, programmes, texte défilant, barre d'état, insérer favoris, heure gmt, javascript menu, script de redirection, javascript heure, javascript menu deroulant, rollover, javascript fenetre, menu déroulant, envoyer mail, formulaire, menu javascript, mail, date, Plein Ecran, pop up">
+<meta name="author" content="monjavascript - PLF">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="mjs.css" type="text/css">
+<script language="JavaScript">
+<!--
+//PLF- http://www.monjavascript.net/
+if (parent.frames.length > 0)
+window.top.location.href = location.href;
+//-->
+</script>
+ <script language=JavaScript>
+  // PLF - http://www.monjavascript.net/ 
+var fois=0 
+boutrep = new Array();
+ function fradio1(bouton,reponse) 
+ {
+ boutrep[bouton]=reponse
+ }
+function fonct_form(bout,form) {
+resultat='<html>\n<title>r&eacute;sultat du formulaire</title>\n<head>\n</head>\n<body>\n';
+err ="";
+	if (form.input1.value == "") {
+      err +="Indiquez le nom de votre site !\n";
+    }
+    if (form.input2.value != "http://") {
+      resultat +="<p align=\"center\">Le nom de votre site est : ";
+	  resultat +="<a href=\""+form.input2.value+"\">"+form.input1.value+"</a></p>\n";
+    }else err +="Indiquez l'URL de votre site !\n";
+    if (form.input3.value != "") {
+      resultat +="<p align=\"center\">Description : "+form.input3.value+".\n";
+    }else resultat +="<p align=\"center\">Pas de description.\n";
+	resultat +="<br>langue : "+form.input4.value+".\n";
+	if (form.input5.checked) {
+      resultat +="<br>utilise le Javascript\n";
+	}else resultat +="<br>n'utilise pas le Javascript\n";
+	resultat +="<br>Nombre de visiteurs par jour : "+boutrep[1]+".\n";
+	resultat +="<br>Age du du site : "+boutrep[2]+".\n";
+	if (err != "") {
+	alert(err);
+	}
+	else{	
+	resultat +="</p>\n</body>\n</html>";
+	if (bout == 1) form.result.value = resultat;
+	if (bout == 2){
+				  	if (fois == 1 ) result.close();
+					result=open("","resultat","toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=1,resizable=1,top=1,left=50,width=500,height=300");
+					result.document.write(resultat)
+					result.document.write('<p align="center" ><a href="javascript:window.close();">Fermer cette fenêtre</a></p>')
+					if (result.blur) result.focus()
+					fois=1;
+					}
+	}}	
+</script>
+</head>
+<body bgcolor="#FFFFFF">
+<table width="1100" border="0" align="center" bgcolor="#9966FF">
+  <tr>    <td ><table width="1100" border="0" background="im/header_tile.gif">
+      <tr> 
+    <td width="240" ><font face="Verdana, Arial, Helvetica, sans-serif"><a href="index.html"><img src="im/mjs160x60_2.gif" alt="http://www.monjavascript.net" width="160" height="60" border="0"></a></font></td>
+    <td valign="middle"> 
+      	 <div align="right"><br>
+<!--Code à insérer jjspub --><script type="text/javascript"><!--
+google_ad_client = "pub-2085185646476169";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text_image";
+//2007-05-06: jjshaut
+google_ad_channel = "0643568426";
+google_color_border = "9966FF";
+google_color_bg = "9966FF";
+google_color_link = "FFFFFF";
+google_color_text = "000000";
+google_color_url = "err404.html";
+//-->
+</script>
+<script type="text/javascript"
+  src="../pagead2.googlesyndication.com/pagead/f.txt">
+</script><!--Code à insérer jjspub -->
+		</div>
+    </td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr> 
+    <td> 
+      <table width="1100" border="0" align="center">
+        <tr> 
+          <td width="162" valign="top"> 
+<script language="JavaScript">
+<!--
+//PLF-http://www.monjavascript.net/
+  function fenetreCentre(url,largeur,hauteur,options) {
+  var haut=(screen.height -(hauteur+130));
+  var Gauche=(screen.width-(largeur+30));
+  window.open(url,"","top="+haut+",left="+Gauche+",width="+largeur+",height="+hauteur+","+options);
+  }
+  adfav = "'index.html', 'Mon javascript : Programation en javascript et autres...'"
+  adreco = "'recomail.html',400,520,'menubar=no,scrollbars=yes,statusbar=no'"
+  adcont = "'contact.html',600,600,'menubar=no,scrollbars=yes,statusbar=no'" 
+  //-->
+</script>
+
+  
+<div align="center">
+  <table width="160" border="0" align="center" bordercolor="#9966FF">
+    <tr><td>
+    <div align="center">
+	<a href="index.html"><img src="menujs/menuaccu.gif" border="0" width="139" height="24"></a></div>
+    <table border="1" width="160"><tr><td align="left" ><p><font size="1"><img src="im/flechep.gif" width="7" height="7"><a href="index.html">ACCUEIL</a>
+	  </font></font><br>
+	  
+	<font size="1">
+	  <img src="im/flechep.gif" width="7" height="7"><a href='javascript:fenetreCentre("contact.html",600,400,"menubar=no,scrollbars=yes,statusbar=no")'>Contact</a>	<br>
+	  <img src="im/flechep.gif" width="7" height="7"><a href="acmoteujjs.html">Rechercher </a><br>
+      <img src="im/flechep.gif" width="7" height="7"><a href='javascript:window.external.addfavorite("index.html", "Mon JavaScript : Programation en javascript et autres...")'>Insérez
+      dans vos<br>
+&nbsp; favoris</a></font> <br>
+<!-- Placez cette balise où vous souhaitez faire apparaître le gadget Bouton +1. -->
+</p>
+          <div class="g-plusone" data-size="medium"></div>
+          <!-- Placez cette ballise après la dernière balise Bouton +1. -->
+          <script type="text/javascript">
+  window.___gcfg = {lang: 'fr'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = '../apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+          </script>
+</td>
+    </tr></table>
+    <div align="center">
+		<a href="somscript.html"><img src="menujs/menuscrpt.gif" border="0" width="139" height="24"></a></div>
+    <table border="1" width="160"><tr><td align="left" ><font size="1">
+		<img src="im/flechep.gif" width="7" height="7"><a href="somac_visit.html">ACCUEIL DES<br>&nbsp;  VISITEURS </a> <br>
+      <img src="im/flechep.gif" width="7" height="7"><a href="somdat_h.html">DATE & HEURE </a><br>
+      <img src="im/flechep.gif" width="7" height="7"><a href="somtexte.html">EFFETS
+    DE TEXTE </a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="somfenetres.html">FENETRES </a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="somform.html">FORMULAIRES </a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="somimages.html">IMAGES </a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="sommenus.html">MENUS</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="sompratique.html">PRATIQUE</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="sompopup.html">POP UP </a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="somdivers.html">DIVERS</a><br>
+    <br>
+    <!--
+	<img src="http://www.monjavascript.net/im/flechep.gif" width="7" height="7"><a href="http://www.monjavascript.net/section_php/index.php">PHP</a>
+	  //-->
+		</font></td>
+    </tr></table>
+	
+    <div align="center">  <img src="menujs/menuplus.gif" width="139" height="24"></div>
+	    <table border="1" width="160"><tr><td align="left" ><font size="1">
+		
+	<img src="im/flechep.gif" width="7" height="7"><a href="cours_jjs/index.html" >Cours de javascript</a><br>
+		<img src="im/flechep.gif" width="7" height="7"><a href="http://www.jecreemonsite.net/html_css/gencss.php" target="_blank">Générer vos Fichiers<br>&nbsp; 
+	
+	CSS</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="http://www.jecreemonsite.net/html_css/genmetatag.php" target="_blank">Générer vos Meta-Tags</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="metadescp.html">Description des Balises<br>&nbsp;  Meta</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="couleurs.html">Les Codes Couleur</a> <br>
+	<img src="im/flechep.gif" width="7" height="7"><a href="math.html">L'objet Math</a><br>
+	<img src="im/flechep.gif" width="7" height="7"><a href="li/lissage.html">Lissage De Pr&ecirc;t</a><br>
+	<img src="im/flechep.gif" width="7" height="7"><a href="li/ta.html">Tableau
+	d'Amortissement</a><br>
+		
+    <img src="im/flechep.gif" width="7" height="7"><a href="moteur.html">un Multi-Moteurs de recherche sur Votre Site</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="mailcryp.html">Cryptez votre e-mail<br>&nbsp;  pour contrer le Spam</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="scriptcryp.html">Cryptez vos Scripts</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><A href="acmoteu.html">Moteurs de recherches </A><br>
+    <img src="im/flechep.gif" width="7" height="7"><A href="acmoteu.html">Référencement </A><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="http://www.jecreemonsite.net/" target="_blank" title="javascript, HTML, PHP, tout pour le webmaster">Je
+    Cr&eacute;e Mon Site</a>
+    <br>
+	<img src="im/flechep.gif" width="7" height="7"><A HREF=http://www.editeurjavascript.com/partenaires/concours.php?id=mjs TARGET=_blank>L'éditeur JavaScript</A>
+    </font></td>
+    </tr></table>
+	
+	
+	
+	
+	
+	<br>
+
+  <div align="center">
+<!--Code à insérer jjspub --><script type="text/javascript"><!--
+google_ad_client = "pub-2085185646476169";
+google_ad_width = 160;
+google_ad_height = 600;
+google_ad_format = "160x600_as";
+google_ad_type = "text_image";
+//2006-11-24: jjsmenu
+google_ad_channel = "6413686093";
+google_color_border = "9966FF";
+google_color_bg = "9966FF";
+google_color_link = "FFFFFF";
+google_color_text = "000000";
+google_color_url = "err404.html";
+//--></script>
+<script type="text/javascript"
+  src="../pagead2.googlesyndication.com/pagead/f.txt">
+</script><!--Code à insérer jjspub -->
+
+
+
+
+  </div>
+ <table width="160" border="0" align="center" bordercolor="#9966FF">
+<tr><td>
+
+    <div align="center">	</div>
+    <div align="center">  </div>
+<div align="center"></div>
+
+
+
+
+
+<div align="center">
+<a href="http://www.xiti.com/xiti.asp?s=504527" title="WebAnalytics" target="_top">
+<script type="text/javascript">
+<!--
+Xt_param = 's=504527&p=';
+try {Xt_r = top.document.referrer;}
+catch(e) {Xt_r = document.referrer; }
+Xt_h = new Date();
+Xt_i = '<img width="39" height="25" border="0" alt="" ';
+Xt_i += 'src="http://logv17.xiti.com/hit.xiti?'+Xt_param;
+Xt_i += '&hl='+Xt_h.getHours()+'x'+Xt_h.getMinutes()+'x'+Xt_h.getSeconds();
+if(parseFloat(navigator.appVersion)>=4)
+{Xt_s=screen;Xt_i+='&r='+Xt_s.width+'x'+Xt_s.height+'x'+Xt_s.pixelDepth+'x'+Xt_s.colorDepth;}
+document.write(Xt_i+'&ref='+Xt_r.replace(/[<>"]/g, '').replace(/&/g, '$')+'" title="Internet Audience">');
+//-->
+</script>
+<noscript>
+Mesure d'audience ROI statistique webanalytics par <img width="39" height="25" src="http://logv17.xiti.com/hit.xiti?s=504527&amp;p=" alt="WebAnalytics" />
+</noscript></a>
+</div>
+
+</td></tr></table>
+ 
+  
+    </td></tr>
+  </table>
+</div>
+
+                
+		  </td>          <td valign="top" bgcolor="#CC99FF" colspan="2"> 
+            <div align="center"> 
+              <p align="center"> 
+                <br>
+                <font face="Verdana, Arial, Helvetica, sans-serif" size="4">Traiter
+                le r&eacute;sultat d'un formulaire<br>
+                </font><font face="Verdana, Arial, Helvetica, sans-serif"> 
+                </font></b></font><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Afficher
+                le r&eacute;sultat d'un formulaire dans un champ de la page ou
+                dans une fen&ecirc;tre.</font></p>
+              <p align="center"><font size="2">Ce script peut facilement compl&eacute;ter &quot; <a href="ecrivez-moi.html">Valider
+              un Formulaire d'Envoi de Mail</a> &quot;</font></p>
+              <form action="#" method="post" name="monform" id="monform">
+                <table width="680" border="0">
+                  <tr bordercolor="#f3f3f3">
+                    <td>Titre
+                        de votre site :</td>
+                    <td><input size=40 name="input1" maxlength="100">
+                    </td>
+                  </tr>
+                  <tr bordercolor="#f3f3f3">
+                    <td>URL
+                        de votre site :</td>
+                    <td><input size=40 name="input2" value="http://">
+                    </td>
+                  </tr>
+                  <tr bordercolor="#f3f3f3">
+                    <td>Description
+                        :</td>
+                    <td><input type="text" size="40" name="input3" maxlength="200">
+                    </td>
+                  </tr>
+                  <tr bordercolor="#f3f3f3">
+                    <td>Langue
+                        du site :</td>
+                    <td>
+                      <select name="input4">
+                        <option value="Allemand">Allemand</option>
+                        <option value="Anglais">Anglais</option>
+                        <option value="Espagnol">Espagnol</option>
+                        <option value="Français" selected>Français</option>
+                        <option value="Autre">Autre</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr bordercolor="#f3f3f3">
+                    <td>Vous
+                        utilisez du Javascript dans vos pages</td>
+                    <td><input name="input5" type=checkbox >
+                    </td>
+                  </tr>
+                  <tr bordercolor="#f3f3f3">
+                    <td>Nombre de visiteurs par jour</td>
+                    <td><p>
+					<input type="radio" name="r1" value="- 100" onclick="fradio1(1,this.value)">- 100<br>
+					<input type="radio" name="r1" value="100 à 500" onclick="fradio1(1,this.value)">100 à 500<br>
+					<input type="radio" name="r1" value="500 à 1000" onclick="fradio1(1,this.value)">500à 1000<br>
+					<input type="radio" name="r1" value="+ 1000" onclick="fradio1(1,this.value)">+ 1000<br>
+                    </p></td>
+                  </tr>
+                  <tr bordercolor="#f3f3f3">
+                    <td>Cr&eacute;ation du site</td>
+                    <td><input type="radio" name="r2" value="- 1 an" onclick="fradio1(2,this.value)">- 1 an<br>
+                      <input type="radio" name="r2" value="1 à 2 ans" onclick="fradio1(2,this.value)">1 à 2 ans<br>
+                      <input type="radio" name="r2" value="2 à 5 ans" onclick="fradio1(2,this.value)">2 à 5 ans<br>
+                      <input type="radio" name="r2" value="+ 5 ans" onclick="fradio1(2,this.value)">+ 5 ans
+				    </td>
+                  </tr>
+                </table><!--Code à insérer jjspub --><script type="text/javascript"><!--
+google_ad_client = "pub-2085185646476169";
+google_ad_width = 468;
+google_ad_height = 60;
+google_ad_format = "468x60_as";
+google_ad_type = "text_image";
+//2006-11-23: jjscentre
+google_ad_channel = "2311992272";
+google_color_border = "CC99FF";
+google_color_bg = "CC99FF";
+google_color_link = "FFFFFF";
+google_color_text = "000000";
+google_color_url = "err404.html";
+//--></script>
+<script type="text/javascript"
+  src="../pagead2.googlesyndication.com/pagead/f.txt">
+</script><!--Code à insérer jjspub -->
+<br>
+                <table width="680" border="0">
+                  <tr bordercolor="#f3f3f3">
+                    <td><div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                        <input onClick="fonct_form(1,this.form)" type=button value="R&eacute;sultat dans un champ" name="button1">
+                    </font></div></td>
+                    <td>
+                      <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                        <input onClick="fonct_form(2,this.form)" type=button value="R&eacute;sultat dans une popup" name="button2">
+                      </font></div>
+                    </td>
+                    <td>
+                      <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                        <input onClick=fonct_dial(this.form) type=reset value="R&eacute;tablir" name="button3">
+                      </font></div>
+                    </td>
+                  </tr>
+                  <tr bordercolor="#f3f3f3">
+                    <td colspan="3"><div align="center">Voir aussi <a href="mailto.html">Un
+                          formulaire d'envoi de mail</a></div></td>
+                  </tr>
+                </table>
+                <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                  <textarea name=result rows=10 wrap=PHYSICAL cols=65></textarea>
+                  <br>
+                  <input onClick=form.result.focus();form.result.select() type=button value="S&eacute;lectionner le code et coller dans une page vierge" name=grab>
+                </font></p>
+              </form>
+              <p align="center"><font color="#000099" size="4" face="Verdana, Arial, Helvetica, sans-serif">Ins&eacute;rez 
+                le code ci-dessous dans l'ent&ecirc;te de votre page (entre les 
+              balises&lt;head&gt; ... &lt;/head&gt;)</font>              </p>
+              <table width="680" border="1" bordercolorlight="#000000" bgcolor="#CCCCCC" align="center">
+                <tr> 
+                  <td> &lt;script language=JavaScript&gt;<br>
+// PLF - http://www.monjavascript.net/ <br>
+var fois=0 <font color="#FFFFFF">//a supprimer si le r&eacute;sultat se fait dans un champ</font><br>
+boutrep = new Array();<br>
+function fradio1(bouton,reponse) <br>
+{<br>
+boutrep[bouton]=reponse<br>
+}<br>
+function fonct_form(form) {<br>
+resultat='&lt;html&gt;\n&lt;title&gt;r&amp;eacute;sultat du formulaire&lt;/title&gt;\n&lt;head&gt;\n&lt;/head&gt;\n&lt;body&gt;\n';<br>
+err =&quot;&quot;;<br>
+if (form.input1.value == &quot;&quot;) {<br>
+err +=&quot;Indiquez le nom de votre site !\n&quot;;<br>
+}<br>
+if (form.input2.value != &quot;http://&quot;) {<br>
+resultat +=&quot;&lt;p align=\&quot;center\&quot;&gt;Le nom de votre site est
+: &quot;;<br>
+resultat +=&quot;&lt;a href=\&quot;&quot;+form.input2.value+&quot;\&quot;&gt;&quot;+form.input1.value+&quot;&lt;/a&gt;&lt;/p&gt;\n&quot;;<br>
+}else err +=&quot;Indiquez l'URL de votre site !\n&quot;;<br>
+if (form.input3.value != &quot;&quot;) {<br>
+resultat +=&quot;&lt;p align=\&quot;center\&quot;&gt;Description : &quot;+form.input3.value+&quot;.\n&quot;;<br>
+}else resultat +=&quot;&lt;p align=\&quot;center\&quot;&gt;Pas de description.\n&quot;;<br>
+resultat +=&quot;&lt;br&gt;langue : &quot;+form.input4.value+&quot;.\n&quot;;<br>
+if (form.input5.checked) {<br>
+resultat +=&quot;&lt;br&gt;utilise le Javascript\n&quot;;<br>
+}else resultat +=&quot;&lt;br&gt;n'utilise pas le Javascript\n&quot;;<br>
+resultat +=&quot;&lt;br&gt;Nombre de visiteurs par jour : &quot;+boutrep[1]+&quot;.\n&quot;;<br>
+resultat +=&quot;&lt;br&gt;Age du du site : &quot;+boutrep[2]+&quot;.\n&quot;;<br>
+if (err != &quot;&quot;) {<br>
+alert(err);<br>
+}<br>
+else{ <br>
+resultat +=&quot;&lt;/p&gt;\n&lt;/body&gt;\n&lt;/html&gt;&quot;;<br>
+ <font color="#FF00FF">form.result.value = resultat;</font> <br>
+}} <br>
+&lt;/script&gt; </td>
+                </tr>
+              </table>
+              <br>
+              <table width="680" border="1" bordercolorlight="#000000" bgcolor="#CCCCCC" align="center">
+                <tr>
+                  <td width="242">boutrep = new Array();</td>
+                  <td width="302" bgcolor="#FFFFFF">Cr&eacute;ation d'un tableau pour g&eacute;rer les
+                  groupes de boutons radio</td>
+                </tr>
+                <tr>
+                  <td width="242">function fradio1(bouton,reponse) <br>
+{<br>
+boutrep[bouton]=reponse<br>
+}</td>
+                  <td bgcolor="#FFFFFF">cette fonction stocke les r&eacute;ponses des
+                    groupes de boutons radio dans le tableau boutrep (ici il
+                    y a 2 groupe donc 2 valeurs boutrep[1] &amp; boutrep[2]</td>
+                </tr>
+                <tr>
+                  <td width="242">resultat='&lt;html&gt;\n&lt;title&gt;r&amp;eacute;sultat<font color="#0000FF">...</font><br>
+                  err =&quot;&quot;;</td>
+                  <td bgcolor="#FFFFFF"><p><strong>resultat</strong> est la variable qui stocke le
+                    r&eacute;sultat du traitement de votre formulaire.<br>
+                    <strong>\n</strong> ins&egrave;re un saut de ligne
+                    <br>
+                    <strong>err</strong> est la variable qui traite les erreurs</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>if (form.input1.value == &quot;&quot;) {<br>
+err +=&quot;Indiquez le nom de votre site !\n&quot;;<br>
+}</td>
+                  <td bgcolor="#FFFFFF">V&eacute;rifie si le champ 1 est vide si oui
+                    met &agrave; jour la variable err.<br>
+                    <strong>+=</strong> ajoute &agrave; la variable</td>
+                </tr>
+                <tr>
+                  <td colspan="2">if (form.input2.value != &quot;http://&quot;) {<br>
+resultat +=&quot;&lt;p align=\&quot;center\&quot;&gt;Le nom de votre site est
+: &quot;;<br>
+resultat +=&quot;&lt;a href=\&quot;&quot;+form.input2.value+&quot;\&quot;&gt;&quot;+form.input1.value+&quot;&lt;/a&gt;&lt;/p&gt;\n&quot;;<br>
+}else err +=&quot;Indiquez l'URL de votre site !\n&quot;;</td>
+                </tr>
+                <tr bgcolor="#FFFFFF">
+                  <td colspan="2">V&eacute;rifie si le champ 2 est diff&eacute;rent
+                    de &quot;http://&quot; (qui &eacute;tait la valeur par d&eacute;faut)<br>
+                    <strong>si oui</strong> : <strong>resultat +=&quot;&lt;p
+                    align=\&quot;center\&quot;&gt;Le
+                    nom de votre<font color="#0000FF">...</font> </strong>on
+                    ajoute les informations dans la variable resultat<br>
+                    <strong>&quot;+form.<font color="#0000FF">input2</font>.value+&quot;</strong>:
+                    ins&egrave;re le r&eacute;sultat d'un champ  input2 &eacute;tant le nom du
+                    champ<br>
+                    <strong>\&quot; : </strong>\ indique que le &quot; qui le suit
+                    fait partie du texte.<br>
+                    <strong>si non</strong> : else err +=&quot;Indiquez l'URL
+                    de votre site !\n&quot;; on met &agrave; jour la variable err</td>
+                </tr>
+                <tr>
+                  <td>if (form.input3.value != &quot;&quot;) {<font color="#0000FF">...<br>
+                    --- </font>else resultat +=&quot;&lt;p align=\&quot;center\&quot;&gt;Pas
+                  de description.\n&quot;;                  </td>
+                  <td bgcolor="#FFFFFF">ici on teste si le champ 3 est vide et
+                    suivant le cas on indique des informations diff&eacute;rentes dans
+                    la variable resultat.</td>
+                </tr>
+                <tr>
+                  <td>resultat +=&quot;&lt;br&gt;langue : &quot;+form.input4.value+&quot;.\n&quot;;</td>
+                  <td bgcolor="#FFFFFF">le r&eacute;sultat du champ 4 (liste d&eacute;roulante)
+                    est ajout&eacute; directement</td>
+                </tr>
+                <tr>
+                  <td>if (form.input5.checked) {<br>
+resultat +=&quot;&lt;br&gt;utilise le Javascript\n&quot;;<br>
+}else resultat +=&quot;&lt;br&gt;n'utilise pas le Javascript\n&quot;;</td>
+                  <td bgcolor="#FFFFFF">teste si le champ 5 (case &agrave; cocher)
+                    est coch&eacute; </td>
+                </tr>
+                <tr>
+                  <td>resultat +=&quot;&lt;br&gt;Nombre de visiteurs par jour
+                  : <font color="#0000FF">&quot;+boutrep[1]+&quot;</font>.\n&quot;;</td>
+                  <td bgcolor="#FFFFFF"> &quot;+boutrep[1]+&quot; est la valeur
+                    stocker dans le tableau boutrep, elle contient la valeur
+                    coch&eacute;e dans le groupe de boutons radio 1</td>
+                </tr>
+                <tr>
+                  <td>if (err != &quot;&quot;) {<br>
+alert(err);<br>
+}<br>
+else{ <br>
+resultat +=&quot;&lt;/p&gt;\n&lt;/body&gt;\n&lt;/html&gt;&quot;;<br>
+<font color="#FF00FF">form.result.value = resultat;</font> <br>
+}</td>
+                  <td bgcolor="#FFFFFF"><p>Teste si err est diff&eacute;rent de vide
+                      :<br>
+                    Si oui : alert(err); ouvre une boite de dialogue contenant
+                    les erreurs (err).<br>
+                    Si non :<font color="#FF00FF"> form.result.value = resultat;</font> envoie
+                    le r&eacute;sultat dans le champ result</p>
+                  </td>
+                </tr>
+              </table>
+              <br>
+              <table width="680" border="1" bordercolorlight="#000000" bgcolor="#CCCCCC" align="center">
+                <tr>
+                  <td bgcolor="#FFFFFF"><p><strong>Pour
+                          envoyer le r&eacute;sultat dans
+                      une fen&ecirc;tre</strong> : Remplacer <font color="#FF00FF">form.result.value
+                      = resultat;</font> par :</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>if (fois == 1 ) result.close();<br>
+    result=open(&quot;&quot;,&quot;resultat&quot;,&quot;toolbar=no, location=no,
+    directories=no, status=no, menubar=no, scrollbars=1, resizable=1, top=1,
+    left=50, width=500, height=200&quot;);<br>
+    result.document.write(resultat)<br>
+    result.document.write('&lt;p align=&quot;center&quot; &gt;&lt;a href=&quot;javascript:window.close();&quot;&gt;Fermer
+    cette fen&ecirc;tre&lt;/a&gt;&lt;/p&gt;')<br>    
+    fois=1;</td>
+                </tr>
+              </table>
+              <table width="680" border="1" bordercolorlight="#000000" bgcolor="#CCCCCC" align="center">
+                <tr>
+                  <td width="242">if (fois == 1 ) result.close();</td>
+                  <td width="302" bgcolor="#FFFFFF">v&eacute;rifie si la fen&ecirc;tre a d&eacute;j&agrave;
+                    &eacute;t&eacute; ouverte et la ferme.</td>
+                </tr>
+                <tr>
+                  <td width="242">result=open(&quot;&quot;,&quot;resultat&quot;,&quot;toolbar=no,<font color="#0000FF">...</font>                    <br>
+                  <font color="#0000FF">...</font>                  left=50, width=500, height=200&quot;);</td>
+                  <td bgcolor="#FFFFFF">Ouvre la fen&ecirc;tre avec les options voulues.</td>
+                </tr>
+                <tr>
+                  <td>result.document.write(resultat)</td>
+                  <td bgcolor="#FFFFFF"><p>Ecrit, dans la fen&ecirc;tre, les informations
+                      stock&eacute;es dans la variable resultat.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" bgcolor="#FFFFFF">Dans notre exemple la variable
+                  contient des informations en html. Dans un autre cas on pourrait
+                    les &eacute;crire dans la fen&ecirc;tre : result.document.write(&lt;html&gt;\n&lt;title&gt;r&amp;eacute;sultat
+                    du formulaire&lt;/title&gt;\n&lt;head&gt;<font color="#0000FF">...</font></td>
+                </tr>
+                <tr>
+                  <td>result.document.write('&lt;p align=&quot;center&quot; &gt;&lt;a
+                    href=&quot;javascript:window.close();&quot;&gt;Fermer cette
+                  fen&ecirc;tre&lt;/a&gt;&lt;/p&gt;')</td>
+                  <td bgcolor="#FFFFFF">Cr&eacute;e un lien pour fermer la fen&ecirc;tre</td>
+                </tr>
+                <tr>
+                  <td>fois=1;</td>
+                  <td bgcolor="#FFFFFF">indique que la fen&ecirc;tre a &eacute;t&eacute; ouverte
+                    au moins 1 fois</td>
+                </tr>
+              </table>
+              <p><font size="4" color="#000099" face="Verdana, Arial, Helvetica, sans-serif">Ins&eacute;rez
+                  le code du formulaire exemple dans votre page Web entre les
+              balises &lt;BODY&gt; et &lt;/BODY&gt;</font></p>
+              <table width="680" border="1" bordercolorlight="#000000" bgcolor="#CCCCCC" align="center">
+                <tr>
+                  <td>&lt;form action=&quot;&quot; method=&quot;post&quot; name=&quot;monform&quot; id=&quot;monform&quot;&gt;<br>
+&lt;div align=&quot;center&quot;&gt;<br>
+&lt;table width=&quot;560&quot; border=&quot;0&quot;&gt;<br>
+&lt;tr bordercolor=&quot;#f3f3f3&quot;&gt;<br>
+&lt;td&gt;Titre de votre site :&lt;/td&gt;<br>
+&lt;td&gt;&lt;input size=40 name=&quot;<font color="#0000FF">input1</font>&quot; maxlength=&quot;100&quot;&gt;<br>
+&lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;tr bordercolor=&quot;#f3f3f3&quot;&gt;<br>
+&lt;td&gt;URL de votre site :&lt;/td&gt;<br>
+&lt;td&gt;&lt;input size=40 name=&quot;<font color="#0000FF">input2</font>&quot; <font color="#006600">value=&quot;http://&quot;</font>&gt;<br>
+&lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;tr bordercolor=&quot;#f3f3f3&quot;&gt;<br>
+&lt;td&gt;Description :&lt;/td&gt;<br>
+&lt;td&gt;&lt;input type=&quot;text&quot; size=&quot;40&quot; name=&quot;<font color="#0000FF">input3</font>&quot; maxlength=&quot;200&quot;&gt;<br>
+&lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;tr bordercolor=&quot;#f3f3f3&quot;&gt;<br>
+&lt;td&gt;Langue du site :&lt;/td&gt;<br>
+&lt;td&gt;<br>
+&lt;select name=&quot;<font color="#0000FF">input4</font>&quot;&gt;<br>
+&lt;option <font color="#9900FF">value=&quot;Allemand&quot;</font>&gt;Allemand&lt;/option&gt;<br>
+&lt;option <font color="#9900FF">value=&quot;Anglais&quot;</font>&gt;Anglais&lt;/option&gt;<br>
+&lt;option <font color="#9900FF">value=&quot;Espagnol&quot;</font>&gt;Espagnol&lt;/option&gt;<br>
+&lt;option <font color="#9900FF">value=&quot;Fran&ccedil;ais&quot;</font> selected&gt;Fran&ccedil;ais&lt;/option&gt;<br>
+&lt;option <font color="#9900FF">value=&quot;Autre&quot;</font>&gt;Autre&lt;/option&gt;<br>
+&lt;/select&gt;<br>
+&lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;tr bordercolor=&quot;#f3f3f3&quot;&gt;<br>
+&lt;td&gt;Vous utilisez du Javascript dans vos pages&lt;/td&gt;<br>
+&lt;td&gt;&lt;input name=&quot;<font color="#0000FF">input5</font>&quot; type=checkbox &gt;<br>
+&lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;tr bordercolor=&quot;#f3f3f3&quot;&gt;<br>
+&lt;td&gt;Nombre de visiteurs par jour&lt;/td&gt;<br>
+&lt;td&gt;&lt;p&gt;<br>
+&lt;input type=&quot;radio&quot; name=&quot;<font color="#0000FF">r1</font>&quot; <font color="#9900FF">value=&quot;- 100&quot;</font> onClick=&quot;fradio1(<font color="#FF0000">1</font>,this.value)&quot;&gt;-
+100&lt;br&gt;<br>
+&lt;input type=&quot;radio&quot; name=&quot;<font color="#0000FF">r1</font>&quot; <font color="#9900FF">value=&quot;100 &agrave; 500&quot;</font> onClick=&quot;fradio1(<font color="#FF0000">1</font>,this.value)&quot;&gt;100 &agrave; 500&lt;br&gt;<br>
+&lt;input type=&quot;radio&quot; name=&quot;<font color="#0000FF">r1</font>&quot; <font color="#9900FF">value=&quot;500 &agrave; 1000&quot;</font> onClick=&quot;fradio1(<font color="#FF0000">1</font>,this.value)&quot;&gt;500&agrave; 1000&lt;br&gt;<br>
+&lt;input type=&quot;radio&quot; name=&quot;<font color="#0000FF">r1</font>&quot; <font color="#9900FF">value=&quot;+ 1000&quot; </font>onClick=&quot;fradio1(<font color="#FF0000">1</font>,this.value)&quot;&gt;+
+1000&lt;br&gt;<br>
+&lt;/p&gt;<br>
+&lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;tr bordercolor=&quot;#f3f3f3&quot;&gt;<br>
+&lt;td&gt;Cr&amp;eacute;ation du site&lt;/td&gt;<br>
+&lt;td&gt;&lt;input type=&quot;radio&quot; name=&quot;<font color="#0000FF">r2</font>&quot; value=&quot;-
+1 an&quot; onClick=&quot;fradio1(<font color="#FF0000">2</font>,this.value)&quot;&gt;- 1 an&lt;br&gt;<br>
+&lt;input type=&quot;radio&quot; name=&quot;<font color="#0000FF">r2</font>&quot; value=&quot;1 &agrave; 2
+ans&quot; onClick=&quot;fradio1(<font color="#FF0000">2</font>,this.value)&quot;&gt;1 &agrave; 2 ans&lt;br&gt;<br>
+&lt;input type=&quot;radio&quot; name=&quot;<font color="#0000FF">r2</font>&quot; value=&quot;2 &agrave; 5
+ans&quot; onClick=&quot;fradio1(<font color="#FF0000">2</font>,this.value)&quot;&gt;2 &agrave; 5 ans&lt;br&gt;<br>
+&lt;input type=&quot;radio&quot; name=&quot;<font color="#0000FF">r2</font>&quot; value=&quot;+ 5 ans&quot; onClick=&quot;fradio1(<font color="#FF0000">2</font>,this.value)&quot;&gt;+
+5 ans &lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;/table&gt;<br>
+&lt;br&gt;<br>
+&lt;table width=&quot;560&quot; border=&quot;0&quot;&gt;<br>
+&lt;tr bordercolor=&quot;#f3f3f3&quot;&gt;<br>
+&lt;td&gt;&lt;div align=&quot;center&quot;&gt;&lt;font face=&quot;Verdana, Arial,
+Helvetica, sans-serif&quot; size=&quot;2&quot;&gt;<br>
+&lt;input onClick=&quot;fonct_form(this.form)&quot; type=button value=&quot;Envoyer&quot; name=&quot;button1&quot;&gt;<br>
+&lt;/font&gt;&lt;/div&gt;<br>
+&lt;/td&gt;<br>
+&lt;td&gt;<br>
+&lt;div align=&quot;center&quot;&gt;&lt;font face=&quot;Verdana, Arial, Helvetica,
+sans-serif&quot; size=&quot;2&quot;&gt;<br>
+&lt;/font&gt;&lt;/div&gt;<br>
+&lt;div align=&quot;center&quot;&gt;&lt;font face=&quot;Verdana, Arial, Helvetica,
+sans-serif&quot; size=&quot;2&quot;&gt;<br>
+&lt;input onClick=fonct_dial(this.form) type=reset value=&quot;R&amp;eacute;tablir&quot; name=&quot;button2&quot;&gt;<br>
+&lt;/font&gt;&lt;/div&gt;<br>
+&lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;/table&gt;<br>
+&lt;/div&gt;<br>
+&lt;p align=&quot;center&quot;&gt;&lt;font face=&quot;Verdana, Arial, Helvetica,
+sans-serif&quot; size=&quot;2&quot;&gt;<br>
+&lt;textarea name=<font color="#0000FF">result</font> rows=10 wrap=PHYSICAL cols=65&gt;&lt;/textarea&gt;<br>
+&lt;br&gt;<br>
+&lt;input onClick=form.result.focus();form.result.select() type=button value=&quot;S&amp;eacute;lectionner
+le code et coller dans une page vierge&quot; name=grab&gt;<br>
+&lt;/font&gt;&lt;/p&gt;<br>
+&lt;/form&gt;</td>
+                </tr>
+                <tr>
+                  <td bgcolor="#FFFFFF"><p><font color="#0000FF">input1</font> noms
+                      des champs (les boutons radio d'un m&ecirc;me groupe ont  le
+                      m&ecirc;me nom)<br>
+                      <font color="#0000FF">result</font>  est le nom du
+                      champ qui contiendra le r&eacute;sultat<br>
+                      <font color="#FF0000">1 </font>Num&eacute;ro du groupe de
+                      boutons radio permettant de stocker la valeur dans le tableau <strong>boutrep<br>
+                      </strong><font color="#006600">value=&quot;http://&quot;</font><strong>  </strong>valeur
+                    par d&eacute;faut<br>
+                    <font color="#9900FF">value=&quot;Allemand&quot;</font> valeur
+                    selon le choix pour les listes d&eacute;roulantes ou les boutons
+                    radio</p>
+                  </td>
+                </tr>
+              </table>
+              <p>&nbsp;</p>
+              <p align="center"> </p>
+              <p align="center"><a href="fairelien.html">Ce site vous a plu ?
+                  Vous avez trouv&eacute; le script que vous cherchiez ?<br>
+                  Faites en profiter vos visiteurs : ins&eacute;rez un lien sur
+                  votre site</a></p>
+            </div>
+          </td>
+          <td width="6" valign="top">
+            <div align="center">
+<table width="6" border="0" align="center" bordercolor="#9966FF">
+<tr><td>
+
+    <div align="center">	</div>
+    <div align="center">  </div>
+<div align="center"></div>
+<div align="center">&nbsp;</div>
+
+</td></tr></table>
+            </div>
+          </td>
+        </tr>
+        <tr valign="middle"> 
+          <td>&nbsp;</td>
+          <td align="center">
+
+
+                  <table border="0" cellspacing="0" width="700">
+                    <tr bordercolor="#00CCFF"> 
+                      <td width="280">
+					  <div align="center">
+<font color="#FFFFFF" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+<a href='http://www.jecreemonsite.net/php/jcmscompteur.php'>Il y a 3 Visiteurs</a> sur <a href='index.html'>Mon JavaScript</a><noscript><a href="http://www.jecreemonsite.net/">javascript php html</a></noscript>
+</font>					  </div></td>
+                      <td><div align="center">
+					  
+					   <img src="im/mjs-minilogo.gif"></div></td>
+                      <td width="280"> 
+                      <div align="center"><font color="#FFFFFF" size="1" face="Verdana, Arial, Helvetica, sans-serif"><a href="index.html">Mon javascript</a> </font>
+					  &nbsp;&nbsp;<font color="#FFFFFF" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              10-08-2015          
+			  </font>
+					  </div>
+                      </td>
+                    </tr>
+                    <tr align="center"> 
+                      <td bgcolor="#003399" height="2" colspan="2"></td>
+                      <td bgcolor="#003399" height="2"></td>
+                    </tr>
+                  </table>
+				  <br>
+
+          </td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+
+<!-- Mirrored from www.monjavascript.net/resultform.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Aug 2015 20:24:25 GMT -->
+</html>

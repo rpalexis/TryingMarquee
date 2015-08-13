@@ -1,0 +1,537 @@
+<html>
+
+<!-- Mirrored from www.monjavascript.net/nbaleat.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Aug 2015 20:24:25 GMT -->
+<head>
+<title>Mon JavaScript - nombre al&eacute;atoire</title>
+<meta name="Description" lang="fr" content="Webmasters, Mon JavaScript vous propose: des scripts en javascript, mais aussi des cours de javascript, des générateurs, le multimoteur, du PHP et autres astuces..., pour donner de l'attrait à votre site web.">
+
+<meta name="keywords" content="javascript, html, langage, programme, programmation, javascript, site, perso, script, java, astuces, programmes, texte défilant, barre d'état, insérer favoris, heure gmt, javascript menu, script de redirection, javascript heure, javascript menu deroulant, rollover, javascript fenetre, menu déroulant, envoyer mail, formulaire, menu javascript, mail, date, Plein Ecran, pop up">
+<meta name="author" content="monjavascript - PLF">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="mjs.css" type="text/css">
+<script language="JavaScript">
+<!--
+//PLF- http://www.monjavascript.net/
+if (parent.frames.length > 0)
+window.top.location.href = location.href;
+//-->
+</script>
+<script language="JavaScript">
+<!--
+//PLF- http://www.monjavascript.net/
+var nb1
+var fois=0
+function nb_aleatoire(nb)
+	{
+	nombre= Math.floor(Math.random() * nb)+1;
+	}
+function alea1()
+	{
+	nb1= document.monform1.nbr1.value;
+	nb_aleatoire(nb1)
+	if (fois == 1 ) result.close();
+	result=open("","resultat","toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=1,resizable=1,top=1,left=50,width=500,height=200");
+	result.document.write('<body BGCOLOR="#CC99FF"><p align="center"><IFRAME NAME="puballopass" SRC="http://www.monjavascript.net/pub/framepub.php" width="468" height="60" MARGINWIDTH="0" MARGINHEIGHT="0" HSPACE="0" VSPACE="0" FRAMEBORDER="0" SCROLLING="no"></IFRAME></p>')
+	result.document.write('<p align="center" >Le nombre au hasard est : '+nombre+'</p><p align="center" ><a href="javascript:window.close();">Fermer cette fenêtre</a></p>')
+	if (result.blur) result.focus()
+	fois=1;
+	}
+function alea2()
+	{
+	nombres=""
+	nb1= document.monform2.nbtirage.value;
+	nb1++;
+	nb2= document.monform2.nbtotal.value;
+	if (nb1-1>nb2) alert("le premier nombre doit etre plus petit que le second");
+	else
+	{
+	tirage = new Array;
+	for (i=1 ;i<nb1 ;i++)
+	{
+	nb_aleatoire(nb2);
+	tirage[i]= nombre;
+	for (t=1 ; t<i ;t++){
+		if (tirage[t]==nombre) 
+		{
+		i=i-1;
+		}		
+	}
+	}
+	for (i=1 ;i<nb1 ;i++)
+	{
+	nombres= nombres+tirage[i]+"&nbsp;&nbsp;&nbsp;";
+	}
+	if (fois == 1 ) result.close();
+	result=open("","resultat","toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=1,resizable=1,top=1,left=50,width=500,height=200");
+	result.document.write('<body BGCOLOR="#CC99FF"><p align="center"><IFRAME NAME="puballopass" SRC="http://www.monjavascript.net/pub/framepub.php" width="468" height="60" MARGINWIDTH="0" MARGINHEIGHT="0" HSPACE="0" VSPACE="0" FRAMEBORDER="0" SCROLLING="no"></IFRAME></p>')
+	result.document.write('<p align="center" >Le resultat du tirage est : '+nombres+'</p><p align="center" ><a href="javascript:window.close();">Fermer cette fenêtre</a></p>')
+	if (result.blur) result.focus()
+	fois=1;
+	}
+	}		
+//-->
+</script>
+
+</head>
+<body bgcolor="#FFFFFF">
+<table width="1100" border="0" align="center" bgcolor="#9966FF">
+  <tr>    <td ><table width="1100" border="0" background="im/header_tile.gif">
+      <tr> 
+    <td width="240" ><font face="Verdana, Arial, Helvetica, sans-serif"><a href="index.html"><img src="im/mjs160x60_2.gif" alt="http://www.monjavascript.net" width="160" height="60" border="0"></a></font></td>
+    <td valign="middle"> 
+      	 <div align="right"><br>
+<!--Code à insérer jjspub --><script type="text/javascript"><!--
+google_ad_client = "pub-2085185646476169";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text_image";
+//2007-05-06: jjshaut
+google_ad_channel = "0643568426";
+google_color_border = "9966FF";
+google_color_bg = "9966FF";
+google_color_link = "FFFFFF";
+google_color_text = "000000";
+google_color_url = "err404.html";
+//-->
+</script>
+<script type="text/javascript"
+  src="../pagead2.googlesyndication.com/pagead/f.txt">
+</script><!--Code à insérer jjspub -->
+		</div>
+    </td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr> 
+    <td> 
+      <table width="1100" border="0" align="center">
+        <tr> 
+          <td width="162" valign="top"> 
+<script language="JavaScript">
+<!--
+//PLF-http://www.monjavascript.net/
+  function fenetreCentre(url,largeur,hauteur,options) {
+  var haut=(screen.height -(hauteur+130));
+  var Gauche=(screen.width-(largeur+30));
+  window.open(url,"","top="+haut+",left="+Gauche+",width="+largeur+",height="+hauteur+","+options);
+  }
+  adfav = "'index.html', 'Mon javascript : Programation en javascript et autres...'"
+  adreco = "'recomail.html',400,520,'menubar=no,scrollbars=yes,statusbar=no'"
+  adcont = "'contact.html',600,600,'menubar=no,scrollbars=yes,statusbar=no'" 
+  //-->
+</script>
+
+  
+<div align="center">
+  <table width="160" border="0" align="center" bordercolor="#9966FF">
+    <tr><td>
+    <div align="center">
+	<a href="index.html"><img src="menujs/menuaccu.gif" border="0" width="139" height="24"></a></div>
+    <table border="1" width="160"><tr><td align="left" ><p><font size="1"><img src="im/flechep.gif" width="7" height="7"><a href="index.html">ACCUEIL</a>
+	  </font></font><br>
+	  
+	<font size="1">
+	  <img src="im/flechep.gif" width="7" height="7"><a href='javascript:fenetreCentre("contact.html",600,400,"menubar=no,scrollbars=yes,statusbar=no")'>Contact</a>	<br>
+	  <img src="im/flechep.gif" width="7" height="7"><a href="acmoteujjs.html">Rechercher </a><br>
+      <img src="im/flechep.gif" width="7" height="7"><a href='javascript:window.external.addfavorite("index.html", "Mon JavaScript : Programation en javascript et autres...")'>Insérez
+      dans vos<br>
+&nbsp; favoris</a></font> <br>
+<!-- Placez cette balise où vous souhaitez faire apparaître le gadget Bouton +1. -->
+</p>
+          <div class="g-plusone" data-size="medium"></div>
+          <!-- Placez cette ballise après la dernière balise Bouton +1. -->
+          <script type="text/javascript">
+  window.___gcfg = {lang: 'fr'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = '../apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+          </script>
+</td>
+    </tr></table>
+    <div align="center">
+		<a href="somscript.html"><img src="menujs/menuscrpt.gif" border="0" width="139" height="24"></a></div>
+    <table border="1" width="160"><tr><td align="left" ><font size="1">
+		<img src="im/flechep.gif" width="7" height="7"><a href="somac_visit.html">ACCUEIL DES<br>&nbsp;  VISITEURS </a> <br>
+      <img src="im/flechep.gif" width="7" height="7"><a href="somdat_h.html">DATE & HEURE </a><br>
+      <img src="im/flechep.gif" width="7" height="7"><a href="somtexte.html">EFFETS
+    DE TEXTE </a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="somfenetres.html">FENETRES </a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="somform.html">FORMULAIRES </a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="somimages.html">IMAGES </a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="sommenus.html">MENUS</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="sompratique.html">PRATIQUE</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="sompopup.html">POP UP </a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="somdivers.html">DIVERS</a><br>
+    <br>
+    <!--
+	<img src="http://www.monjavascript.net/im/flechep.gif" width="7" height="7"><a href="http://www.monjavascript.net/section_php/index.php">PHP</a>
+	  //-->
+		</font></td>
+    </tr></table>
+	
+    <div align="center">  <img src="menujs/menuplus.gif" width="139" height="24"></div>
+	    <table border="1" width="160"><tr><td align="left" ><font size="1">
+		
+	<img src="im/flechep.gif" width="7" height="7"><a href="cours_jjs/index.html" >Cours de javascript</a><br>
+		<img src="im/flechep.gif" width="7" height="7"><a href="http://www.jecreemonsite.net/html_css/gencss.php" target="_blank">Générer vos Fichiers<br>&nbsp; 
+	
+	CSS</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="http://www.jecreemonsite.net/html_css/genmetatag.php" target="_blank">Générer vos Meta-Tags</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="metadescp.html">Description des Balises<br>&nbsp;  Meta</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="couleurs.html">Les Codes Couleur</a> <br>
+	<img src="im/flechep.gif" width="7" height="7"><a href="math.html">L'objet Math</a><br>
+	<img src="im/flechep.gif" width="7" height="7"><a href="li/lissage.html">Lissage De Pr&ecirc;t</a><br>
+	<img src="im/flechep.gif" width="7" height="7"><a href="li/ta.html">Tableau
+	d'Amortissement</a><br>
+		
+    <img src="im/flechep.gif" width="7" height="7"><a href="moteur.html">un Multi-Moteurs de recherche sur Votre Site</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="mailcryp.html">Cryptez votre e-mail<br>&nbsp;  pour contrer le Spam</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="scriptcryp.html">Cryptez vos Scripts</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><A href="acmoteu.html">Moteurs de recherches </A><br>
+    <img src="im/flechep.gif" width="7" height="7"><A href="acmoteu.html">Référencement </A><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="http://www.jecreemonsite.net/" target="_blank" title="javascript, HTML, PHP, tout pour le webmaster">Je
+    Cr&eacute;e Mon Site</a>
+    <br>
+	<img src="im/flechep.gif" width="7" height="7"><A HREF=http://www.editeurjavascript.com/partenaires/concours.php?id=mjs TARGET=_blank>L'éditeur JavaScript</A>
+    </font></td>
+    </tr></table>
+	
+	
+	
+	
+	
+	<br>
+
+  <div align="center">
+<!--Code à insérer jjspub --><script type="text/javascript"><!--
+google_ad_client = "pub-2085185646476169";
+google_ad_width = 160;
+google_ad_height = 600;
+google_ad_format = "160x600_as";
+google_ad_type = "text_image";
+//2006-11-24: jjsmenu
+google_ad_channel = "6413686093";
+google_color_border = "9966FF";
+google_color_bg = "9966FF";
+google_color_link = "FFFFFF";
+google_color_text = "000000";
+google_color_url = "err404.html";
+//--></script>
+<script type="text/javascript"
+  src="../pagead2.googlesyndication.com/pagead/f.txt">
+</script><!--Code à insérer jjspub -->
+
+
+
+
+  </div>
+ <table width="160" border="0" align="center" bordercolor="#9966FF">
+<tr><td>
+
+    <div align="center">	</div>
+    <div align="center">  </div>
+<div align="center"></div>
+
+
+
+
+
+<div align="center">
+<a href="http://www.xiti.com/xiti.asp?s=504527" title="WebAnalytics" target="_top">
+<script type="text/javascript">
+<!--
+Xt_param = 's=504527&p=';
+try {Xt_r = top.document.referrer;}
+catch(e) {Xt_r = document.referrer; }
+Xt_h = new Date();
+Xt_i = '<img width="39" height="25" border="0" alt="" ';
+Xt_i += 'src="http://logv17.xiti.com/hit.xiti?'+Xt_param;
+Xt_i += '&hl='+Xt_h.getHours()+'x'+Xt_h.getMinutes()+'x'+Xt_h.getSeconds();
+if(parseFloat(navigator.appVersion)>=4)
+{Xt_s=screen;Xt_i+='&r='+Xt_s.width+'x'+Xt_s.height+'x'+Xt_s.pixelDepth+'x'+Xt_s.colorDepth;}
+document.write(Xt_i+'&ref='+Xt_r.replace(/[<>"]/g, '').replace(/&/g, '$')+'" title="Internet Audience">');
+//-->
+</script>
+<noscript>
+Mesure d'audience ROI statistique webanalytics par <img width="39" height="25" src="http://logv17.xiti.com/hit.xiti?s=504527&amp;p=" alt="WebAnalytics" />
+</noscript></a>
+</div>
+
+</td></tr></table>
+ 
+  
+    </td></tr>
+  </table>
+</div>
+
+                
+		  </td>          <td valign="top" bgcolor="#CC99FF" colspan="2"> 
+            <div align="center"> 
+              <p align="center"> 
+                <br>
+                <font face="Verdana, Arial, Helvetica, sans-serif" size="4">
+Trouver un nombre al&eacute;atoire ou tirage de nombres</font><font face="Verdana, Arial, Helvetica, sans-serif"> 
+                </font></p>
+              <p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Le
+                  premier exemple d&eacute;termine un nombre au hasard entre
+              1 et le nombre de votre choix.</font>
+              <form name="monform1" method="post" action="javascript:alea1()">
+              <table width="250" border="0">
+                <tr>
+                  <td>Choisir un nombre :</td>
+                  <td><input name="nbr1" type="text"  value="10" size="8"></td>
+			  </table>
+              <p><input type="submit" name="Submit" value="Test">
+              </p>
+              </form>
+              <p align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"></font></p>
+              <p align="center"><!--Code à insérer jjspub --><script type="text/javascript"><!--
+google_ad_client = "pub-2085185646476169";
+google_ad_width = 468;
+google_ad_height = 60;
+google_ad_format = "468x60_as";
+google_ad_type = "text_image";
+//2006-11-23: jjscentre
+google_ad_channel = "2311992272";
+google_color_border = "CC99FF";
+google_color_bg = "CC99FF";
+google_color_link = "FFFFFF";
+google_color_text = "000000";
+google_color_url = "err404.html";
+//--></script>
+<script type="text/javascript"
+  src="../pagead2.googlesyndication.com/pagead/f.txt">
+</script><!--Code à insérer jjspub -->
+</p>
+              <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Le
+                  second exemple est un tirage de x nombres sur le nombre de
+                  numero que vous indiquez. </font></p>
+              <form action="javascript:alea2()" method="post" name="monform2">
+                <table width="250" border="0">
+                  <tr>
+                    <td>Nombre de numero &agrave; tirer :</td>
+                    <td><input name="nbtirage" type="text" id="nbtirage" value="6" size="8">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Nombre total de numero :</td>
+                    <td><input name="nbtotal" type="text" id="nbtotal" value="49" size="8"></td>
+                  </tr>
+                </table>
+                <p>
+                  <input type="submit" name="Submit2" value="Test">
+                </p>
+              </form>
+              <p align="center">&nbsp;</p>
+              <table width="90%" border="1" bordercolorlight="#000000" bgcolor="#CCCCCC" align="center">
+                <tr>
+                  <td><p>&lt;script language=&quot;JavaScript&quot;&gt;<br>
+&lt;!--<br>
+//PLF- http://www.monjavascript.net/<br>
+                      function nb_aleatoire(<font color="#FF0000">nb</font>)<br>
+                      {<br>
+                      <font color="#0000FF">nombre</font>= Math.floor(Math.random() * <font color="#FF0000">nb</font>)+1;<br>
+                      }                      <br>
+                      //--&gt;<br>
+                      &lt;/script&gt;                  </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#FFFFFF"><p>C'est la fonction qui calcule le nombre
+                    al&eacute;atoire. Placez-la entre les balises&lt;head&gt; ... &lt;/head&gt;</p>
+                    <p><font color="#0000FF">nombre</font> est la variable contenant le r&eacute;sultat<br>
+                      <font color="#FF0000">nb</font> est la limite haute de votre recherche (nombre se situe
+                        entre 1 et nb)</p>
+                  </td>
+                </tr>
+              </table>
+              <div align="left">
+              <ul>
+              <a href="math.html" target="_blank">L'objet Math ?</a>
+              </ul>
+              </div>
+              <p align="center"><font color="#000099" size="+1"> 
+                </font></p>
+              <br>
+              <table width="90%" border="1" bordercolorlight="#000000" bgcolor="#CCCCCC" align="center">
+                <tr> 
+                  <td> &lt;script language=&quot;JavaScript&quot;&gt;<br>
+                    &lt;!--<br>
+                    //PLF- http://www.monjavascript.net/<br>
+                    nb_aleatoire(<font color="#FF0000">5</font>)<br>
+                    document.write(&quot;le resultat est : &quot;+<font color="#0000FF">nombre</font>) <br>
+                    //--&gt;<br>
+&lt;/script&gt;</td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#FFFFFF"><p>Ce script recherche un nombre au hasard</p>
+                    <p> nb_aleatoire(<font color="#FF0000">5</font>) appelle
+                      de la fonction en indiquant que <font color="#FF0000">nb</font>=5<br>
+                      ce nombre peut &ecirc;tre remplacer par un variable &agrave; laquelle
+                      vous donnez la valeur de votre choix.</p>
+                  <p>document.write(&quot;le resultat est : &quot;+<font color="#0000FF">nombre</font>)
+                  dans                     cet exemple le r&eacute;sultat est &eacute;crit
+                  dans la page courante</p></td>
+                </tr>
+              </table>
+              <p align="center">&nbsp;</p>
+              <br>
+              <table width="90%" border="1" bordercolorlight="#000000" bgcolor="#CCCCCC" align="center">
+                <tr>
+                  <td colspan="2"><p>&lt;script language=&quot;JavaScript&quot;&gt;<br>
+&lt;!--<br>
+                      //PLF- http://www.monjavascript.net/<br>
+                      tirage = new Array;<br>
+                      nombres=&quot;&quot;<br>
+                      nb=
+                      <font color="#FF00FF">7</font><br>
+                      for (i=1 ;i&lt;<font color="#FF00FF">nb</font> ;i++)<br>
+                      {<br>
+                      nb_aleatoire(<font color="#FF0000">20</font>);<br>
+                      tirage[i]= <font color="#0000FF">nombre</font>;<br>
+                      for (t=1 ; t&lt;i ;t++){<br>
+                      if (tirage[t]==<font color="#0000FF">nombre</font>) <br>
+                      {<br>
+                      i=i-1;<br>
+                      } <br>
+                      }<br>
+                      }<br>
+                      for (i=1 ;i&lt;<font color="#FF00FF">nb</font> ;i++)<br>
+                      {<br>
+                      nombres= nombres+tirage[i]+&quot; &quot;;<br>
+                      }<br>
+                      document.write(nombres);<br>
+                      //--&gt;<br>
+&lt;/script&gt;</p>
+                  </td>
+                </tr>
+                <tr valign="top">
+                  <td colspan="2" bgcolor="#FFFFFF"><p align="left">Ce script
+                      effectue un tirage o&ugrave;
+                      chaque num&eacute;ro ne peut &ecirc;tre tir&eacute; qu'une seule
+                  fois.</p>
+                    <p align="left">&nbsp;</p></td>
+                </tr>
+                <tr valign="top">
+                  <td width="32%" bgcolor="#FFFFFF">tirage = new Array;</td>
+                  <td width="68%" bgcolor="#FFFFFF"><p align="left">cr&eacute;ation du tableau
+                      tirage.</p>
+                  </td>
+                </tr>
+                <tr valign="top">
+                  <td bgcolor="#FFFFFF"><font color="#FF00FF">nb</font>= <font color="#FF00FF">7</font><br>
+for (i=1 ;i&lt;<font color="#FF00FF">nb</font> ;i++)</td>
+                  <td bgcolor="#FFFFFF"><p align="left">lance une boucle qui
+                      effectue un tirage &agrave; chaque passage. Ici 6 tirage
+                      puisque la boucle continuera tant que i sera inf&eacute;rieur &agrave; <font color="#FF00FF">7</font>. </p>
+                  </td>
+                </tr>
+                <tr valign="top">
+                  <td bgcolor="#FFFFFF">nb_aleatoire(<font color="#FF0000">20</font>) </td>
+                  <td bgcolor="#FFFFFF">appelle de la fonction en indiquant que <font color="#FF0000">nb</font>=20<br>
+ce nombre peut &ecirc;tre remplacer par un variable &agrave; laquelle vous donnez
+la valeur de votre choix.</td>
+                </tr>
+                <tr valign="top">
+                  <td bgcolor="#FFFFFF">tirage[i]= <font color="#0000FF">nombre</font>;</td>
+                  <td bgcolor="#FFFFFF">le r&eacute;sultat de chaque boucle est
+                    entr&eacute; dans le tableau et pourra &ecirc;tre r&eacute;cup&eacute;r&eacute; gr&acirc;ce &agrave; la
+                  valeur de i. ex: le troisi&egrave;me tirage est &eacute;gale &agrave; tirage[3]</td>
+                </tr>
+                <tr valign="top">
+                  <td bgcolor="#FFFFFF">for (t=1 ; t&lt;i ;t++){<br>
+if (tirage[t]==<font color="#0000FF">nombre</font>) <br>
+{<br>
+i=i-1;<br>
+} <br>
+}</td>
+                  <td bgcolor="#FFFFFF"><p>Cette 2&egrave;me boucle ins&eacute;r&eacute;e
+                      dans la 1&egrave;re v&eacute;rifie si chaque valeur du
+                      tableau tirage (de 1 &agrave; la valeur actuelle de i)
+                      n'est pas &eacute;gale &agrave; nombre.<br>
+                    Si l'une d'elle l'est, on annule le dernier passage dans
+                    la 1&egrave;re boucle : i=i-1;</p>
+                  </td>
+                </tr>
+                <tr valign="top">
+                  <td bgcolor="#FFFFFF">for (i=1 ;i&lt;<font color="#FF00FF">nb</font> ;i++)<br>
+{<br>
+nombres= nombres+tirage[i]+&quot; &quot;;<br>
+}</td>
+                  <td bgcolor="#FFFFFF">Cette boucle ajoute chaque valeur du
+                    tableau tirage &agrave; la variable nombres.</td>
+                </tr>
+                <tr valign="top">
+                  <td bgcolor="#FFFFFF">document.write(nombres);</td>
+                  <td bgcolor="#FFFFFF">Affiche le r&eacute;sultat dans la page</td>
+                </tr>
+              </table>
+              <p align="center">&nbsp;</p>
+              <p align="center"> </p>
+              <p align="center"><a href="fairelien.html">Ce site vous a plu ?
+                  Vous avez trouv&eacute; le script que vous cherchiez ?<br>
+                  Faites en profiter vos visiteurs : ins&eacute;rez un lien sur
+                  votre site</a></p>
+              <p align="center">&nbsp;</p>
+            </div>
+          </td>
+          <td width="6" valign="top">
+            <div align="center">
+<table width="6" border="0" align="center" bordercolor="#9966FF">
+<tr><td>
+
+    <div align="center">	</div>
+    <div align="center">  </div>
+<div align="center"></div>
+<div align="center">&nbsp;</div>
+
+</td></tr></table>
+            </div>
+          </td>
+        </tr>
+        <tr valign="middle"> 
+          <td>&nbsp;</td>
+          <td align="center">
+
+
+                  <table border="0" cellspacing="0" width="700">
+                    <tr bordercolor="#00CCFF"> 
+                      <td width="280">
+					  <div align="center">
+<font color="#FFFFFF" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+<a href='http://www.jecreemonsite.net/php/jcmscompteur.php'>Il y a 3 Visiteurs</a> sur <a href='index.html'>Mon JavaScript</a><noscript><a href="http://www.jecreemonsite.net/">javascript php html</a></noscript>
+</font>					  </div></td>
+                      <td><div align="center">
+					  
+					   <img src="im/mjs-minilogo.gif"></div></td>
+                      <td width="280"> 
+                      <div align="center"><font color="#FFFFFF" size="1" face="Verdana, Arial, Helvetica, sans-serif"><a href="index.html">Mon javascript</a> </font>
+					  &nbsp;&nbsp;<font color="#FFFFFF" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              10-08-2015          
+			  </font>
+					  </div>
+                      </td>
+                    </tr>
+                    <tr align="center"> 
+                      <td bgcolor="#003399" height="2" colspan="2"></td>
+                      <td bgcolor="#003399" height="2"></td>
+                    </tr>
+                  </table>
+				  <br>
+
+          </td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+
+<!-- Mirrored from www.monjavascript.net/nbaleat.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Aug 2015 20:24:25 GMT -->
+</html>

@@ -1,0 +1,432 @@
+<html>
+
+<!-- Mirrored from www.monjavascript.net/protimage.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Aug 2015 20:24:29 GMT -->
+<head>
+<title>Mon JavaScript - Afficher une Image dans une Popup en Neutralisant le Clic Droit</title>
+<meta name="Description" lang="fr" content="Webmasters, Mon JavaScript vous propose: des scripts en javascript, mais aussi des cours de javascript, des générateurs, le multimoteur, du PHP et autres astuces..., pour donner de l'attrait à votre site web.">
+
+<meta name="keywords" content="javascript, html, langage, programme, programmation, javascript, site, perso, script, java, astuces, programmes, texte défilant, barre d'état, insérer favoris, heure gmt, javascript menu, script de redirection, javascript heure, javascript menu deroulant, rollover, javascript fenetre, menu déroulant, envoyer mail, formulaire, menu javascript, mail, date, Plein Ecran, pop up">
+<meta name="author" content="monjavascript - PLF">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="mjs.css" type="text/css">
+<script language="JavaScript">
+<!--
+//PLF- http://www.monjavascript.net/
+if (parent.frames.length > 0)
+window.top.location.href = location.href;
+//-->
+</script>
+<SCRIPT language="JavaScript">
+//PLF- http://www.monjavascript.net/
+var fois=0
+function AfficheImage(petiteImage,grandeImage,texteImage)
+{
+document.write('<A HREF="javascript:Affichegrande(\''+grandeImage+'\',\''+texteImage+'\')"><IMG SRC="'+petiteImage+'" HSPACE=0 VSPACE=0 BORDER=0 ALT="cliquez ici pour afficher en grand"></A>');
+}
+
+function Affichegrande(cheminImage,texte)
+{
+newImage = new Image;
+newImage.src = cheminImage;
+html = '<HTML><HEAD><TITLE>Image</TITLE><meta http-equiv="Pragma" content="no-cache"></HEAD><BODY leftmargin=0 marginwidth=0 topmargin=0 marginheigth=0 oncontextmenu="return false"><CENTER>'+
+'<a href="#" onClick="window.close()"><IMG SRC="'+cheminImage+'" BORDER=0 NAME=monImage alt="'+texte+'"border="0" onLoad="window.resizeTo(document.monImage.width+20,document.monImage.height+80);window.moveTo((screen.width-document.monImage.width)/2,5)"></a></CENTER></BODY></HTML>';
+if (fois == 1 ) ouvrirImage.close();
+ouvrirImage = window.open('','_blank','toolbar=0,location=0,menuBar=0,scrollbars=0,resizable=0');
+ouvrirImage.document.write(html);
+fois=1;
+}
+</SCRIPT>
+</head>
+<body bgcolor="#FFFFFF">
+<table width="1100" border="0" align="center" bgcolor="#9966FF">
+  <tr>    <td ><table width="1100" border="0" background="im/header_tile.gif">
+      <tr> 
+    <td width="240" ><font face="Verdana, Arial, Helvetica, sans-serif"><a href="index.html"><img src="im/mjs160x60_2.gif" alt="http://www.monjavascript.net" width="160" height="60" border="0"></a></font></td>
+    <td valign="middle"> 
+      	 <div align="right"><br>
+<!--Code à insérer jjspub --><script type="text/javascript"><!--
+google_ad_client = "pub-2085185646476169";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text_image";
+//2007-05-06: jjshaut
+google_ad_channel = "0643568426";
+google_color_border = "9966FF";
+google_color_bg = "9966FF";
+google_color_link = "FFFFFF";
+google_color_text = "000000";
+google_color_url = "err404.html";
+//-->
+</script>
+<script type="text/javascript"
+  src="../pagead2.googlesyndication.com/pagead/f.txt">
+</script><!--Code à insérer jjspub -->
+		</div>
+    </td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr> 
+    <td> 
+      <table width="1100" border="0" align="center">
+        <tr> 
+          <td width="162" valign="top"> 
+<script language="JavaScript">
+<!--
+//PLF-http://www.monjavascript.net/
+  function fenetreCentre(url,largeur,hauteur,options) {
+  var haut=(screen.height -(hauteur+130));
+  var Gauche=(screen.width-(largeur+30));
+  window.open(url,"","top="+haut+",left="+Gauche+",width="+largeur+",height="+hauteur+","+options);
+  }
+  adfav = "'index.html', 'Mon javascript : Programation en javascript et autres...'"
+  adreco = "'recomail.html',400,520,'menubar=no,scrollbars=yes,statusbar=no'"
+  adcont = "'contact.html',600,600,'menubar=no,scrollbars=yes,statusbar=no'" 
+  //-->
+</script>
+
+  
+<div align="center">
+  <table width="160" border="0" align="center" bordercolor="#9966FF">
+    <tr><td>
+    <div align="center">
+	<a href="index.html"><img src="menujs/menuaccu.gif" border="0" width="139" height="24"></a></div>
+    <table border="1" width="160"><tr><td align="left" ><p><font size="1"><img src="im/flechep.gif" width="7" height="7"><a href="index.html">ACCUEIL</a>
+	  </font></font><br>
+	  
+	<font size="1">
+	  <img src="im/flechep.gif" width="7" height="7"><a href='javascript:fenetreCentre("contact.html",600,400,"menubar=no,scrollbars=yes,statusbar=no")'>Contact</a>	<br>
+	  <img src="im/flechep.gif" width="7" height="7"><a href="acmoteujjs.html">Rechercher </a><br>
+      <img src="im/flechep.gif" width="7" height="7"><a href='javascript:window.external.addfavorite("index.html", "Mon JavaScript : Programation en javascript et autres...")'>Insérez
+      dans vos<br>
+&nbsp; favoris</a></font> <br>
+<!-- Placez cette balise où vous souhaitez faire apparaître le gadget Bouton +1. -->
+</p>
+          <div class="g-plusone" data-size="medium"></div>
+          <!-- Placez cette ballise après la dernière balise Bouton +1. -->
+          <script type="text/javascript">
+  window.___gcfg = {lang: 'fr'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = '../apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+          </script>
+</td>
+    </tr></table>
+    <div align="center">
+		<a href="somscript.html"><img src="menujs/menuscrpt.gif" border="0" width="139" height="24"></a></div>
+    <table border="1" width="160"><tr><td align="left" ><font size="1">
+		<img src="im/flechep.gif" width="7" height="7"><a href="somac_visit.html">ACCUEIL DES<br>&nbsp;  VISITEURS </a> <br>
+      <img src="im/flechep.gif" width="7" height="7"><a href="somdat_h.html">DATE & HEURE </a><br>
+      <img src="im/flechep.gif" width="7" height="7"><a href="somtexte.html">EFFETS
+    DE TEXTE </a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="somfenetres.html">FENETRES </a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="somform.html">FORMULAIRES </a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="somimages.html">IMAGES </a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="sommenus.html">MENUS</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="sompratique.html">PRATIQUE</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="sompopup.html">POP UP </a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="somdivers.html">DIVERS</a><br>
+    <br>
+    <!--
+	<img src="http://www.monjavascript.net/im/flechep.gif" width="7" height="7"><a href="http://www.monjavascript.net/section_php/index.php">PHP</a>
+	  //-->
+		</font></td>
+    </tr></table>
+	
+    <div align="center">  <img src="menujs/menuplus.gif" width="139" height="24"></div>
+	    <table border="1" width="160"><tr><td align="left" ><font size="1">
+		
+	<img src="im/flechep.gif" width="7" height="7"><a href="cours_jjs/index.html" >Cours de javascript</a><br>
+		<img src="im/flechep.gif" width="7" height="7"><a href="http://www.jecreemonsite.net/html_css/gencss.php" target="_blank">Générer vos Fichiers<br>&nbsp; 
+	
+	CSS</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="http://www.jecreemonsite.net/html_css/genmetatag.php" target="_blank">Générer vos Meta-Tags</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="metadescp.html">Description des Balises<br>&nbsp;  Meta</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="couleurs.html">Les Codes Couleur</a> <br>
+	<img src="im/flechep.gif" width="7" height="7"><a href="math.html">L'objet Math</a><br>
+	<img src="im/flechep.gif" width="7" height="7"><a href="li/lissage.html">Lissage De Pr&ecirc;t</a><br>
+	<img src="im/flechep.gif" width="7" height="7"><a href="li/ta.html">Tableau
+	d'Amortissement</a><br>
+		
+    <img src="im/flechep.gif" width="7" height="7"><a href="moteur.html">un Multi-Moteurs de recherche sur Votre Site</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="mailcryp.html">Cryptez votre e-mail<br>&nbsp;  pour contrer le Spam</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="scriptcryp.html">Cryptez vos Scripts</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><A href="acmoteu.html">Moteurs de recherches </A><br>
+    <img src="im/flechep.gif" width="7" height="7"><A href="acmoteu.html">Référencement </A><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="http://www.jecreemonsite.net/" target="_blank" title="javascript, HTML, PHP, tout pour le webmaster">Je
+    Cr&eacute;e Mon Site</a>
+    <br>
+	<img src="im/flechep.gif" width="7" height="7"><A HREF=http://www.editeurjavascript.com/partenaires/concours.php?id=mjs TARGET=_blank>L'éditeur JavaScript</A>
+    </font></td>
+    </tr></table>
+	
+	
+	
+	
+	
+	<br>
+
+  <div align="center">
+<!--Code à insérer jjspub --><script type="text/javascript"><!--
+google_ad_client = "pub-2085185646476169";
+google_ad_width = 160;
+google_ad_height = 600;
+google_ad_format = "160x600_as";
+google_ad_type = "text_image";
+//2006-11-24: jjsmenu
+google_ad_channel = "6413686093";
+google_color_border = "9966FF";
+google_color_bg = "9966FF";
+google_color_link = "FFFFFF";
+google_color_text = "000000";
+google_color_url = "err404.html";
+//--></script>
+<script type="text/javascript"
+  src="../pagead2.googlesyndication.com/pagead/f.txt">
+</script><!--Code à insérer jjspub -->
+
+
+
+
+  </div>
+ <table width="160" border="0" align="center" bordercolor="#9966FF">
+<tr><td>
+
+    <div align="center">	</div>
+    <div align="center">  </div>
+<div align="center"></div>
+
+
+
+
+
+<div align="center">
+<a href="http://www.xiti.com/xiti.asp?s=504527" title="WebAnalytics" target="_top">
+<script type="text/javascript">
+<!--
+Xt_param = 's=504527&p=';
+try {Xt_r = top.document.referrer;}
+catch(e) {Xt_r = document.referrer; }
+Xt_h = new Date();
+Xt_i = '<img width="39" height="25" border="0" alt="" ';
+Xt_i += 'src="http://logv17.xiti.com/hit.xiti?'+Xt_param;
+Xt_i += '&hl='+Xt_h.getHours()+'x'+Xt_h.getMinutes()+'x'+Xt_h.getSeconds();
+if(parseFloat(navigator.appVersion)>=4)
+{Xt_s=screen;Xt_i+='&r='+Xt_s.width+'x'+Xt_s.height+'x'+Xt_s.pixelDepth+'x'+Xt_s.colorDepth;}
+document.write(Xt_i+'&ref='+Xt_r.replace(/[<>"]/g, '').replace(/&/g, '$')+'" title="Internet Audience">');
+//-->
+</script>
+<noscript>
+Mesure d'audience ROI statistique webanalytics par <img width="39" height="25" src="http://logv17.xiti.com/hit.xiti?s=504527&amp;p=" alt="WebAnalytics" />
+</noscript></a>
+</div>
+
+</td></tr></table>
+ 
+  
+    </td></tr>
+  </table>
+</div>
+
+                
+		  </td>          <td valign="top" bgcolor="#CC99FF" colspan="2"> 
+            <div align="center"> 
+              <p align="center"> 
+                <br>
+                <font size="4" face="Verdana, Arial, Helvetica, sans-serif">Afficher
+                une Image dans une Popup<br>
+                </font><font size="4" face="Verdana, Arial, Helvetica, sans-serif">en
+                Neutralisant le Clic Droit</font></p>
+              <p align="center">cliquez sur la vignette et l'image s'ouvre
+              dans une popup en interdisant le clic droit.</p>
+              <p align="center">Cliquez dans cette
+                  image et elle se ferme.</p>
+              <p align="center"> Cliquez sur une autre vignette et l'image pr&eacute;c&eacute;dente
+                se ferme avant d'afficher la nouvelle</p>
+              <p align="center"><font face="Verdana, Arial, Helvetica, sans-serif">
+                <script language=JavaScript>AfficheImage("im/imag1p.gif","im/imag1.gif","Cliquer pour fermer");</script>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 <script language=JavaScript>AfficheImage("im/imag2p.gif","im/imag2.gif","Vous Cherchez un graphiste ? Contactez-moi !");</script>
+              </font> </p>
+              <p align="center"><!--Code à insérer jjspub --><script type="text/javascript"><!--
+google_ad_client = "pub-2085185646476169";
+google_ad_width = 468;
+google_ad_height = 60;
+google_ad_format = "468x60_as";
+google_ad_type = "text_image";
+//2006-11-23: jjscentre
+google_ad_channel = "2311992272";
+google_color_border = "CC99FF";
+google_color_bg = "CC99FF";
+google_color_link = "FFFFFF";
+google_color_text = "000000";
+google_color_url = "err404.html";
+//--></script>
+<script type="text/javascript"
+  src="../pagead2.googlesyndication.com/pagead/f.txt">
+</script><!--Code à insérer jjspub -->
+</p>
+              <p align="center"><font color="#000099" size="4" face="Verdana, Arial, Helvetica, sans-serif">Ins&eacute;rez
+                   le code ci-dessous dans l'ent&ecirc;te de votre page<br>
+                (entre
+                   les  balises&lt;head&gt; ... &lt;/head&gt;)</font><font color="#000099" size="+1"> 
+              </font></p>
+              <br>
+              <table width="90%" border="1" bordercolorlight="#000000" bgcolor="#CCCCCC" align="center">
+                <tr> 
+                  <td>                    &lt;SCRIPT language=&quot;JavaScript&quot;&gt;<br>
+                    //PLF- http://www.monjavascript.net/<br>
+                    var fois=0<br>
+                    function AfficheImage(petiteImage,grandeImage,texteImage)<br>
+                    {<br>
+                    document.write('&lt;A HREF=&quot;javascript:Affichegrande(\''+grandeImage+'\',\''+texteImage+'\')&quot;&gt;&lt;IMG
+                    SRC=&quot;'+petiteImage+'&quot; HSPACE=0 VSPACE=0 BORDER=0
+                    ALT=&quot;<font color="#FF0000">cliquez ici pour afficher
+                    en grand</font>&quot;&gt;&lt;/A&gt;');<br>
+                    }
+                    <p>function Affichegrande(cheminImage,texte)<br>
+                      {<br>
+                      newImage = new Image;<br>
+                      newImage.src = cheminImage;<br>
+                      html = '&lt;HTML&gt;&lt;HEAD&gt;&lt;TITLE&gt;Image&lt;/TITLE&gt;&lt;meta
+                      http-equiv=&quot;Pragma&quot; content=&quot;no-cache&quot;&gt;&lt;/HEAD&gt;&lt;BODY
+                      leftmargin=0 marginwidth=0 topmargin=0 marginheigth=0 oncontextmenu=&quot;return
+                      false&quot;&gt;&lt;CENTER&gt;'+<br>
+                      '&lt;a href=&quot;#&quot; onClick=&quot;window.close()&quot;&gt;&lt;IMG
+                      SRC=&quot;'+cheminImage+'&quot; BORDER=0 NAME=monImage
+                      alt=&quot;'+texte+'&quot;border=&quot;0&quot; onLoad=&quot;window.resizeTo(document.monImage.width+20,document.monImage.height+80);
+                      <font color="#0000FF">window.moveTo((screen.width-document.monImage.width)/2,5)</font>&quot;&gt; &lt;/a&gt;&lt;/CENTER&gt;&lt;/BODY&gt;&lt;/HTML&gt;';<br>
+                      if (fois == 1 ) ouvrirImage.close();<br>
+                      ouvrirImage = window.open('','_blank','toolbar=0,location=0,menuBar=0,scrollbars=0,resizable=0');<br>
+                      ouvrirImage.document.write(html);<br>
+                      fois=1;<br>
+                      }<br>
+                  &lt;/SCRIPT&gt;</p></td>
+                </tr>
+                <tr>
+                  <td bgcolor="#FFFFFF"><p><font color="#FF0000">cliquez ici voir
+                    l'image </font>Texte au au passage de la souris sur 
+                  la vignette</p>
+                  <p><font color="#0000FF">Place
+                      l'image &agrave; l'endroit voulu :
+                    window.moveTo((gauche,haut)</font><br>
+                    <br>
+                    gauche est la distance du bord gauche de l'&eacute;cran<br>
+                    haut est la distance du haut de l'&eacute;cran</p>
+                  <p>screen.width
+                      est la largeur de l'&eacute;cran<br>
+                      screen.height est la hauteur de l'&eacute;cran<br>
+                      document.monImage.width est la largeur de l'image<br>
+                      document.monImage.height est la hauteur de l'image</p>
+                  <p>Pour mettre au centre :<br>
+                    si vous diviser screen.width par 2
+                    vous trouver le centre de l'&eacute;cran en largeur. Si vous vous soustrayez pr&eacute;alablement
+                      la lageur de l'image vous la centrez.<br>
+                      (screen.width-document.monImage.width)/2<br>
+                      Vous faites de m&ecirc;me pour la hauteur et votre commande
+                      est donc :<br>
+                    window.moveTo((screen.width-document.monImage.width)/2,(screen.height-document.monImage.height)/2)</p>
+                  <p>Pour ne centrer qu'en horizontal:<br>
+                    window.moveTo((screen.width-document.monImage.width)/2,10)<br>
+                    10 &eacute;tant votre marge du haut
+                  </p>
+                  <p>                      pour en bas &agrave; droite :<br>
+                      il ne faut pas diviser par
+                              deux (Par contre on ajoute une petite marge)<br>
+                      window.moveTo((screen.width-document.monImage.width)-15,(screen.height-document.monImage.height)-15) </p>
+                  </td>
+                </tr>
+              </table>
+              <p align="center"><font size="4" color="#000099" face="Verdana, Arial, Helvetica, sans-serif">Ins&eacute;rez
+                le code ci-dessus dans votre page Web l'endroit                o&ugrave; vous
+                souhaitez installer la vignette
+                et corrigez le comme suit</font></p>
+              <table width="90%" border="1" bordercolorlight="#000000" bgcolor="#CCCCCC" align="center">
+                <tr>
+                  <td colspan="2"><p>&lt;script language=JavaScript&gt;AfficheImage(&quot;<font color="#FF0000">chemin/vignette.gif</font>&quot;,&quot;<font color="#0000FF">chemin/image.gif</font>&quot;,&quot;<font color="#FF00FF">Texte
+                      sur l Image</font>&quot;);&lt;/script&gt;</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#FFFFFF"><font color="#FF0000">chemin/vignette.gif</font><br> 
+                    <font color="#0000FF">chemin/image.gif</font><br>
+                    <font color="#FF00FF">Texte sur l Image</font></td>
+                  <td width="81%" bgcolor="#FFFFFF">Indiquez le chemin et le fichier de la
+                    vignette<br>
+                    Indiquez le
+                    chemin et le fichier de l'image en taille normale<br>
+                    Indiquez le
+                  texte qui appara&icirc;tra au passage de la souris sur l'image
+                  (pas d'apostrophe et autres...)</td>
+                </tr>
+              </table>
+              <p align="center"><font size="4" color="#000099" face="Verdana, Arial, Helvetica, sans-serif">Vous
+                  pouvez installez autant vignettes que vous le voulez sur la
+                  m&ecirc;me page</font></p>
+              <p align="center"> </p>
+              <p align="center"><a href="fairelien.html">Ce site vous a plu ?
+                  Vous avez trouv&eacute; le script que vous cherchiez ?<br>
+                  Faites en profiter vos visiteurs : ins&eacute;rez un lien sur
+                  votre site</a></p>
+            </div>
+          </td>
+          <td width="6" valign="top">
+            <div align="center">
+<table width="6" border="0" align="center" bordercolor="#9966FF">
+<tr><td>
+
+    <div align="center">	</div>
+    <div align="center">  </div>
+<div align="center"></div>
+<div align="center">&nbsp;</div>
+
+</td></tr></table>
+            </div>
+          </td>
+        </tr>
+        <tr valign="middle"> 
+          <td>&nbsp;</td>
+          <td align="center">
+
+
+                  <table border="0" cellspacing="0" width="700">
+                    <tr bordercolor="#00CCFF"> 
+                      <td width="280">
+					  <div align="center">
+<font color="#FFFFFF" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+<a href='http://www.jecreemonsite.net/php/jcmscompteur.php'>Il y a 3 Visiteurs</a> sur <a href='index.html'>Mon JavaScript</a><noscript><a href="http://www.jecreemonsite.net/">javascript php html</a></noscript>
+</font>					  </div></td>
+                      <td><div align="center">
+					  
+					   <img src="im/mjs-minilogo.gif"></div></td>
+                      <td width="280"> 
+                      <div align="center"><font color="#FFFFFF" size="1" face="Verdana, Arial, Helvetica, sans-serif"><a href="index.html">Mon javascript</a> </font>
+					  &nbsp;&nbsp;<font color="#FFFFFF" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              10-08-2015          
+			  </font>
+					  </div>
+                      </td>
+                    </tr>
+                    <tr align="center"> 
+                      <td bgcolor="#003399" height="2" colspan="2"></td>
+                      <td bgcolor="#003399" height="2"></td>
+                    </tr>
+                  </table>
+				  <br>
+
+          </td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+
+<!-- Mirrored from www.monjavascript.net/protimage.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Aug 2015 20:24:30 GMT -->
+</html>

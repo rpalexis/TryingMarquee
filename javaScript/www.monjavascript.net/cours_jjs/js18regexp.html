@@ -1,0 +1,845 @@
+<html>
+
+<!-- Mirrored from www.monjavascript.net/cours_jjs/js18regexp.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Aug 2015 20:25:21 GMT -->
+<head>
+<title>Mon javascript - Cours de javascript</title>
+<meta name="Description" lang="fr" content="Webmasters, Mon javascript vous propose: des scripts en javascript, mais aussi des cours de javascript, des générateurs, le multimoteur, du PHP et autres astuces..., pour donner de l'attrait à votre site web.">
+
+<meta name="keywords" content="javascript, html, langage, programme, programmation, javascript, site, perso, script, java, astuces, programmes, texte défilant, barre d'état, insérer favoris, heure gmt, javascript menu, script de redirection, javascript heure, javascript menu deroulant, rollover, javascript fenetre, menu déroulant, envoyer mail, formulaire, menu javascript, mail, date, Plein Ecran, pop up">
+<meta name="author" content="Monjavascript - PLF">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../mjs.css" type="text/css">
+<script language="JavaScript">
+<!--
+//PLF- http://www.Monjavascript.net/
+if (parent.frames.length > 0)
+window.top.location.href = location.href;
+//-->
+</script>
+</head>
+<body bgcolor="#FFFFFF">
+<table width="1100" border="0" align="center" bgcolor="#9966FF">
+  <tr>    <td ><table width="1100" border="0" background="../err404.html">
+      <tr> 
+    <td width="240" ><font face="Verdana, Arial, Helvetica, sans-serif"><a href="../index.html"><img src="../im/mjs160x60_2.gif" alt="http://www.monjavascript.net" width="160" height="60" border="0"></a></font></td>
+    <td valign="middle"> 
+      	 <div align="right"><br>
+<!--Code à insérer jjspub --><script type="text/javascript"><!--
+google_ad_client = "pub-2085185646476169";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text_image";
+//2007-05-06: jjshaut
+google_ad_channel = "0643568426";
+google_color_border = "9966FF";
+google_color_bg = "9966FF";
+google_color_link = "FFFFFF";
+google_color_text = "000000";
+google_color_url = "../err404.html";
+//-->
+</script>
+<script type="text/javascript"
+  src="../../pagead2.googlesyndication.com/pagead/f.txt">
+</script><!--Code à insérer jjspub -->
+		</div>
+    </td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr> 
+    <td> 
+      <table width="1100" border="0" align="center">
+        <tr> 
+          <td width="162" valign="top"> 
+<script language="JavaScript">
+<!--
+//PLF-http://www.monjavascript.net/
+  function fenetreCentre(url,largeur,hauteur,options) {
+  var haut=(screen.height -(hauteur+130));
+  var Gauche=(screen.width-(largeur+30));
+  window.open(url,"","top="+haut+",left="+Gauche+",width="+largeur+",height="+hauteur+","+options);
+  }
+  adfav = "'../index.html', 'Mon javascript : Programation en javascript et autres...'"
+  adreco = "'../recomail.html',400,520,'menubar=no,scrollbars=yes,statusbar=no'"
+  adcont = "'../contact.html',600,600,'menubar=no,scrollbars=yes,statusbar=no'" 
+  //-->
+</script>
+
+  
+<div align="center">
+  <table width="160" border="0" align="center" bordercolor="#9966FF">
+    <tr><td>
+    <div align="center">
+	<a href="../index.html"><img src="../menujs/menuaccu.gif" border="0" width="139" height="24"></a></div>
+    <table border="1" width="160"><tr><td align="left" ><p><font size="1"><img src="../im/flechep.gif" width="7" height="7"><a href="../index.html">ACCUEIL</a>
+	  </font></font><br>
+	  
+	<font size="1">
+	  <img src="../im/flechep.gif" width="7" height="7"><a href='javascript:fenetreCentre("../err404.html",600,400,"menubar=no,scrollbars=yes,statusbar=no")'>Contact</a>	<br>
+	  <img src="../im/flechep.gif" width="7" height="7"><a href="../acmoteujjs.html">Rechercher </a><br>
+      <img src="../im/flechep.gif" width="7" height="7"><a href='javascript:window.external.addfavorite("../index.html", "Mon JavaScript : Programation en javascript et autres...")'>Insérez
+      dans vos<br>
+&nbsp; favoris</a></font> <br>
+<!-- Placez cette balise où vous souhaitez faire apparaître le gadget Bouton +1. -->
+</p>
+          <div class="g-plusone" data-size="medium"></div>
+          <!-- Placez cette ballise après la dernière balise Bouton +1. -->
+          <script type="text/javascript">
+  window.___gcfg = {lang: 'fr'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = '../../apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+          </script>
+</td>
+    </tr></table>
+    <div align="center">
+		<a href="../somscript.html"><img src="../menujs/menuscrpt.gif" border="0" width="139" height="24"></a></div>
+    <table border="1" width="160"><tr><td align="left" ><font size="1">
+		<img src="../im/flechep.gif" width="7" height="7"><a href="../somac_visit.html">ACCUEIL DES<br>&nbsp;  VISITEURS </a> <br>
+      <img src="../im/flechep.gif" width="7" height="7"><a href="../somdat_h.html">DATE & HEURE </a><br>
+      <img src="../im/flechep.gif" width="7" height="7"><a href="../somtexte.html">EFFETS
+    DE TEXTE </a><br>
+    <img src="../im/flechep.gif" width="7" height="7"><a href="../somfenetres.html">FENETRES </a><br>
+    <img src="../im/flechep.gif" width="7" height="7"><a href="../somform.html">FORMULAIRES </a><br>
+    <img src="../im/flechep.gif" width="7" height="7"><a href="../somimages.html">IMAGES </a><br>
+    <img src="../im/flechep.gif" width="7" height="7"><a href="../sommenus.html">MENUS</a><br>
+    <img src="../im/flechep.gif" width="7" height="7"><a href="../sompratique.html">PRATIQUE</a><br>
+    <img src="../im/flechep.gif" width="7" height="7"><a href="../sompopup.html">POP UP </a><br>
+    <img src="../im/flechep.gif" width="7" height="7"><a href="../somdivers.html">DIVERS</a><br>
+    <br>
+    <!--
+	<img src="http://www.monjavascript.net/im/flechep.gif" width="7" height="7"><a href="http://www.monjavascript.net/section_php/index.php">PHP</a>
+	  //-->
+		</font></td>
+    </tr></table>
+	
+    <div align="center">  <img src="../menujs/menuplus.gif" width="139" height="24"></div>
+	    <table border="1" width="160"><tr><td align="left" ><font size="1">
+	<div align="center"><a href="index.html">Cours de Javascript</a><a href="index.html">
+</a></div>
+<p>  <img src="../im/flechep.gif" width="7" height="7"><a href="js01intro.html">Introduction au Javascript</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js02implant.html">Implantation du code</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js03var.html">Variables javascript</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js04tab.html">Tableaux javascript</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js05char.html">Cha&icirc;ne de caract&egrave;res</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js06even.html">&Eacute;v&eacute;nements
+  javascript</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js07oper.html">Op&eacute;rateurs</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js08cond.html">Structures conditionnelles</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js09fonc.html">Fonctions</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js10meth.html">M&eacute;thodes</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js11dial.html">Bo&icirc;tes
+  de dialogue</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js12objet.html">La notion d'objet</a><br>
+  <font color="#CCCCCC"><strong>Objets de Javascript</strong></font><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js13noyau.html">Objets du noyau</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js14array.html">Objet Array</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js15boolean.html">Objet Boolean</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js16date.html">Objet Date</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js17math.html">Objet Math</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js18regexp.html">Objet RegExp</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js19string.html">Objet String</a><br>
+  <font color="#CCCCCC"><strong>Objets du navigateur</strong></font><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js20objets.html">Pr&eacute;sentation
+  des objets</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js21window.html">Objet window</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js22navig.html">Objet navigator</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js23history.html">Objet history</a></p>
+<p align="center"><font color="#FFFFFF">- - - - - - - -</font> </p> 
+
+	<img src="../im/flechep.gif" width="7" height="7"><a href="http://www.jecreemonsite.net/html_css/gencss.php" target="_blank">Générer vos Fichiers<br>&nbsp; 
+	
+	CSS</a><br>
+    <img src="../im/flechep.gif" width="7" height="7"><a href="http://www.jecreemonsite.net/html_css/genmetatag.php" target="_blank">Générer vos Meta-Tags</a><br>
+    <img src="../im/flechep.gif" width="7" height="7"><a href="../metadescp.html">Description des Balises<br>&nbsp;  Meta</a><br>
+    <img src="../im/flechep.gif" width="7" height="7"><a href="../couleurs.html">Les Codes Couleur</a> <br>
+	<img src="../im/flechep.gif" width="7" height="7"><a href="../math.html">L'objet Math</a><br>
+	<img src="../im/flechep.gif" width="7" height="7"><a href="../li/lissage.html">Lissage De Pr&ecirc;t</a><br>
+	<img src="../im/flechep.gif" width="7" height="7"><a href="../li/ta.html">Tableau
+	d'Amortissement</a><br>
+		
+    <img src="../im/flechep.gif" width="7" height="7"><a href="../moteur.html">un Multi-Moteurs de recherche sur Votre Site</a><br>
+    <img src="../im/flechep.gif" width="7" height="7"><a href="../mailcryp.html">Cryptez votre e-mail<br>&nbsp;  pour contrer le Spam</a><br>
+    <img src="../im/flechep.gif" width="7" height="7"><a href="../scriptcryp.html">Cryptez vos Scripts</a><br>
+    <img src="../im/flechep.gif" width="7" height="7"><A href="../acmoteu.html">Moteurs de recherches </A><br>
+    <img src="../im/flechep.gif" width="7" height="7"><A href="../acmoteu.html">Référencement </A><br>
+    <img src="../im/flechep.gif" width="7" height="7"><a href="http://www.jecreemonsite.net/" target="_blank" title="javascript, HTML, PHP, tout pour le webmaster">Je
+    Cr&eacute;e Mon Site</a>
+    <br>
+	<img src="../im/flechep.gif" width="7" height="7"><A HREF=http://www.editeurjavascript.com/partenaires/concours.php?id=mjs TARGET=_blank>L'éditeur JavaScript</A>
+    </font></td>
+    </tr></table>
+	
+	
+	
+	
+	
+	<br>
+
+  <div align="center">
+<!--Code à insérer jjspub --><script type="text/javascript"><!--
+google_ad_client = "pub-2085185646476169";
+google_ad_width = 160;
+google_ad_height = 600;
+google_ad_format = "160x600_as";
+google_ad_type = "text_image";
+//2006-11-24: jjsmenu
+google_ad_channel = "6413686093";
+google_color_border = "9966FF";
+google_color_bg = "9966FF";
+google_color_link = "FFFFFF";
+google_color_text = "000000";
+google_color_url = "../err404.html";
+//--></script>
+<script type="text/javascript"
+  src="../../pagead2.googlesyndication.com/pagead/f.txt">
+</script><!--Code à insérer jjspub -->
+
+
+
+
+  </div>
+ <table width="160" border="0" align="center" bordercolor="#9966FF">
+<tr><td>
+
+    <div align="center">	</div>
+    <div align="center">  </div>
+<div align="center"></div>
+
+
+
+
+
+<div align="center">
+<a href="http://www.xiti.com/xiti.asp?s=504527" title="WebAnalytics" target="_top">
+<script type="text/javascript">
+<!--
+Xt_param = 's=504527&p=';
+try {Xt_r = top.document.referrer;}
+catch(e) {Xt_r = document.referrer; }
+Xt_h = new Date();
+Xt_i = '<img width="39" height="25" border="0" alt="" ';
+Xt_i += 'src="http://logv17.xiti.com/hit.xiti?'+Xt_param;
+Xt_i += '&hl='+Xt_h.getHours()+'x'+Xt_h.getMinutes()+'x'+Xt_h.getSeconds();
+if(parseFloat(navigator.appVersion)>=4)
+{Xt_s=screen;Xt_i+='&r='+Xt_s.width+'x'+Xt_s.height+'x'+Xt_s.pixelDepth+'x'+Xt_s.colorDepth;}
+document.write(Xt_i+'&ref='+Xt_r.replace(/[<>"]/g, '').replace(/&/g, '$')+'" title="Internet Audience">');
+//-->
+</script>
+<noscript>
+Mesure d'audience ROI statistique webanalytics par <img width="39" height="25" src="http://logv17.xiti.com/hit.xiti?s=504527&amp;p=" alt="WebAnalytics" />
+</noscript></a>
+</div>
+
+</td></tr></table>
+ 
+  
+    </td></tr>
+  </table>
+</div>
+
+                
+		  </td>          <td valign="top" bgcolor="#CC99FF" colspan="2"> 
+            <div align="left"> 
+              <h2 align="center"> 
+                 L'objet RegExp<br>
+              </h2>
+              
+              <table width="300" border="0" align="right">
+                <tr>
+                  <td width="100"><div align="center"></div>
+                  </td>
+                  <td width="100"><div align="center"><a href="js17math.html"><img src="images/flchg.gif" width="40" height="32" border="0"></a></div>
+                  </td>
+                  <td><div align="center"><a href="js19string.html"><img src="images/flchd.gif" width="40" height="32" border="0"></a></div>
+                  </td>
+                </tr>
+              </table>              
+              <h2>&nbsp;</h2>
+              <h2><br>
+                <a name="string" class="ancre"></a>Les particularit&eacute;s
+                de l'objet <i>RegExp</i></h2>
+              <p align="justify">L'objet <i>RegExp</i> est un objet permettant
+                de manipuler des expressions r&eacute;guli&egrave;res, c'est-&agrave;-dire
+                des modèles créés à l'aide de caractères ASCII permettant
+                de manipuler des <a href="js05char.html">cha&icirc;nes de caract&egrave;res</a>,
+                afin de trouver des portions de la chaîne correspondant au modèle.
+              <p align="justify">La cr&eacute;ation d'un objet <i>RegExp</i> se
+                cr&eacute;e &agrave; l'aide d'une simple expression comme suit&nbsp;:
+              <pre class="Code">Expression = /motif/drapeau</pre>
+              <p align="justify">Il est &eacute;galement possible de cr&eacute;er
+                un tel objet de mani&egrave;re plus classique &agrave; l'aide
+                de son constructeur&nbsp;:
+              <pre class="Code">Expression = new RegExp("motif","drapeau")</pre>
+              <p align="justify">Le motif repr&eacute;sente l'expression r&eacute;guli&egrave;re
+                en elle-m&ecirc;me tandis que le drapeau (optionnel) permet de
+                pr&eacute;ciser le comportement de l'expression r&eacute;guli&egrave;re&nbsp;:
+              <ul>
+                <li><b>g</b> indique une recherche globale sur la cha&icirc;ne
+                  de caract&egrave;re et indique une recherche de toutes les
+                  occurences.
+                <li><b>i</b> indique une recherche non sensible &agrave; la casse,
+                  c'est-&agrave;-dire que la recherche se fait ind&eacute;pendamment
+                  de l'&eacute;criture en majuscule ou minuscule de la cha&icirc;ne.
+                <li><b>gi</b> combine les deux comportements pr&eacute;c&eacute;dents.
+              </ul>
+              <a name="construire" class="ancre"></a>
+              <h2>Construire une expression régulière</h2>
+              <p></p>
+              <p align="justify">Les expressions régulières permettent de rechercher
+                des occurrences (c'est-à-dire une suite de caractères correspondant à ce
+                que l'on recherche) grâce à une série de caractères spéciaux.
+                L'expression régulière en elle-même est donc une chaîne de caractère
+                contenant des caractères spéciaux et des caractères standards.</p>
+              <p align="justify">              
+              <table border="0">
+                <tbody>
+                  <tr>
+                    <td> <img src="images/warning.gif"> </td>
+                    <td> Pour rechercher un caractère faisant partie des caractères
+                      spéciaux, il suffit de <b>le faire précéder d'un antislash</b> (<b>sauf
+                      entre crochets</b>)&nbsp;:
+                        <p align="justify">
+                        <table class="ccm">
+                          <tbody>
+                            <tr>
+                              <th>Caractère sp&eacute;cial</th>
+                              <th>Echappement</th>
+                            </tr>
+                            <tr>
+                              <td>\</td>
+                              <td>\\</td>
+                            </tr>
+                            <tr>
+                              <td>.</td>
+                              <td>\.</td>
+                            </tr>
+                            <tr>
+                              <td>$</td>
+                              <td>\$</td>
+                            </tr>
+                            <tr>
+                              <td>[</td>
+                              <td>\[</td>
+                            </tr>
+                            <tr>
+                              <td>]</td>
+                              <td>\]</td>
+                            </tr>
+                            <tr>
+                              <td>(</td>
+                              <td>\(</td>
+                            </tr>
+                            <tr>
+                              <td>)</td>
+                              <td>\)</td>
+                            </tr>
+                            <tr>
+                              <td>{</td>
+                              <td>\{</td>
+                            </tr>
+                            <tr>
+                              <td>}</td>
+                              <td>\}</td>
+                            </tr>
+                            <tr>
+                              <td>^</td>
+                              <td>\^</td>
+                            </tr>
+                            <tr>
+                              <td>?</td>
+                              <td>\?</td>
+                            </tr>
+                            <tr>
+                              <td>*</td>
+                              <td>\*</td>
+                            </tr>
+                            <tr>
+                              <td>+</td>
+                              <td>\+</td>
+                            </tr>
+                            <tr>
+                              <td>-</td>
+                              <td>\-</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                    </td>
+                  </tr>
+              </table>
+              <a name="debut" class="ancre"></a>
+              <h2>D&eacute;but et fin de cha&icirc;ne</h2>
+              <p></p>
+              <p align="justify">Les symboles <i>^</i> et <i>$</i> indiquent
+                respectivement le début et la fin d'une chaîne, et permettent
+                donc de la délimiter. </p>
+              <pre class="Code">&quot;^debut&quot;: chaîne qui commence par &quot;debut&quot;
+
+&quot;fin$&quot;: chaîne qui se termine par &quot;fin&quot;
+
+&quot;^chaîne$&quot;: chaîne qui commence et se termine par &quot;chaîne&quot;
+
+&quot;abc&quot;: chaîne contenant la chaîne "abc"</pre>
+              <a name="occurences" class="ancre"></a>
+              <h2>Nombre d'occurences</h2>
+              <p></p>
+              <p align="justify">Les symboles *, + et ?, signifient respectivement "z&eacute;ro
+                ou plusieurs", "au moins un", "un ou aucun", et permettent de
+                donner une notion de quantit&eacute;.
+              <pre class="Code">"abc+": chaîne qui contient "ab" suivie de un ou plusieurs "c" ("abc", "abcc", etc.)
+"abc*": chaîne qui contient "ab" suivie de z&eacute;ro ou plusieurs "c" ("ab", "abc", etc.)
+"abc?": chaîne qui contient "ab" suivie de z&eacute;ro ou un "c" ("ab" ou "abc" uniquement)
+"^abc+": chaîne commençant par "ab" suivie de un ou plusieurs "c" ("abc", "abcc", etc.)</pre>
+              <p align="justify">Les accolades {X,Y} permettent de donner des
+                limites pr&eacute;cises de nombre d'occurences.
+              <pre class="Code">"abc{2}": chaîne qui contient "ab" suivie de deux "c" ("abcc")
+"abc{2,}": chaîne qui contient "ab" suivie de deux "c" ou plus ("abcc" etc..)
+"abc{2,4}": chaîne qui contient "ab" suivie 2, 3 ou 4 "c" ("abcc" .. "abcccc")</pre>
+Il est &agrave; noter que le premier nombre de la limite est obligatoire (&quot;{0,2}&quot;,
+mais pas &quot;{,2}&quot;).
+Les symboles vu précedemment ('*', '+', et
+'?') sont équivalents à "{0,}", "{1,}", et "{0,1}". <a name="capture" class="ancre"></a>
+<h2>Parenth&egrave;ses capturantes</h2>
+<p></p>
+<p align="justify">Les parenthèses ( ) permettent de repr&eacute;senter une séquence
+  de caractères et de capturer le r&eacute;sultat. Les occurences correspondant
+  au motif entre parenth&egrave;ses sont accessibles via la m&eacute;thode <i>exec()</i> de
+  l'objet RegExp ou bien les m&eacute;thodes <i>search()</i>, <i>match()</i> et <i>replace()</i> de
+  l'objet <a href="js19string.html">String</a>. </p>
+<pre class="Code">"a(bc)+": chaîne qui contient "a" suivie de au moins
+une occurence de la cha&icirc;ne "bc"</pre>
+<p align="justify">La barre verticale | se comporte en tant qu'opérateur OU
+<pre class="Code">&quot;(un|le)&quot;: chaîne qui contient &quot;un&quot; ou &quot;le&quot;
+
+&quot;(un|le) chien&quot;: chaîne qui correspond &agrave;
+ &quot;un chien&quot; ou &quot;le chien&quot;
+
+&quot;commentcamarche\.((net)|(com)|(org))&quot;:
+chaîne qui correspond &agrave; &nbsp;:
+&quot;commentcamarche.net&quot;
+&quot;commentcamarche.com&quot;
+&quot;commentcamarche.org&quot;</pre>
+<a name="point" class="ancre"></a>
+<h2>Caract&egrave;re quelconque</h2>
+<p></p>
+<p align="justify">Le point (.) indique n'importe une occurence de n'importe
+  quel caractère.
+<pre class="Code">&quot;^.{3}$&quot;: chaîne qui contient 3 caractères
+&quot;.*&quot;: Tous les caract&egrave;res</pre>
+<a name="liste" class="ancre"></a>
+<h2>Liste de caract&egrave;res</h2>
+<p></p>
+<p align="justify">Les crochets <i>[ ]</i> définissent une liste de caractères
+  autorisés (ou interdits). Le signe - permet quand à lui de définir un intervalle.
+  Le caractère ^ après le premier crochet indique quand à lui une interdiction.
+<pre class="Code">&quot;[abc]&quot;: chaîne qui contient un &quot;a&quot;, un &quot;b&quot;, ou un &quot;c&quot;.
+&quot;[a-z]&quot;: chaîne qui contient un caractère compris entre &quot;a&quot; et &quot;z&quot;.
+&quot;[^a-zA-Z]&quot;: chaîne qui ne commence pas par une lettre.</pre>
+En effet entre crochets, chaque caractère représente
+ce qu'il est. Pour représenter un ] il faut le mettre en premier (ou
+après un ^ si c'est une interdiction).
+Etant donn&eacute; que le signe <i>-</i> sert &agrave; d&eacute;finir un intervalle,
+il est n&eacute;cessaire
+de commencer ou de terminer par ce caract&egrave;re lorsque l'on veut indiquer
+qu'il fait partie des caract&egrave;res
+autoris&eacute;s&nbsp;:
+<pre class="Code">&quot;[-ag]&quot;: chaîne qui contient un moins (<i>-</i>), un &quot;a&quot;, ou un &quot;g&quot;
+&quot;[a-g]&quot;: chaîne qui contient un caractère compris entre &quot;a&quot; et &quot;g&quot;
+&quot;[\+?{}.]&quot;: chaîne qui contient un de ces six caractères
+&quot;[]-]&quot;: chaîne qui contient le caractère &quot;]&quot; ou le caractère "-"</pre>
+<div align="center"><a name="speciaux" class="ancre"></a>
+    <!--Code à insérer jjspub -->
+    <script type="text/javascript"><!--
+google_ad_client = "pub-2085185646476169";
+google_ad_width = 468;
+google_ad_height = 60;
+google_ad_format = "468x60_as";
+google_ad_type = "text_image";
+//2006-11-23: jjscentre
+google_ad_channel = "2311992272";
+google_color_border = "CC99FF";
+google_color_bg = "CC99FF";
+google_color_link = "FFFFFF";
+google_color_text = "000000";
+google_color_url = "../err404.html";
+//--></script>
+<script type="text/javascript"
+  src="../../pagead2.googlesyndication.com/pagead/f.txt">
+</script>
+    <!--Code à insérer jjspub -->
+  </div>
+<h2>Caract&egrave;res sp&eacute;ciaux</h2>
+<p></p>
+<p align="justify">Il existe enfin des caract&egrave;res sp&eacute;ciaux (pr&eacute;c&eacute;d&eacute;s
+  d'une barre oblique inverse) repr&eacute;sentant des types de caract&egrave;res
+  sp&eacute;cifiques&nbsp;:
+<p align="justify">
+<table class="ccm">
+  <tbody>
+    <tr>
+      <th>Caractère sp&eacute;cial</th>
+      <th>Utilit&eacute;</th>
+    </tr>
+    <tr>
+      <td>\b</td>
+      <td>Permet de capturer une coupure de mot, c'est-&agrave;-dire des caract&egrave;res
+        situ&eacute;s au tout d&eacute;but ou &agrave; la fin d'un mot. Par exemple &quot;he\b&quot; permet
+        de capturer &quot;CommentCaMarche&quot; mais pas &quot;chenil&quot;.
+        De la m&ecirc;me fa&ccedil;on &quot;\bCo&quot; permet de capturer &quot;CommentCaMarche&quot; mais
+        pas &quot;DéCor&quot;. </td>
+    </tr>
+    <tr>
+      <td>\B</td>
+      <td>Permet de capturer les caract&egrave;res non pr&eacute;c&eacute;d&eacute;s
+        ou suivis d'une coupure de mot, c'est-&agrave;-dire des caract&egrave;res
+        situ&eacute;s au milieu d'un mot. Par exemple &quot;ment\B&quot; permet
+        de capturer &quot;CommentCaMarche&quot; mais pas &quot;Comment Ca Marche&quot;. </td>
+    </tr>
+    <tr>
+      <td>\c<i>Caract&egrave;re</i></td>
+      <td>Permet de capturer un caract&egrave;re de contr&ocirc;le (correspondant &agrave; la
+        combinaison <i>Ctrl+Caract&egrave;re</i>. Par exemple &quot;\cC&quot; permet
+        de capturer la s&eacute;quence <i>Ctrl+c</i>. </td>
+    </tr>
+    <tr>
+      <td>\d</td>
+      <td>Permet de capturer un caract&egrave;re num&eacute;rique. <i>\d</i> est
+        ainsi &eacute;quivalent &agrave; <i>[0-9]</i>.</td>
+    </tr>
+    <tr>
+      <td>\f</td>
+      <td>Permet de capturer un saut de page.</td>
+    </tr>
+    <tr>
+      <td>\n</td>
+      <td>Permet de capturer un saut de ligne.</td>
+    </tr>
+    <tr>
+      <td>\r</td>
+      <td>Permet de capturer un retour chariot.</td>
+    </tr>
+    <tr>
+      <td>\s</td>
+      <td>Permet de capturer un &quot;caract&egrave;re blanc&quot; (espace, retour
+        chariot, tabulation, saut de ligne, saut de page).</td>
+    </tr>
+    <tr>
+      <td>\S</td>
+      <td>Permet de capturer un &quot;caract&egrave;re non blanc&quot; (tous
+        les caract&egrave;res sauf espace, retour chariot, tabulation, saut de
+        ligne, saut de page).</td>
+    </tr>
+    <tr>
+      <td>\t</td>
+      <td>Permet de capturer une tabulation horizontale.</td>
+    </tr>
+    <tr>
+      <td>\v</td>
+      <td>Permet de capturer une tabulation verticale.</td>
+    </tr>
+    <tr>
+      <td>\w</td>
+      <td>Permet de capturer un caract&egrave;re alphanum&eacute;rique (y compris
+        le caract&egrave;re _). <i>\w</i> est ainsi &eacute;quivalent &agrave; <i>[a-zA-Z0-9_]</i>.</td>
+    </tr>
+    <tr>
+      <td>\w</td>
+      <td>Permet de capturer un caract&egrave;re non alphanum&eacute;rique. <i>\W</i> est
+        ainsi &eacute;quivalent &agrave; <i>[^a-zA-Z0-9_]</i>.</td>
+    </tr>
+    <tr>
+      <td>\o<i>Nombre</i></td>
+      <td>Permet de capturer un nombre en base octale (base 8). </td>
+    </tr>
+    <tr>
+      <td>\x<i>Nombre</i></td>
+      <td>Permet de capturer un nombre en base <a href="../err404.html">hexad&eacute;cimale</a> (base
+        16). </td>
+    </tr>
+  </tbody>
+</table>
+<a name="recapitulatif" class="ancre"></a>
+<h2>Tableau r&eacute;capitulatif</h2>
+<p></p>
+<p align="justify">Voici un tableau récapitulatif des caractères spéciaux utilisés
+  dans les expressions régulières&nbsp;: </p>
+<p align="justify">
+<table class="ccm">
+  <tbody>
+    <tr>
+      <td>Caractère</td>
+      <td>Utilité</td>
+    </tr>
+    <tr>
+      <td>\</td>
+      <td>Le caractère antislash représente lui-m&ecirc;me ou le caract&egrave;re
+        sp&eacute;cial qui le suit.</td>
+    </tr>
+    <tr>
+      <td>[]</td>
+      <td>Les crochets définissent une liste de caractères.</td>
+    </tr>
+    <tr>
+      <td>()</td>
+      <td>Les parenthèses définissent un élément composé de l'expression régulière
+        qu'elle contient.</td>
+    </tr>
+    <tr>
+      <td>{}</td>
+      <td>Les accolades lorsqu'elles contiennent un ou plusieurs chiffres séparés
+        par des virgules représentent le nombre d'occurences de l'élément les
+        précédant (par exemple <i>p{2,5}</i> correspond à <i>ppp</i>, <i>pppp</i> ou <i>ppppp</i></td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>Un moins entre deux caractères dans une liste représente un intervalle
+        (par exemple <i>[a-d]</i> représente <i>[abcd]</i>).</td>
+    </tr>
+    <tr>
+      <td>.</td>
+      <td>Le caractère point représente un caractère quelconque.</td>
+    </tr>
+    <tr>
+      <td>*</td>
+      <td>Le caractère astérisque indique un nombre d'occurences indéterminé (y
+        compris aucune) de l'élément le précédant.</td>
+    </tr>
+    <tr>
+      <td>+</td>
+      <td>Le caractère plus indique une ou plusieurs occurences de l'élément
+        le précédant.</td>
+    </tr>
+    <tr>
+      <td>?</td>
+      <td>Le caractère &quot;point d'interrogation&quot; indique une occurence éventuelle
+        (0 ou 1) de l'élément le précédant.</td>
+    </tr>
+    <tr>
+      <td>|</td>
+      <td>La barre verticale signifie l'occurrence de l'élément situé à sa gauche
+        ou de celui situé à sa droite (<i>lard|cochon</i>)</td>
+    </tr>
+    <tr>
+      <td>^</td>
+      <td><ul>
+          <li>Placé en début d'expression il signifie "chaîne commençant par
+            .. "</li>
+          <li>Utilisé entre crochet, imm&eacute;diatement apr&egrave;s le crochet
+            ouvrant, il signifie "ne contenant pas les caractères suivants...</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>[abc]</td>
+      <td>Permet de rechercher les caract&egrave;res compris entre les crochets.</td>
+    </tr>
+    <tr>
+      <td>[^abc]</td>
+      <td>Permet de rechercher tous les caract&egrave;res sauf ceux compris entre
+        les crochets.</td>
+    </tr>
+    <tr>
+      <td>$</td>
+      <td>Placé en fin d'expression il signifie &quot;chaîne finissant par ... &quot;</td>
+    </tr>
+  </tbody>
+</table>
+<a name="proprietes" class="ancre"></a>
+<h2>Les propri&eacute;t&eacute;s de l'objet <i>RegExp</i></h2>
+<p align="justify">Le r&eacute;sultat d'une expression r&eacute;guli&egrave;re
+  est stockée dans l'objet <i>RegExp</i>. Les propri&eacute;t&eacute;s de l'objet
+  RegExp contiennent des cha&icirc;nes correspondant &agrave; la derni&egrave;re
+  occurence trouv&eacute;e. <br>
+  La syntaxe pour manipuler ces donn&eacute;es est la suivante&nbsp;:
+<pre class="Code">RegExp.<i>propri&eacute;t&eacute;</i></pre>
+<table class="ccm" >
+  <tbody>
+    <tr>
+      <td>Propri&eacute;t&eacute;</td>
+      <td>Description</td>
+    </tr>
+    <tr>
+      <td>$_</td>
+      <td>Propri&eacute;t&eacute; correspondant &agrave; la propri&eacute;t&eacute; <i>input</i>.</td>
+    </tr>
+    <tr>
+      <td>$*</td>
+      <td>Propri&eacute;t&eacute; correspondant &agrave; la propri&eacute;t&eacute; <i>multiline</i>.</td>
+    </tr>
+    <tr>
+      <td>$&</td>
+      <td>Propri&eacute;t&eacute; correspondant &agrave; la propri&eacute;t&eacute; <i>LastMatch</i>.</td>
+    </tr>
+    <tr>
+      <td>$+</td>
+      <td>Propri&eacute;t&eacute; correspondant &agrave; la propri&eacute;t&eacute; <i>LastParen</i>.</td>
+    </tr>
+    <tr>
+      <td>$`</td>
+      <td>Propri&eacute;t&eacute; correspondant &agrave; la propri&eacute;t&eacute; <i>LeftContext</i>.</td>
+    </tr>
+    <tr>
+      <td>$'</td>
+      <td>Propri&eacute;t&eacute; correspondant &agrave; la propri&eacute;t&eacute; <i>RightContext</i>.</td>
+    </tr>
+    <tr>
+      <td>global</td>
+      <td>Propri&eacute;t&eacute; bool&eacute;enne indiquant si la recherche
+        est globale (<i>true</i>) ou non (<i>false</i>).</td>
+    </tr>
+    <tr>
+      <td>ignoreCase</td>
+      <td>Propri&eacute;t&eacute; bool&eacute;enne indiquant si la recherche
+        est sensible &agrave; la casse (<i>true</i>) ou non (<i>false</i>).</td>
+    </tr>
+    <tr>
+      <td>input</td>
+      <td>Indique la cha&icirc;ne d'entr&eacute;e sur laquelle la recherche est
+        r&eacute;alis&eacute;e.</td>
+    </tr>
+    <tr>
+      <td>lastIndex</td>
+      <td>Indique la position &agrave; laquelle la recherche suivante va se faire.</td>
+    </tr>
+    <tr>
+      <td>lastMatch</td>
+      <td>Contient la derni&egrave;re occurence trouv&eacute;e.</td>
+    </tr>
+    <tr>
+      <td>lastParen</td>
+      <td>Contient la derni&egrave;re occurence correspondant &agrave; un motif
+        entre parenth&egrave;ses.</td>
+    </tr>
+    <tr>
+      <td>leftContext</td>
+      <td>Contient la cha&icirc;ne situ&eacute; &agrave; gauche de l'occurence
+        trouv&eacute;e.</td>
+    </tr>
+    <tr>
+      <td>multiline</td>
+      <td>Propri&eacute;t&eacute; bool&eacute;enne indiquant si la recherche
+        porte sur plusieurs lignes (<i>true</i>) ou non (<i>false</i>).</td>
+    </tr>
+    <tr>
+      <td>rightContext</td>
+      <td>Contient la cha&icirc;ne situ&eacute; &agrave; droite de l'occurence
+        trouv&eacute;e.</td>
+    </tr>
+    <tr>
+      <td>source</td>
+      <td>Contient le motif de l'expression r&eacute;guli&egrave;re.</td>
+    </tr>
+  </tbody>
+</table>
+<a name="methode" class="ancre"></a>
+<h2>Les m&eacute;thodes de l'objet <i>RegExp</i></h2>
+<p align="justify">Les m&eacute;thodes de l'objet <i>RegExp</i> permettent d'appliquer
+  l'expression r&eacute;guli&egrave;re &agrave; une cha&icirc;ne de caract&egrave;res.
+<p align="justify">Le tableau suivant d&eacute;crit les m&eacute;thodes de l'objet <i>RegExp</i>&nbsp;:
+<p align="justify">
+<table class="ccm" >
+  <tr>
+    <td>M&eacute;thode</td>
+    <td>Description</td>
+  </tr>
+  <tr>
+    <td><b>Expression.compile("chaine");</b></td>
+    <td>Permet de red&eacute;finir une nouvelle expression r&eacute;guli&egrave;re.</td>
+  </tr>
+  <tr>
+    <td><b>Expression.exec("chaine");</b></td>
+    <td>Effectue une recherche sur la cha&icirc;ne de caract&egrave;re avec l'expression
+      r&eacute;guli&egrave;re d&eacute;finie. Cette m&eacute;thode retourne un
+      tableau contenant les occurences trouv&eacute;es.</td>
+  </tr>
+  <tr>
+    <td><b>Expression.test("chaine");</b></td>
+    <td>Teste une cha&icirc;ne de caract&egrave;re avec l'expression r&eacute;guli&egrave;re.
+      Cette m&eacute;thode retourne <i>True</i> si la recherche est fructueuse, <i>false</i> dans
+      le cas contraire.</td>
+  </tr>
+</table>
+<p align="center">&nbsp;</p>
+              <table width="300" border="0">
+                <tr>
+                  <td width="100"><div align="center"></div>
+                  </td>
+                  <td width="100"><div align="center"><a href="js17math.html"><img src="images/flchg.gif" width="40" height="32" border="0"></a></div>
+                  </td>
+                  <td><div align="center"><a href="js19string.html"><img src="images/flchd.gif" width="40" height="32" border="0"></a></div>
+                  </td>
+                </tr>
+              </table>
+              <hr>
+
+              <p align="justify"> <font size="1" face="Verdana, Arial, Helvetica, sans-serif">Ce
+                  document intitul&eacute; &laquo;Javascript - L'objet RegExp&raquo; issu
+                de l'encyclop&eacute;die
+                informatique Comment &Ccedil;a Marche (<a href="http://www.commentcamarche.net/" target="_blank">www.commentcamarche.net</a>)
+                est mis &agrave; disposition sous les termes de la licence Creative
+                Commons. Vous pouvez copier, modifier des copies de cette page,
+                dans les conditions fix&eacute;es par la licence, tant que cette
+              note appara&icirc;t clairement. </font></p>
+              <p align="center">&nbsp;</p>
+            </div>
+          </td>
+          <td width="6" valign="top">
+            <div align="center">
+<table width="6" border="0" align="center" bordercolor="#9966FF">
+<tr><td>
+
+    <div align="center">	</div>
+    <div align="center">  </div>
+<div align="center"></div>
+<div align="center">&nbsp;</div>
+
+</td></tr></table>
+            </div>
+          </td>
+        </tr>
+        <tr valign="middle"> 
+          <td>&nbsp;</td>
+          <td align="center">
+
+
+                  <table border="0" cellspacing="0" width="700">
+                    <tr bordercolor="#00CCFF"> 
+                      <td width="280">
+					  <div align="center">
+<font color="#FFFFFF" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+<a href='http://www.jecreemonsite.net/php/jcmscompteur.php'>Il y a 3 Visiteurs</a> sur <a href='../index.html'>Mon JavaScript</a><noscript><a href="http://www.jecreemonsite.net/">javascript php html</a></noscript>
+</font>					  </div></td>
+                      <td><div align="center">
+					  
+					   <img src="../im/mjs-minilogo.gif"></div></td>
+                      <td width="280"> 
+                      <div align="center"><font color="#FFFFFF" size="1" face="Verdana, Arial, Helvetica, sans-serif"><a href="../index.html">Mon javascript</a> </font>
+					  &nbsp;&nbsp;<font color="#FFFFFF" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              10-08-2015          
+			  </font>
+					  </div>
+                      </td>
+                    </tr>
+                    <tr align="center"> 
+                      <td bgcolor="#003399" height="2" colspan="2"></td>
+                      <td bgcolor="#003399" height="2"></td>
+                    </tr>
+                  </table>
+				  <br>
+
+          </td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+
+<!-- Mirrored from www.monjavascript.net/cours_jjs/js18regexp.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Aug 2015 20:25:22 GMT -->
+</html>

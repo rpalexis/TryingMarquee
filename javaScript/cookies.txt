@@ -1,0 +1,6 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+www.monjavascript.net	TRUE	/	FALSE	1999999999	jjspart	ok
+www.monjavascript.net	TRUE	/	FALSE	1999999999	PHPSESSID	038928ceeb33bae20aaa4af7b9f6aa22
+.google.com	TRUE	/	FALSE	1999999999	NID	70=oxLY7LKKNafPSWcseSnq1Pywz1U9vD5EPqo2FlHuXTCEtEOHLiptKXg6W47CHcyR0LC_-vOCv3SiPXEnvf_P_ce8rI8jRENfahEO1-x47rswMXgbIhMLIWlfjotN6f3d
+

@@ -1,0 +1,12 @@
+document.write('<!-- Copyright © 2015 Secuser.com -->');
+document.write('<LI>06/08 : <a href="http://www.secuser.com/vulnerabilite/2015/150806-firefox.htm" target = "_blank">Mise &agrave; jour critique pour le navigateur Firefox</a> (Secuser.com)</LI>');
+document.write('<LI>20/07 : <a href="http://www.secuser.com/vulnerabilite/2015/150720-windows.htm" target = "_blank">Mise &agrave; jour critique pour le syt&egrave;me Windows</a> (Secuser.com)</LI>');
+document.write('<LI>15/07 : <a href="http://www.secuser.com/vulnerabilite/2015/150715-java.htm" target = "_blank">Mise &agrave; jour critique pour le logiviel Java</a> (Secuser.com)</LI>');
+document.write('<LI>14/07 : <a href="http://www.secuser.com/vulnerabilite/2015/150714-flash-player.htm" target = "_blank">Mise &agrave; jour critique pour le lecteur Flash Player</a> (Secuser.com)</LI>');
+document.write('<LI>14/07 : <a href="http://www.secuser.com/vulnerabilite/2015/150714-shockwave-player.htm" target = "_blank">Mise &agrave; jour critique pour le lecteur Shockwave Player</a> (Secuser.com)</LI>');
+document.write('<LI>14/07 : <a href="http://www.secuser.com/vulnerabilite/2015/150714-adobe-reader.htm" target = "_blank">Mise &agrave; jour critique pour le lecteur Adobe Reader</a> (Secuser.com)</LI>');
+document.write('<LI>08/07 : <a href="http://www.secuser.com/vulnerabilite/2015/150708-flash-player.htm" target = "_blank">Mise &agrave; jour critique pour le lecteur Flash Player</a> (Secuser.com)</LI>');
+document.write('<LI>02/07 : <a href="http://www.secuser.com/vulnerabilite/2015/150702-firefox-thunderbird.htm" target = "_blank">Mise &agrave; jour critique pour les logiciels Firefox et Thunderbird</a> (Secuser.com)</LI>');
+document.write('<LI>23/06 : <a href="http://www.secuser.com/vulnerabilite/2015/150623-flash-player.htm" target = "_blank">Mise &agrave; jour critique pour le lecteur Flash Player</a> (Secuser.com)</LI>');
+document.write('<LI>09/06 : <a href="http://www.secuser.com/vulnerabilite/2015/150609-flash-player.htm" target = "_blank">Mise &agrave; jour critique pour le lecteur Flash Player</a> (Secuser.com)</LI>');
+document.write('<!-- Copyright © 2015 Secuser.com -->');

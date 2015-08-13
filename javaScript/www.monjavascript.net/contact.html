@@ -1,0 +1,103 @@
+<html>
+
+<!-- Mirrored from www.monjavascript.net/contact.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Aug 2015 20:23:23 GMT -->
+<head>
+<title>Contact</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+//PLF-http://www.monjavascript.net/
+function long_com(champs,taille){
+if (champs.value.length > 1500) {
+champs.value=champs.value.substring(0,1500);
+alert("Message 1500 caracteres maxi");
+}
+taille.value=1500-champs.value.length;
+}
+
+function valider() {
+var form_err = "";
+if ( document.ecrire.email.value.length < 1) {
+form_err = "Email invalide ! \n";
+}
+if ( document.ecrire.email.value == "votrenom@mail.com") {
+form_err = "Email non valide ! \n";
+}
+var verim = 0;
+for (i=1; i<document.ecrire.email.value.length -4; i++) {
+if ( document.ecrire.email.value.charAt(i) == "@") {
+verim = 1;
+}} 
+if ( verim == 0) {
+form_err = "Email invalide ! \n";
+}
+if ( document.ecrire.nom.value.length < 2) {
+form_err += "Indiquer le Nom. \n";
+}
+if ( document.ecrire.COMMENTS.value.length < 19) {
+form_err += "Message non valide !\n";
+}
+if ( document.ecrire.COMMENTS.value.length > 1500) {
+form_err += "Message 1500 caracteres maxi ! \n";
+}
+if ( document.ecrire.antibotcode.value.length < 5) {
+form_err += "Recopier le code . "; 
+}
+if ( form_err != "") {
+alert(form_err);
+return false;
+}
+return true 
+}
+//-->
+</script>
+
+</head>
+
+<body bgcolor="#CC99FF"><!--onBlur="self.focus()"//-->
+<table width="90%" border="0" align="center">
+  <tr>
+    <td><img src="im/mjs-logo.gif" width="90" height="85" align="absmiddle"></td>
+    <td><p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">    </font></p>
+    </td>
+  </tr>
+</table><form method="POST" action="#" name="ecrire" onSubmit="return valider();">
+
+<table width="90%" border="0" align="center">
+  <tr>
+    <td width="20%" valign="top"><b>Votre E-mail : </b></td>
+    <td width="80%" valign="top">
+      <input type="hidden" name="subject" value="JJS Contact http://www.monjavascript.net/textdefil_1.php" >
+      <input name="email"size=40 maxlength=50 value="votrenom@mail.com">
+    </td>
+  </tr>
+  <tr>
+    <td valign="top"><b>Nom : </b></td>
+    <td valign="top">
+      <input name="nom"size=40 maxlength=50 value="" >
+    </td>
+  </tr>
+  <tr>
+    <td valign="top"><p><b>Message :
+      <input name="nbre" type="text" id="nbre" value="1500" size="4" maxlength="4" readonly>
+    </b></p>
+      <p><b><font color="#FFFFFF"><img src="securite/securite.png" alt="Code de sécurité à recopier" />          <b>          </b></font></b><font size="1" face="Verdana, Arial, Helvetica, sans-serif"><br>
+  Recopier le Code</font><b><font color="#FFFFFF">        </font></b></p>
+        <input name="antibotcode" type="text" id="antibotcode" autocomplete="off" size="15" />
+</td>
+    <td valign="top">
+      <textarea name="COMMENTS" cols=35 rows=10 onKeyUp="long_com(this,this.form.nbre)" onClick="long_com(this,this.form.nbre)" ></textarea>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top"></td>
+    <td valign="top"> <font color="#FFFFFF"><b>      <input type=submit value="Envoyer" name="submit">
+    </b></font><b></b> </td>
+  </tr>
+</table>
+</form>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"></font></p>
+</body>
+
+<!-- Mirrored from www.monjavascript.net/contact.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Aug 2015 20:23:24 GMT -->
+</html>

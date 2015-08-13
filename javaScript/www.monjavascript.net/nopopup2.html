@@ -1,0 +1,466 @@
+<html>
+
+<!-- Mirrored from www.monjavascript.net/nopopup2.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Aug 2015 20:25:13 GMT -->
+<head>
+<title>Mon JavaScript - Une Popup qui entre dans l'&eacute;cran</title>
+<meta name="Description" lang="fr" content="Webmasters, Mon JavaScript vous propose: des scripts en javascript, mais aussi des cours de javascript, des générateurs, le multimoteur, du PHP et autres astuces..., pour donner de l'attrait à votre site web.">
+
+<meta name="keywords" content="javascript, html, langage, programme, programmation, javascript, site, perso, script, java, astuces, programmes, texte défilant, barre d'état, insérer favoris, heure gmt, javascript menu, script de redirection, javascript heure, javascript menu deroulant, rollover, javascript fenetre, menu déroulant, envoyer mail, formulaire, menu javascript, mail, date, Plein Ecran, pop up">
+<meta name="author" content="monjavascript - PLF">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="mjs.css" type="text/css">
+<script language="JavaScript">
+<!--
+//PLF- http://www.monjavascript.net/
+if (parent.frames.length > 0)
+window.top.location.href = location.href;
+//-->
+</script>
+<script language="JavaScript">
+<!--
+//PLF- http://www.monjavascript.net/
+
+var cheminImage = "../www.lacuisinedemacopine.net/cmc2.gif"; //image
+var lienpopup = "http://www.lacuisinedemacopine.net/";
+
+monImage = new Image;
+monImage.src = cheminImage;
+var taillebg = monImage.width //largeur popup
+var invtaillebg = (-taillebg)
+taillebg = taillebg +5
+var position_x = invtaillebg
+var fermeture=0
+var position_y = (screen.height-monImage.height-10)/2 //(hauteur ecran - hauteur image)/2
+
+function ouvrir_menu()
+	{	
+	if (fermeture==1) {window.clearTimeout(deactiv_pop);}
+	document.getElementById("menu_context").style.top = position_y;
+	document.getElementById("menu_context").style.left = position_x;
+	
+	if (position_x < 10 ) {
+		position_x++;
+	activ_pop = setTimeout("ouvrir_menu()",5);
+	}
+	else {
+	deactiv_pop = setTimeout("fermer_menu()",10000);
+		 }
+	}
+
+function fermer_menu()
+	{
+	fermeture=1
+	window.clearTimeout(activ_pop);
+	document.getElementById("menu_context").style.top = position_y;
+	document.getElementById("menu_context").style.left = position_x;
+	if (position_x > invtaillebg-6 ) {
+	
+	position_x=position_x-2;
+	deactiv_pop = setTimeout("fermer_menu()",1);
+	}
+	else {
+	activ_pop = setTimeout("ouvrir_menu()",30000)
+		 }
+	}
+window.onload = ouvrir_menu;
+//-->
+</script>
+
+</head>
+<body bgcolor="#FFFFFF">
+<table width="1100" border="0" align="center" bgcolor="#9966FF">
+  <tr>    <td ><table width="1100" border="0" background="im/header_tile.gif">
+      <tr> 
+    <td width="240" ><font face="Verdana, Arial, Helvetica, sans-serif"><a href="index.html"><img src="im/mjs160x60_2.gif" alt="http://www.monjavascript.net" width="160" height="60" border="0"></a></font></td>
+    <td valign="middle"> 
+      	 <div align="right"><br>
+<!--Code à insérer jjspub --><script type="text/javascript"><!--
+google_ad_client = "pub-2085185646476169";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text_image";
+//2007-05-06: jjshaut
+google_ad_channel = "0643568426";
+google_color_border = "9966FF";
+google_color_bg = "9966FF";
+google_color_link = "FFFFFF";
+google_color_text = "000000";
+google_color_url = "err404.html";
+//-->
+</script>
+<script type="text/javascript"
+  src="../pagead2.googlesyndication.com/pagead/f.txt">
+</script><!--Code à insérer jjspub -->
+		</div>
+    </td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr> 
+    <td> 
+      <table width="1100" border="0" align="center">
+        <tr> 
+          <td width="162" valign="top"> 
+<script language="JavaScript">
+<!--
+//PLF-http://www.monjavascript.net/
+  function fenetreCentre(url,largeur,hauteur,options) {
+  var haut=(screen.height -(hauteur+130));
+  var Gauche=(screen.width-(largeur+30));
+  window.open(url,"","top="+haut+",left="+Gauche+",width="+largeur+",height="+hauteur+","+options);
+  }
+  adfav = "'index.html', 'Mon javascript : Programation en javascript et autres...'"
+  adreco = "'recomail.html',400,520,'menubar=no,scrollbars=yes,statusbar=no'"
+  adcont = "'contact.html',600,600,'menubar=no,scrollbars=yes,statusbar=no'" 
+  //-->
+</script>
+
+  
+<div align="center">
+  <table width="160" border="0" align="center" bordercolor="#9966FF">
+    <tr><td>
+    <div align="center">
+	<a href="index.html"><img src="menujs/menuaccu.gif" border="0" width="139" height="24"></a></div>
+    <table border="1" width="160"><tr><td align="left" ><p><font size="1"><img src="im/flechep.gif" width="7" height="7"><a href="index.html">ACCUEIL</a>
+	  </font></font><br>
+	  
+	<font size="1">
+	  <img src="im/flechep.gif" width="7" height="7"><a href='javascript:fenetreCentre("contact.html",600,400,"menubar=no,scrollbars=yes,statusbar=no")'>Contact</a>	<br>
+	  <img src="im/flechep.gif" width="7" height="7"><a href="acmoteujjs.html">Rechercher </a><br>
+      <img src="im/flechep.gif" width="7" height="7"><a href='javascript:window.external.addfavorite("index.html", "Mon JavaScript : Programation en javascript et autres...")'>Insérez
+      dans vos<br>
+&nbsp; favoris</a></font> <br>
+<!-- Placez cette balise où vous souhaitez faire apparaître le gadget Bouton +1. -->
+</p>
+          <div class="g-plusone" data-size="medium"></div>
+          <!-- Placez cette ballise après la dernière balise Bouton +1. -->
+          <script type="text/javascript">
+  window.___gcfg = {lang: 'fr'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = '../apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+          </script>
+</td>
+    </tr></table>
+    <div align="center">
+		<a href="somscript.html"><img src="menujs/menuscrpt.gif" border="0" width="139" height="24"></a></div>
+    <table border="1" width="160"><tr><td align="left" ><font size="1">
+		<img src="im/flechep.gif" width="7" height="7"><a href="somac_visit.html">ACCUEIL DES<br>&nbsp;  VISITEURS </a> <br>
+      <img src="im/flechep.gif" width="7" height="7"><a href="somdat_h.html">DATE & HEURE </a><br>
+      <img src="im/flechep.gif" width="7" height="7"><a href="somtexte.html">EFFETS
+    DE TEXTE </a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="somfenetres.html">FENETRES </a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="somform.html">FORMULAIRES </a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="somimages.html">IMAGES </a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="sommenus.html">MENUS</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="sompratique.html">PRATIQUE</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="sompopup.html">POP UP </a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="somdivers.html">DIVERS</a><br>
+    <br>
+    <!--
+	<img src="http://www.monjavascript.net/im/flechep.gif" width="7" height="7"><a href="http://www.monjavascript.net/section_php/index.php">PHP</a>
+	  //-->
+		</font></td>
+    </tr></table>
+	
+    <div align="center">  <img src="menujs/menuplus.gif" width="139" height="24"></div>
+	    <table border="1" width="160"><tr><td align="left" ><font size="1">
+		
+	<img src="im/flechep.gif" width="7" height="7"><a href="cours_jjs/index.html" >Cours de javascript</a><br>
+		<img src="im/flechep.gif" width="7" height="7"><a href="http://www.jecreemonsite.net/html_css/gencss.php" target="_blank">Générer vos Fichiers<br>&nbsp; 
+	
+	CSS</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="http://www.jecreemonsite.net/html_css/genmetatag.php" target="_blank">Générer vos Meta-Tags</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="metadescp.html">Description des Balises<br>&nbsp;  Meta</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="couleurs.html">Les Codes Couleur</a> <br>
+	<img src="im/flechep.gif" width="7" height="7"><a href="math.html">L'objet Math</a><br>
+	<img src="im/flechep.gif" width="7" height="7"><a href="li/lissage.html">Lissage De Pr&ecirc;t</a><br>
+	<img src="im/flechep.gif" width="7" height="7"><a href="li/ta.html">Tableau
+	d'Amortissement</a><br>
+		
+    <img src="im/flechep.gif" width="7" height="7"><a href="moteur.html">un Multi-Moteurs de recherche sur Votre Site</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="mailcryp.html">Cryptez votre e-mail<br>&nbsp;  pour contrer le Spam</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="scriptcryp.html">Cryptez vos Scripts</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><A href="acmoteu.html">Moteurs de recherches </A><br>
+    <img src="im/flechep.gif" width="7" height="7"><A href="acmoteu.html">Référencement </A><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="http://www.jecreemonsite.net/" target="_blank" title="javascript, HTML, PHP, tout pour le webmaster">Je
+    Cr&eacute;e Mon Site</a>
+    <br>
+	<img src="im/flechep.gif" width="7" height="7"><A HREF=http://www.editeurjavascript.com/partenaires/concours.php?id=mjs TARGET=_blank>L'éditeur JavaScript</A>
+    </font></td>
+    </tr></table>
+	
+	
+	
+	
+	
+	<br>
+
+  <div align="center">
+<!--Code à insérer jjspub --><script type="text/javascript"><!--
+google_ad_client = "pub-2085185646476169";
+google_ad_width = 160;
+google_ad_height = 600;
+google_ad_format = "160x600_as";
+google_ad_type = "text_image";
+//2006-11-24: jjsmenu
+google_ad_channel = "6413686093";
+google_color_border = "9966FF";
+google_color_bg = "9966FF";
+google_color_link = "FFFFFF";
+google_color_text = "000000";
+google_color_url = "err404.html";
+//--></script>
+<script type="text/javascript"
+  src="../pagead2.googlesyndication.com/pagead/f.txt">
+</script><!--Code à insérer jjspub -->
+
+
+
+
+  </div>
+ <table width="160" border="0" align="center" bordercolor="#9966FF">
+<tr><td>
+
+    <div align="center">	</div>
+    <div align="center">  </div>
+<div align="center"></div>
+
+
+
+
+
+<div align="center">
+<a href="http://www.xiti.com/xiti.asp?s=504527" title="WebAnalytics" target="_top">
+<script type="text/javascript">
+<!--
+Xt_param = 's=504527&p=';
+try {Xt_r = top.document.referrer;}
+catch(e) {Xt_r = document.referrer; }
+Xt_h = new Date();
+Xt_i = '<img width="39" height="25" border="0" alt="" ';
+Xt_i += 'src="http://logv17.xiti.com/hit.xiti?'+Xt_param;
+Xt_i += '&hl='+Xt_h.getHours()+'x'+Xt_h.getMinutes()+'x'+Xt_h.getSeconds();
+if(parseFloat(navigator.appVersion)>=4)
+{Xt_s=screen;Xt_i+='&r='+Xt_s.width+'x'+Xt_s.height+'x'+Xt_s.pixelDepth+'x'+Xt_s.colorDepth;}
+document.write(Xt_i+'&ref='+Xt_r.replace(/[<>"]/g, '').replace(/&/g, '$')+'" title="Internet Audience">');
+//-->
+</script>
+<noscript>
+Mesure d'audience ROI statistique webanalytics par <img width="39" height="25" src="http://logv17.xiti.com/hit.xiti?s=504527&amp;p=" alt="WebAnalytics" />
+</noscript></a>
+</div>
+
+</td></tr></table>
+ 
+  
+    </td></tr>
+  </table>
+</div>
+
+                
+		  </td>          <td valign="top" bgcolor="#CC99FF" colspan="2"> 
+            <div align="center"> 
+              <p align="center"> 
+                <br>
+                <font face="Verdana, Arial, Helvetica, sans-serif" size="4">Une
+                Popup qui entre dans la page en glissant</font></p>
+              <p align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Cette
+                  fausse
+                  Popup appara&icirc;t  en glissant sur la gauche de la page
+                  et repart toute seule ou ferm&eacute;e par le visiteur
+              et revient  au bout d'un temps donn&eacute;.</font></p>
+              <p align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"> La
+                  taille de la Popup s'adapte automatiquement &agrave; votre image. </font></p>
+              <p align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"> </font></p>
+              <p align="center"><strong>Test&eacute; avec IE Netscape7 Firefox</strong></p>
+              <p align="center"><font color="#000099" size="4" face="Verdana, Arial, Helvetica, sans-serif">Ins&eacute;rez
+                   le code ci-dessous dans l'ent&ecirc;te de votre page (entre
+                   les  balises&lt;head&gt; ... &lt;/head&gt;)</font><font color="#000099" size="+1"> </font><font size="4" color="#000099" face="Verdana, Arial, Helvetica, sans-serif">et
+              corrigez le comme suit</font><font color="#000099" size="+1">              :</font></p>
+              <br>
+              <table width="90%" border="1" bordercolorlight="#000000" bgcolor="#CCCCCC" align="center">
+                <tr> 
+                  <td>&lt;script language=&quot;JavaScript&quot;&gt;<br>
+                    &lt;!--<br>
+                    //PLF- http://www.monjavascript.net/<br>
+                    var cheminImage = &quot;<font color="#FF0000">monimage.gif</font>&quot;;
+                    //image<br>
+                    var lienpopup = &quot;<font color="#0000FF">http://www.monjavascript.net</font>&quot;;<br>
+                    monImage = new Image;<br>
+                    monImage.src = cheminImage;<br>
+                    var taillebg = monImage.width //largeur popup<br>
+                    var invtaillebg = (-taillebg)<br>
+                    taillebg = taillebg +5<br>
+                    var position_x = invtaillebg<br>
+                    var fermeture=0<br>
+                    var position_y = <font color="#9900FF">(screen.height-monImage.height-10)/2</font> //(hauteur
+                      ecran - hauteur image)/2
+                      <p>function ouvrir_menu()<br>
+  { <br>
+  if (fermeture==1) {window.clearTimeout(deactiv_pop);}<br>
+  document.getElementById(&quot;menu_context&quot;).style.top = position_y;<br>
+  document.getElementById(&quot;menu_context&quot;).style.left = position_x;<br>
+  <br>
+  if (position_x &lt; <font color="#FF9900">10 </font>) {<br>
+  position_x++;<br>
+  activ_pop = setTimeout(&quot;ouvrir_menu()&quot;,<font color="#FF00FF">10</font>);<br>
+  }<br>
+  else {<br>
+  deactiv_pop = setTimeout(&quot;fermer_menu()&quot;,<font color="#006600">10000</font>);<br>
+  }<br>
+  }</p>
+                    <p>function fermer_menu()<br>
+  {<br>
+  fermeture=1<br>
+  window.clearTimeout(activ_pop);<br>
+  document.getElementById(&quot;menu_context&quot;).style.top = position_y;<br>
+  document.getElementById(&quot;menu_context&quot;).style.left = position_x;<br>
+  if (position_x &gt; invtaillebg-6 ) {<br>
+  <br>
+  position_x=position_x-2;<br>
+  deactiv_pop = setTimeout(&quot;fermer_menu()&quot;,<font color="#FF00FF">5</font>);<br>
+  }<br>
+  else {<br>
+  activ_pop = setTimeout(&quot;ouvrir_menu()&quot;,<font color="#660033">20000</font>)<br>
+  }<br>
+  }<br>
+  window.onload = ouvrir_menu;<br>
+  //--&gt;<br>
+&lt;/script&gt;</p></td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#FFFFFF"><p><font color="#FF0000">chemin et nom
+                        de votre image<br>
+                        <font color="#0000FF">Adresse du lien<br>
+                        <font color="#FF9900">Distance maxi du bord de la page
+                        </font></font></font><br>
+                        <font color="#FF00FF">Vitesse de d&eacute;placement</font>                  <br>
+                        <font color="#9900FF">Position de la popup par rappot &agrave; la
+                        gauche.</font><br>
+                        <font color="#006600">Temps avant la fermeture auto de
+                          la popup (La ligne peut &ecirc;tre
+                        supprim&eacute;e)</font><br>
+                        <font color="#660033">Temps avant la r&eacute;-ouverture de la popup (La ligne
+                        peut &ecirc;tre supprim&eacute;e) </font></p>
+                  </td>
+                </tr>
+              </table>
+              <p align="center"><!--Code à insérer jjspub --><script type="text/javascript"><!--
+google_ad_client = "pub-2085185646476169";
+google_ad_width = 468;
+google_ad_height = 60;
+google_ad_format = "468x60_as";
+google_ad_type = "text_image";
+//2006-11-23: jjscentre
+google_ad_channel = "2311992272";
+google_color_border = "CC99FF";
+google_color_bg = "CC99FF";
+google_color_link = "FFFFFF";
+google_color_text = "000000";
+google_color_url = "err404.html";
+//--></script>
+<script type="text/javascript"
+  src="../pagead2.googlesyndication.com/pagead/f.txt">
+</script><!--Code à insérer jjspub -->
+</p>
+              <p align="center"><font size="4" color="#000099" face="Verdana, Arial, Helvetica, sans-serif">Ins&eacute;rez
+                  le code ci-dessus dans votre page Web entre les balises &lt;BODY&gt; et &lt;/BODY&gt;. Juste
+                  avant &lt;/BODY&gt;</font></p>
+              <br>
+              <table width="90%" border="1" bordercolorlight="#000000" bgcolor="#CCCCCC" align="center">
+                <tr>
+                  <td> &lt;script language=&quot;JavaScript&quot;&gt;<br>
+                    &lt;!--<br>
+                    //PLF- http://www.monjavascript.net/<br>
+                    document.write('&lt;div id=menu_context style=&quot;z-index:500;position:absolute;width:'+taillebg+'px;
+                    border:0px solid #9D9DA1; cursor:default; visibility:visible;padding:3&quot;&gt;');<br>
+                    document.write('&lt;table width=&quot;100%&quot; border=&quot;0&quot; &gt;&lt;tr&gt;&lt;td
+                    colspan=&quot;2&quot; align=&quot;right&quot; bgcolor=&quot;#000099&quot;&gt;&lt;a
+                    href=&quot;#&quot; onClick=&quot;fermer_menu()&quot;&gt;&lt;font
+                    color=&quot;#FF0000&quot; face=&quot;Verdana&quot; size=&quot;3&quot;&gt;X&lt;/font&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;');<br>
+                    document.write('&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;&lt;a
+                    href=&quot;'+lienpopup+'&quot; target=&quot;_blank&quot;&gt;&lt;img
+                    src=&quot;'+cheminImage+'&quot; border=0 align=&quot;top&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;td
+                    valign=&quot;top&quot;&gt;&lt;a href=&quot;#&quot; onClick=&quot;ouvrir_menu()&quot;&gt;P&lt;br&gt;U&lt;br&gt;B&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;');<br>
+                    //--&gt;<br>
+&lt;/script&gt;</td>
+                </tr>
+              </table>
+              <p align="center">&nbsp;</p>
+              <p align="center"><a href="fairelien.html">Ce site vous a plu ?
+                  Vous avez trouv&eacute; le script que vous cherchiez ?<br>
+                  Faites en profiter vos visiteurs : ins&eacute;rez un lien sur
+                  votre site</a></p>
+            </div>
+            <p>
+              <script language="JavaScript">
+<!--
+//PLF- http://www.monjavascript.net/
+document.write('<div id=menu_context style="z-index:500;position:absolute;width:'+taillebg+'px; border:0px solid #9D9DA1; cursor:default; visibility:visible;padding:3">');
+document.write('<table width="100%" border="0" ><tr><td colspan="2" align="right" bgcolor="#000099"><a href="#" onClick="fermer_menu()"><font color="#FF0000" face="Verdana" size="3">X</font></a></td></tr>');
+document.write('<tr><td align="left"><a href="'+lienpopup+'" target="_blank"><img src="'+cheminImage+'" border=0 align="top"></a></td><td valign="top"><a href="#" onClick="ouvrir_menu()">P<br>U<br>B</a></td></tr></table>');
+//-->
+            </script>
+            </p>
+          </td>
+          <td width="6" valign="top">
+            <div align="center">
+<table width="6" border="0" align="center" bordercolor="#9966FF">
+<tr><td>
+
+    <div align="center">	</div>
+    <div align="center">  </div>
+<div align="center"></div>
+<div align="center">&nbsp;</div>
+
+</td></tr></table>
+            </div>
+          </td>
+        </tr>
+        <tr valign="middle"> 
+          <td>&nbsp;</td>
+          <td align="center">
+
+
+                  <table border="0" cellspacing="0" width="700">
+                    <tr bordercolor="#00CCFF"> 
+                      <td width="280">
+					  <div align="center">
+<font color="#FFFFFF" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+<a href='http://www.jecreemonsite.net/php/jcmscompteur.php'>Il y a 3 Visiteurs</a> sur <a href='index.html'>Mon JavaScript</a><noscript><a href="http://www.jecreemonsite.net/">javascript php html</a></noscript>
+</font>					  </div></td>
+                      <td><div align="center">
+					  
+					   <img src="im/mjs-minilogo.gif"></div></td>
+                      <td width="280"> 
+                      <div align="center"><font color="#FFFFFF" size="1" face="Verdana, Arial, Helvetica, sans-serif"><a href="index.html">Mon javascript</a> </font>
+					  &nbsp;&nbsp;<font color="#FFFFFF" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              10-08-2015          
+			  </font>
+					  </div>
+                      </td>
+                    </tr>
+                    <tr align="center"> 
+                      <td bgcolor="#003399" height="2" colspan="2"></td>
+                      <td bgcolor="#003399" height="2"></td>
+                    </tr>
+                  </table>
+				  <br>
+
+          </td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+
+<!-- Mirrored from www.monjavascript.net/nopopup2.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Aug 2015 20:25:13 GMT -->
+</html>

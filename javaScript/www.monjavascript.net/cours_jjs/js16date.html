@@ -1,0 +1,654 @@
+<html>
+
+<!-- Mirrored from www.monjavascript.net/cours_jjs/js16date.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Aug 2015 20:25:21 GMT -->
+<head>
+<title>Mon javascript - Cours de javascript</title>
+<meta name="Description" lang="fr" content="Webmasters, Mon javascript vous propose: des scripts en javascript, mais aussi des cours de javascript, des générateurs, le multimoteur, du PHP et autres astuces..., pour donner de l'attrait à votre site web.">
+
+<meta name="keywords" content="javascript, html, langage, programme, programmation, javascript, site, perso, script, java, astuces, programmes, texte défilant, barre d'état, insérer favoris, heure gmt, javascript menu, script de redirection, javascript heure, javascript menu deroulant, rollover, javascript fenetre, menu déroulant, envoyer mail, formulaire, menu javascript, mail, date, Plein Ecran, pop up">
+<meta name="author" content="Monjavascript - PLF">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../mjs.css" type="text/css">
+<script language="JavaScript">
+<!--
+//PLF- http://www.Monjavascript.net/
+if (parent.frames.length > 0)
+window.top.location.href = location.href;
+//-->
+</script>
+</head>
+<body bgcolor="#FFFFFF">
+<table width="1100" border="0" align="center" bgcolor="#9966FF">
+  <tr>    <td ><table width="1100" border="0" background="../err404.html">
+      <tr> 
+    <td width="240" ><font face="Verdana, Arial, Helvetica, sans-serif"><a href="../index.html"><img src="../im/mjs160x60_2.gif" alt="http://www.monjavascript.net" width="160" height="60" border="0"></a></font></td>
+    <td valign="middle"> 
+      	 <div align="right"><br>
+<!--Code à insérer jjspub --><script type="text/javascript"><!--
+google_ad_client = "pub-2085185646476169";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text_image";
+//2007-05-06: jjshaut
+google_ad_channel = "0643568426";
+google_color_border = "9966FF";
+google_color_bg = "9966FF";
+google_color_link = "FFFFFF";
+google_color_text = "000000";
+google_color_url = "../err404.html";
+//-->
+</script>
+<script type="text/javascript"
+  src="../../pagead2.googlesyndication.com/pagead/f.txt">
+</script><!--Code à insérer jjspub -->
+		</div>
+    </td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr> 
+    <td> 
+      <table width="1100" border="0" align="center">
+        <tr> 
+          <td width="162" valign="top"> 
+<script language="JavaScript">
+<!--
+//PLF-http://www.monjavascript.net/
+  function fenetreCentre(url,largeur,hauteur,options) {
+  var haut=(screen.height -(hauteur+130));
+  var Gauche=(screen.width-(largeur+30));
+  window.open(url,"","top="+haut+",left="+Gauche+",width="+largeur+",height="+hauteur+","+options);
+  }
+  adfav = "'../index.html', 'Mon javascript : Programation en javascript et autres...'"
+  adreco = "'../recomail.html',400,520,'menubar=no,scrollbars=yes,statusbar=no'"
+  adcont = "'../contact.html',600,600,'menubar=no,scrollbars=yes,statusbar=no'" 
+  //-->
+</script>
+
+  
+<div align="center">
+  <table width="160" border="0" align="center" bordercolor="#9966FF">
+    <tr><td>
+    <div align="center">
+	<a href="../index.html"><img src="../menujs/menuaccu.gif" border="0" width="139" height="24"></a></div>
+    <table border="1" width="160"><tr><td align="left" ><p><font size="1"><img src="../im/flechep.gif" width="7" height="7"><a href="../index.html">ACCUEIL</a>
+	  </font></font><br>
+	  
+	<font size="1">
+	  <img src="../im/flechep.gif" width="7" height="7"><a href='javascript:fenetreCentre("../err404.html",600,400,"menubar=no,scrollbars=yes,statusbar=no")'>Contact</a>	<br>
+	  <img src="../im/flechep.gif" width="7" height="7"><a href="../acmoteujjs.html">Rechercher </a><br>
+      <img src="../im/flechep.gif" width="7" height="7"><a href='javascript:window.external.addfavorite("../index.html", "Mon JavaScript : Programation en javascript et autres...")'>Insérez
+      dans vos<br>
+&nbsp; favoris</a></font> <br>
+<!-- Placez cette balise où vous souhaitez faire apparaître le gadget Bouton +1. -->
+</p>
+          <div class="g-plusone" data-size="medium"></div>
+          <!-- Placez cette ballise après la dernière balise Bouton +1. -->
+          <script type="text/javascript">
+  window.___gcfg = {lang: 'fr'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = '../../apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+          </script>
+</td>
+    </tr></table>
+    <div align="center">
+		<a href="../somscript.html"><img src="../menujs/menuscrpt.gif" border="0" width="139" height="24"></a></div>
+    <table border="1" width="160"><tr><td align="left" ><font size="1">
+		<img src="../im/flechep.gif" width="7" height="7"><a href="../somac_visit.html">ACCUEIL DES<br>&nbsp;  VISITEURS </a> <br>
+      <img src="../im/flechep.gif" width="7" height="7"><a href="../somdat_h.html">DATE & HEURE </a><br>
+      <img src="../im/flechep.gif" width="7" height="7"><a href="../somtexte.html">EFFETS
+    DE TEXTE </a><br>
+    <img src="../im/flechep.gif" width="7" height="7"><a href="../somfenetres.html">FENETRES </a><br>
+    <img src="../im/flechep.gif" width="7" height="7"><a href="../somform.html">FORMULAIRES </a><br>
+    <img src="../im/flechep.gif" width="7" height="7"><a href="../somimages.html">IMAGES </a><br>
+    <img src="../im/flechep.gif" width="7" height="7"><a href="../sommenus.html">MENUS</a><br>
+    <img src="../im/flechep.gif" width="7" height="7"><a href="../sompratique.html">PRATIQUE</a><br>
+    <img src="../im/flechep.gif" width="7" height="7"><a href="../sompopup.html">POP UP </a><br>
+    <img src="../im/flechep.gif" width="7" height="7"><a href="../somdivers.html">DIVERS</a><br>
+    <br>
+    <!--
+	<img src="http://www.monjavascript.net/im/flechep.gif" width="7" height="7"><a href="http://www.monjavascript.net/section_php/index.php">PHP</a>
+	  //-->
+		</font></td>
+    </tr></table>
+	
+    <div align="center">  <img src="../menujs/menuplus.gif" width="139" height="24"></div>
+	    <table border="1" width="160"><tr><td align="left" ><font size="1">
+	<div align="center"><a href="index.html">Cours de Javascript</a><a href="index.html">
+</a></div>
+<p>  <img src="../im/flechep.gif" width="7" height="7"><a href="js01intro.html">Introduction au Javascript</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js02implant.html">Implantation du code</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js03var.html">Variables javascript</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js04tab.html">Tableaux javascript</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js05char.html">Cha&icirc;ne de caract&egrave;res</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js06even.html">&Eacute;v&eacute;nements
+  javascript</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js07oper.html">Op&eacute;rateurs</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js08cond.html">Structures conditionnelles</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js09fonc.html">Fonctions</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js10meth.html">M&eacute;thodes</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js11dial.html">Bo&icirc;tes
+  de dialogue</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js12objet.html">La notion d'objet</a><br>
+  <font color="#CCCCCC"><strong>Objets de Javascript</strong></font><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js13noyau.html">Objets du noyau</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js14array.html">Objet Array</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js15boolean.html">Objet Boolean</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js16date.html">Objet Date</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js17math.html">Objet Math</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js18regexp.html">Objet RegExp</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js19string.html">Objet String</a><br>
+  <font color="#CCCCCC"><strong>Objets du navigateur</strong></font><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js20objets.html">Pr&eacute;sentation
+  des objets</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js21window.html">Objet window</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js22navig.html">Objet navigator</a><br>
+  <img src="../im/flechep.gif" width="7" height="7"><a href="js23history.html">Objet history</a></p>
+<p align="center"><font color="#FFFFFF">- - - - - - - -</font> </p> 
+
+	<img src="../im/flechep.gif" width="7" height="7"><a href="http://www.jecreemonsite.net/html_css/gencss.php" target="_blank">Générer vos Fichiers<br>&nbsp; 
+	
+	CSS</a><br>
+    <img src="../im/flechep.gif" width="7" height="7"><a href="http://www.jecreemonsite.net/html_css/genmetatag.php" target="_blank">Générer vos Meta-Tags</a><br>
+    <img src="../im/flechep.gif" width="7" height="7"><a href="../metadescp.html">Description des Balises<br>&nbsp;  Meta</a><br>
+    <img src="../im/flechep.gif" width="7" height="7"><a href="../couleurs.html">Les Codes Couleur</a> <br>
+	<img src="../im/flechep.gif" width="7" height="7"><a href="../math.html">L'objet Math</a><br>
+	<img src="../im/flechep.gif" width="7" height="7"><a href="../li/lissage.html">Lissage De Pr&ecirc;t</a><br>
+	<img src="../im/flechep.gif" width="7" height="7"><a href="../li/ta.html">Tableau
+	d'Amortissement</a><br>
+		
+    <img src="../im/flechep.gif" width="7" height="7"><a href="../moteur.html">un Multi-Moteurs de recherche sur Votre Site</a><br>
+    <img src="../im/flechep.gif" width="7" height="7"><a href="../mailcryp.html">Cryptez votre e-mail<br>&nbsp;  pour contrer le Spam</a><br>
+    <img src="../im/flechep.gif" width="7" height="7"><a href="../scriptcryp.html">Cryptez vos Scripts</a><br>
+    <img src="../im/flechep.gif" width="7" height="7"><A href="../acmoteu.html">Moteurs de recherches </A><br>
+    <img src="../im/flechep.gif" width="7" height="7"><A href="../acmoteu.html">Référencement </A><br>
+    <img src="../im/flechep.gif" width="7" height="7"><a href="http://www.jecreemonsite.net/" target="_blank" title="javascript, HTML, PHP, tout pour le webmaster">Je
+    Cr&eacute;e Mon Site</a>
+    <br>
+	<img src="../im/flechep.gif" width="7" height="7"><A HREF=http://www.editeurjavascript.com/partenaires/concours.php?id=mjs TARGET=_blank>L'éditeur JavaScript</A>
+    </font></td>
+    </tr></table>
+	
+	
+	
+	
+	
+	<br>
+
+  <div align="center">
+<!--Code à insérer jjspub --><script type="text/javascript"><!--
+google_ad_client = "pub-2085185646476169";
+google_ad_width = 160;
+google_ad_height = 600;
+google_ad_format = "160x600_as";
+google_ad_type = "text_image";
+//2006-11-24: jjsmenu
+google_ad_channel = "6413686093";
+google_color_border = "9966FF";
+google_color_bg = "9966FF";
+google_color_link = "FFFFFF";
+google_color_text = "000000";
+google_color_url = "../err404.html";
+//--></script>
+<script type="text/javascript"
+  src="../../pagead2.googlesyndication.com/pagead/f.txt">
+</script><!--Code à insérer jjspub -->
+
+
+
+
+  </div>
+ <table width="160" border="0" align="center" bordercolor="#9966FF">
+<tr><td>
+
+    <div align="center">	</div>
+    <div align="center">  </div>
+<div align="center"></div>
+
+
+
+
+
+<div align="center">
+<a href="http://www.xiti.com/xiti.asp?s=504527" title="WebAnalytics" target="_top">
+<script type="text/javascript">
+<!--
+Xt_param = 's=504527&p=';
+try {Xt_r = top.document.referrer;}
+catch(e) {Xt_r = document.referrer; }
+Xt_h = new Date();
+Xt_i = '<img width="39" height="25" border="0" alt="" ';
+Xt_i += 'src="http://logv17.xiti.com/hit.xiti?'+Xt_param;
+Xt_i += '&hl='+Xt_h.getHours()+'x'+Xt_h.getMinutes()+'x'+Xt_h.getSeconds();
+if(parseFloat(navigator.appVersion)>=4)
+{Xt_s=screen;Xt_i+='&r='+Xt_s.width+'x'+Xt_s.height+'x'+Xt_s.pixelDepth+'x'+Xt_s.colorDepth;}
+document.write(Xt_i+'&ref='+Xt_r.replace(/[<>"]/g, '').replace(/&/g, '$')+'" title="Internet Audience">');
+//-->
+</script>
+<noscript>
+Mesure d'audience ROI statistique webanalytics par <img width="39" height="25" src="http://logv17.xiti.com/hit.xiti?s=504527&amp;p=" alt="WebAnalytics" />
+</noscript></a>
+</div>
+
+</td></tr></table>
+ 
+  
+    </td></tr>
+  </table>
+</div>
+
+                
+		  </td>          <td valign="top" bgcolor="#CC99FF" colspan="2"> 
+            <div align="left"> 
+              <h2 align="center"> 
+                L'objet Date              </h2>
+              <table width="300" border="0" align="right">
+                <tr>
+                  <td width="100"><div align="center"></div>
+                  </td>
+                  <td width="100"><div align="center"><a href="js15boolean.html"><img src="images/flchg.gif" width="40" height="32" border="0"></a></div>
+                  </td>
+                  <td><div align="center"><a href="js17math.html"><img src="images/flchd.gif" width="40" height="32" border="0"></a></div>
+                  </td>
+                </tr>
+              </table>              
+              <h2>&nbsp;</h2>
+              <h2><br>
+                <a name="navig" class="ancre"></a>Les particularit&eacute;s
+                de l'objet <i>Date</i></h2>
+              <p align="justify">L'objet <i>Date</i> permet de travailler avec
+                toutes les variables qui concernent les dates et la gestion du
+                temps. Il s'agit d'un objet inclus de fa&ccedil;on native dans
+                Javascript, et que l'on peut toujours utiliser.
+              <p align="justify">La syntaxe pour cr&eacute;er un objet-date peut &ecirc;tre
+                une des suivantes&nbsp;:
+              <ol>
+                <li><b>Nom_de_l_objet = new Date()</b><br/>
+                  cette syntaxe permet de stocker la date et l'heure actuelle</li>
+                <li><b>Nom_de_l_objet = new Date("jour, mois date ann&eacute;e
+                    heures:minutes:secondes")</b> <br/>
+                    <i>les param&egrave;tres sont une cha&icirc;ne de caract&egrave;re
+                    suivant scrupuleusement la notation ci-dessus</i></li>
+                <li><b>Nom_de_l_objet = new Date(ann&eacute;e, mois, jour)</b><br/>
+                    <i>les param&egrave;tres sont trois entiers s&eacute;par&eacute;s
+                    par des virgules.<br/>
+                    Les param&egrave;tres omis sont mis &agrave; z&eacute;ro
+                    par d&eacute;faut</i></li>
+                <li><b>Nom_de_l_objet = new Date(ann&eacute;e, mois, jour, heures,
+                    minutes, secondes[, millisecondes])</b><br/>
+                    <i>les param&egrave;tres sont six entiers s&eacute;par&eacute;s
+                    par des virgules.<br/>
+                    Les param&egrave;tres omis sont mis &agrave; z&eacute;ro
+                    par d&eacute;faut</i></li>
+              </ol>
+              <p align="justify">Les dates en Javascript sont stock&eacute;es
+                de la m&ecirc;me mani&egrave;re que dans le langage Java, c'est-&agrave;-dire
+                qu'il s'agit du nombre de millisecondes depuis le 1<sup>er</sup> janvier
+                1970. Ainsi, toute date ant&eacute;rieure au 1<sup>er</sup> janvier
+                1970 fournira une valeur erron&eacute;e.
+              <p align="justify">Avec les versions de Javascript inf&eacute;rieures &agrave; la
+                version 1.3, pour manipuler des dates ant&eacute;rieures &agrave; &quot;l'ann&eacute;e
+                z&eacute;ro&quot; il vous sera n&eacute;cessaire de cr&eacute;er
+                un objet date sp&eacute;cifique. <br/>
+                A partir de la version 1.3, il est possible de manipuler des
+                dates de plus ou mois 100 000 000 de jours par rapport au premier
+                janvier 1970. <a name="proprietes" class="ancre"></a>
+              <h2>Les m&eacute;thodes de l'objet <i>Date</i></h2>
+              <p align="justify">La date est stock&eacute;e dans une variable
+                sous la forme d'une cha&icirc;ne qui contient le jour, le mois,
+                l'ann&eacute;e, l'heure, les minutes, et les secondes. Il est
+                donc difficile d'acc&eacute;der &agrave; un seul &eacute;l&eacute;ment
+                d'un objet <i>date</i> avec les fonctions
+                de manipulation de <a href="js05char.html">cha&icirc;nes de caract&egrave;res</a>, &eacute;tant
+                donn&eacute; que chacun des &eacute;l&eacute;ments peut avoir
+                une taille variable. Heureusement, les m&eacute;thodes de l'objet <i>Date</i> fournissent
+                un moyen simple d'acc&eacute;der &agrave; un seul &eacute;l&eacute;ment,
+                ou bien de le modifier. <br/>
+  Leur syntaxe est la suivante&nbsp;:
+              <pre class="Code">Objet_Date.Methode()</pre>
+              <div align="center"><a name="connaitre" class="ancre"></a>
+                <!--Code à insérer jjspub -->
+                <script type="text/javascript"><!--
+google_ad_client = "pub-2085185646476169";
+google_ad_width = 468;
+google_ad_height = 60;
+google_ad_format = "468x60_as";
+google_ad_type = "text_image";
+//2006-11-23: jjscentre
+google_ad_channel = "2311992272";
+google_color_border = "CC99FF";
+google_color_bg = "CC99FF";
+google_color_link = "FFFFFF";
+google_color_text = "000000";
+google_color_url = "../err404.html";
+//--></script>
+<script type="text/javascript"
+  src="../../pagead2.googlesyndication.com/pagead/f.txt">
+</script>
+                <!--Code à insérer jjspub -->
+              </div>
+              <h3>Conna&icirc;tre la date</h3>
+              <p align="justify">Les m&eacute;thodes dont le nom commence par
+                le radical <i>get</i> (mot anglais qui signifie <i>r&eacute;cup&eacute;rer</i>)
+                permettent de renvoyer une partie de l'objet <i>Date</i>&nbsp;:
+              <p align="justify">
+              <table class="ccm">
+                <tr>
+                  <th>M&eacute;thode</th>
+                  <th>Description</th>
+                  <th>Type de valeurs retourn&eacute;e</th>
+                </tr>
+                <tr>
+                  <td>getDate()</td>
+                  <td>Permet de r&eacute;cup&eacute;rer la valeur du jour du
+                    mois</td>
+                  <td>L'objet retourn&eacute; est un entier (entre 1 et 31) qui
+                    correspond au jour du mois&nbsp;: </td>
+                </tr>
+                <tr>
+                  <td>getDay()</td>
+                  <td>Permet de r&eacute;cup&eacute;rer la valeur du jour de
+                    la semaine pour la date sp&eacute;cifi&eacute;e</td>
+                  <td>L'objet retourn&eacute; est un entier qui correspond au
+                    jour de la semaine&nbsp;:
+                      <ul>
+                        <li>0: dimanche</li>
+                        <li>1: lundi ...</li>
+                      </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>getFullYear()</td>
+                  <td>Permet de r&eacute;cup&eacute;rer la valeur de l'ann&eacute; sur
+                    4 chiffres pour la date pass&eacute;e en param&egrave;tre</td>
+                  <td>L'objet retourn&eacute; est un entier qui correspond &agrave; l'ann&eacute;e
+                    (XXXX)&nbsp;:
+                      <script language="Javascript">
+
+<!--
+var now = new Date();
+document.write(now.getFullYear());
+
+// -->
+
+                </script>
+                  </td>
+                </tr>
+                <tr>
+                  <td>getHours()</td>
+                  <td>Permet de r&eacute;cup&eacute;rer la valeur de l'heure</td>
+                  <td>L'objet retourn&eacute; est un entier (entre 0 et 23) qui
+                    correspond &agrave; l'objet Date. </td>
+                </tr>
+                <tr>
+                  <td>getMilliseconds()</td>
+                  <td>Permet de r&eacute;cup&eacute;rer le nombre de millisecondes</td>
+                  <td>L'objet retourn&eacute; est un entier (entre 0 et 999)
+                    qui correspond aux millisecondes de l'objet pass&eacute; en
+                    param&egrave;tre. </td>
+                </tr>
+                <tr>
+                  <td>getMinutes()</td>
+                  <td>Permet de r&eacute;cup&eacute;rer la valeur des minutes</td>
+                  <td>L'objet retourn&eacute; est un entier (entre 0 et 59) qui
+                    correspond aux minutes de l'objet Date. </td>
+                </tr>
+                <tr>
+                  <td>getMonth()</td>
+                  <td>Permet de r&eacute;cup&eacute;rer le num&eacute;ro du mois</td>
+                  <td>L'objet retourn&eacute; est un entier (entre 0 et 11) qui
+                    correspond au mois&nbsp;:
+                      <ul>
+                        <li>0: janvier</li>
+                        <li>1: f&eacute;vrier ...</li>
+                      </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>getSeconds()</td>
+                  <td>Permet de r&eacute;cup&eacute;rer le nombre de secondes</td>
+                  <td>L'objet retourn&eacute; est un entier (entre 0 et 59) qui
+                    correspond aux secondes de l'objet pass&eacute; en param&egrave;tre. </td>
+                </tr>
+                <tr>
+                  <td>getTime()</td>
+                  <td>Permet de r&eacute;cup&eacute;rer le nombre de millisecondes
+                    depuis le 1<sup>er</sup> janvier 1970</td>
+                  <td>L'objet retourn&eacute; est un entier. Cette m&eacute;thode
+                    est tr&egrave;s utile pour convertir des dates, soustraire
+                    ou ajouter deux dates, etc.</td>
+                </tr>
+                <tr>
+                  <td>getTimezoneOffset()</td>
+                  <td>Retourne la diff&eacute;rence entre l'heure locale et l'heure
+                    GMT (Greenwich Mean Time)</td>
+                  <td>L'objet retourn&eacute; est un entier, il repr&eacute;sente
+                    le nombre de <b>minutes</b> de d&eacute;calage </td>
+                </tr>
+                <tr>
+                  <td>getYear()</td>
+                  <td>Permet de r&eacute;cup&eacute;rer la valeur de l'ann&eacute; sur
+                    2 chiffres pour l'objet Date.</td>
+                  <td>L'objet retourn&eacute; est un entier qui correspond &agrave; l'ann&eacute; (XX)&nbsp;:
+                      <script language="Javascript">
+
+<!--
+var now = new Date();
+
+document.write(Date.getYear(Date));
+
+// -->
+
+                </script>
+                  </td>
+                </tr>
+              </table>
+              <a name="format" class="ancre"></a>
+              <h3>Modifier le format de la date</h3>
+              <p align="justify">Les deux m&eacute;thodes suivantes ne permettent
+                de travailler que sur l'heure actuelle (objet <i>Date()</i>)
+                leur syntaxe est donc fig&eacute;e&nbsp;:
+              <p align="justify">
+              <table class="ccm">
+                <tr>
+                  <th>M&eacute;thode</th>
+                  <th>Description</th>
+                  <th>Type de valeurs retourn&eacute;e</th>
+                </tr>
+                <tr>
+                  <td>toGMTString()</td>
+                  <td>Permet de convertir une date en une cha&icirc;ne de caract&egrave;res
+                    au format GMT</td>
+                  <td>L'objet retourn&eacute; est une cha&icirc;ne de caract&egrave;re
+                    du type&nbsp;: <br/>
+                    Wed, 28 Jul 1999 15:15:20 GMT</td>
+                </tr>
+                <tr>
+                  <td>toLocaleString()</td>
+                  <td>Permet de convertir une date en une cha&icirc;ne de carct&egrave;res
+                    au format local</td>
+                  <td>L'objet retourn&eacute; est une cha&icirc;ne de caract&egrave;re
+                    dont la syntaxe d&eacute;pend du syst&egrave;me, par exemple&nbsp;: <br/>
+                    28/07/99 15:15:20</td>
+                </tr>
+              </table>
+              <a name="modifier" class="ancre"></a>
+              <h3>Modifier la date</h3>
+              <p align="justify">Les m&eacute;thodes dont le nom commence par
+                le radical <i>set</i> (mot anglais qui signifie <i>r&egrave;gler</i>)
+                permettent de modifier une valeur&nbsp;:
+              <p align="justify">
+              <table class="ccm">
+                <tr>
+                  <th>M&eacute;thode</th>
+                  <th>Description</th>
+                  <th>Type de valeur en param&egrave;tre</th>
+                </tr>
+                <tr>
+                  <td>setDate(X)</td>
+                  <td>Permet de fixer la valeur du jour du mois</td>
+                  <td>Le param&egrave;tre est un entier (entre 1 et 31) qui correspond
+                    au jour du mois </td>
+                </tr>
+                <tr>
+                  <td>setDay(X)</td>
+                  <td>Permet de fixer la valeur du jour de la semaine</td>
+                  <td>Le param&egrave;tre est un entier qui correspond au jour
+                    de la semaine&nbsp;:
+                      <ul>
+                        <li>0: dimanche</li>
+                        <li>1: lundi ...</li>
+                      </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>setHours(X)</td>
+                  <td>Permet de fixer la valeur de l'heure</td>
+                  <td>Le param&egrave;tre est un entier (entre 0 et 23) qui correspond &agrave; l'heure </td>
+                </tr>
+                <tr>
+                  <td>setMinutes(X)</td>
+                  <td>Permet de fixer la valeur des minutes</td>
+                  <td>Le param&egrave;tre est un entier (entre 0 et 59) qui correspond
+                    aux minutes </td>
+                </tr>
+                <tr>
+                  <td>setMonth(X)</td>
+                  <td>Permet de fixer le num&eacute;ro du mois</td>
+                  <td>Le param&egrave;tre est un entier (entre 0 et 11) qui correspond
+                    au mois&nbsp;:
+                      <ul>
+                        <li>0: janvier</li>
+                        <li>1: f&eacute;vrier ...</li>
+                      </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>setTime(X)</td>
+                  <td>Permet d'assigner la date</td>
+                  <td>Le param&egrave;tre est un entier repr&eacute;sentant le
+                    nombre de millisecondes depuis le 1<sup>er</sup> janvier
+                    1970 </td>
+                </tr>
+              </table>
+              <hr>
+              <p align="center">&nbsp;  </p>
+              <table width="500" border="0">
+                <tr>
+                  <td width="100" align="center"><div align="center">
+                    <!--Code à insérer jjspub -->
+                    <!-- SiteSearch Google -->
+                    
+                    <form method="get" action="http://www.google.fr/custom" target="google_window">
+                          <table height="40" border="0" bgcolor="#9966FF">
+                            <tr>
+                              <td nowrap="nowrap">
+                                  <div align="left">
+                                    <input type="hidden" name="domains" value="www.Monjavascript.net">
+                                    <input type="text" name="q" size="32" maxlength="255">
+                                  </div></td>
+
+                              <td nowrap="nowrap">
+                                      <input type="radio" name="sitesearch" value="" checked="checked">
+                                      <font size="-1" color="#000000">Web</font> </td>
+                              <td nowrap="nowrap">
+                                      <input type="radio" name="sitesearch" value="www.Monjavascript.net">
+                                      <font size="-1" color="#000000">Monjavascript
+                                      </font></td>
+                              <td nowrap="nowrap">
+                                <div align="center"></div>
+                                <div align="center">
+                                  <input type="submit" name="sa" value="Recherche Google">
+                                  <input type="hidden" name="client" value="pub-2085185646476169">
+                                  <input type="hidden" name="forid" value="1">
+                                  <input type="hidden" name="ie" value="ISO-8859-1">
+                                  <input type="hidden" name="oe" value="ISO-8859-1">
+                                  <input type="hidden" name="cof" value="GALT:#008000;GL:1;DIV:#9966FF;VLC:663399;AH:center;BGC:FFFFFF;LBGC:9966FF;ALC:0000FF;LC:0000FF;T:000000;GFNT:0000FF;GIMP:0000FF;LH:50;LW:158;L:http://www.Monjavascript.net/im/jjs-net2.gif;S:http://www.Monjavascript.net/;FORID:1">
+                                  <input type="hidden" name="hl" value="fr">
+                                </div></td>
+                            </tr>
+                          </table>
+                    </form>
+                        <!-- SiteSearch Google -->
+                    <!--Code à insérer jjspub -->
+</div>
+                  </td>
+                  <td width="100"><div align="center"><a href="js15boolean.html"><img src="images/flchg.gif" width="40" height="32" border="0"></a></div>
+                  </td>
+                  <td><div align="center"><a href="js17math.html"><img src="images/flchd.gif" width="40" height="32" border="0"></a></div>
+                  </td>
+                </tr>
+              </table>
+
+              <p align="justify"> <font size="1" face="Verdana, Arial, Helvetica, sans-serif">Ce
+                  document intitul&eacute; &laquo;Javascript - L'objet Date &raquo; issu
+                de l'encyclop&eacute;die
+                informatique Comment &Ccedil;a Marche (<a href="http://www.commentcamarche.net/" target="_blank">www.commentcamarche.net</a>)
+                est mis &agrave; disposition sous les termes de la licence Creative
+                Commons. Vous pouvez copier, modifier des copies de cette page,
+                dans les conditions fix&eacute;es par la licence, tant que cette
+              note appara&icirc;t clairement. </font></p>
+              <p align="center">&nbsp;</p>
+            </div>
+          </td>
+          <td width="6" valign="top">
+            <div align="center">
+<table width="6" border="0" align="center" bordercolor="#9966FF">
+<tr><td>
+
+    <div align="center">	</div>
+    <div align="center">  </div>
+<div align="center"></div>
+<div align="center">&nbsp;</div>
+
+</td></tr></table>
+            </div>
+          </td>
+        </tr>
+        <tr valign="middle"> 
+          <td>&nbsp;</td>
+          <td align="center">
+
+
+                  <table border="0" cellspacing="0" width="700">
+                    <tr bordercolor="#00CCFF"> 
+                      <td width="280">
+					  <div align="center">
+<font color="#FFFFFF" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+<a href='http://www.jecreemonsite.net/php/jcmscompteur.php'>Il y a 3 Visiteurs</a> sur <a href='../index.html'>Mon JavaScript</a><noscript><a href="http://www.jecreemonsite.net/">javascript php html</a></noscript>
+</font>					  </div></td>
+                      <td><div align="center">
+					  
+					   <img src="../im/mjs-minilogo.gif"></div></td>
+                      <td width="280"> 
+                      <div align="center"><font color="#FFFFFF" size="1" face="Verdana, Arial, Helvetica, sans-serif"><a href="../index.html">Mon javascript</a> </font>
+					  &nbsp;&nbsp;<font color="#FFFFFF" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              10-08-2015          
+			  </font>
+					  </div>
+                      </td>
+                    </tr>
+                    <tr align="center"> 
+                      <td bgcolor="#003399" height="2" colspan="2"></td>
+                      <td bgcolor="#003399" height="2"></td>
+                    </tr>
+                  </table>
+				  <br>
+
+          </td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+
+<!-- Mirrored from www.monjavascript.net/cours_jjs/js16date.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Aug 2015 20:25:21 GMT -->
+</html>

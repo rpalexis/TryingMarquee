@@ -1,0 +1,571 @@
+<html>
+
+<!-- Mirrored from www.monjavascript.net/moteur.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Aug 2015 20:24:14 GMT -->
+<head>
+<title>Le Multimoteur Mon JavaScript</title>
+<meta name="Description" lang="fr" content="Webmasters, Mon JavaScript vous propose: des scripts en javascript, mais aussi des cours de javascript, des générateurs, le multimoteur, du PHP et autres astuces..., pour donner de l'attrait à votre site web.">
+
+<meta name="keywords" content="javascript, html, langage, programme, programmation, javascript, site, perso, script, java, astuces, programmes, texte défilant, barre d'état, insérer favoris, heure gmt, javascript menu, script de redirection, javascript heure, javascript menu deroulant, rollover, javascript fenetre, menu déroulant, envoyer mail, formulaire, menu javascript, mail, date, Plein Ecran, pop up">
+<meta name="author" content="monjavascript - PLF">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="mjs.css" type="text/css">
+<script language="JavaScript">
+<!--
+//PLF-http://www.monjavascript.net/
+//if (parent.frames.length > 0)
+//window.top.location.href = location.href;
+//-->
+</script>
+<script language="JavaScript">
+<!--
+//PLF-http://www.monjavascript.net/
+var monsite = "monjavascript.net" 
+function multi(form){
+                    rech = form.moteur.options[form.moteur.selectedIndex].value					
+                    switch(rech){
+                    case "1" :
+					window.open('http://www.google.com/search?q='+form.q.value+'&btnG=Recherche+Google&hl=fr&lr=lang_fr','','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes');
+                    break;
+case "0":
+	var mess="Vous n'avez pas sélectionné de moteur !"
+ 	alert(mess);
+                    break;
+case "1":
+	window.open( "http://www.google.com/search?q="+form.q.value+"&btnG=Recherche+Google&hl=fr&lr=lang_fr","","toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes");
+                    break;
+case "2":
+	window.open( "http://www.alltheweb.com/search?query="+form.q.value+"&cat=web&charset=utf-8&submit=Web+Search","","toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes");
+                   
+				    break;
+case "3":
+	window.open( "http://www.altavista.com/web/results?itag=ody&q="+form.q.value+"&kgs=1&kls=0","toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes");
+                    break;
+case "4":
+	window.open( "http://www.recherche.aol.fr/rech?enc=iso&q="+form.q.value+"&v=0","","toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes");
+                    break;
+case "5":
+	window.open( "http://fr.web.caloga.com/html/search_result.php?n=30&amp;sel=s&amp;lr=lang_fr&amp;q="+form.q.value,"","toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes");
+                    break;
+case "6":
+	window.open( "http://search.dmoz.org/cgi-bin/search?search="+form.q.value+"&cat=World%2FFran%25c3%25a7ais","","toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes");
+                    break;
+case "7":
+	window.open( "http://search-dyn.excite.fr/search.php?key="+form.q.value+"&submit=Recherche+Excite&external=1&language=fr&collection=web","","toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes");
+                    break;
+case "8":
+	window.open( "http://recherche.francite.com/cgi-win/recherche.exe?bd=francite&name="+form.q.value,"","toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes");
+                    break;
+case "9":
+	window.open( "http://hotbot.lycos.com/?MT="+form.q.value+"&SM=MC&DV=0&LG=any&DC=10&DE=2&BT=H","","toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes");
+                    break;
+case "10":
+	window.open( "http://www.fr.lycos.de/cgi-bin/pursuit?matchmode=and&lang=fr&mtemp=main.sites&query="+form.q.value+"&cat=lycos&x=19&y=10","","toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes");
+                    break;
+case "11":
+	window.open( "http://search.metacrawler.com/texis/search?brand=metacrawler&q="+form.q.value+"&redirect=&top=1&method=0&rpp=20&hpe=10&region=0&timeout=0&sort=0&theme=classic","","toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes");
+                    break;
+case "12":
+	window.open( "http://search.msn.fr/results.asp?q="+form.q.value+"&origq=&RS=CHECKED&FORM=SMCRT&v=1&cfg=SMCINITIAL&nosp=0","","toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes");
+                    break;
+case "14":
+	window.open( "http://www.overture.com/d/search/?type=home&mkt=fr&tm=1&Keywords="+form.q.value,"","toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes");
+                    break;
+case "15":
+	window.open( "http://www.sharelook.fr/sldb/SLDB_db.php?keyword="+form.q.value+"&suche_starten=Recherche&seite=700001&template=fr_suchen&next_results=0","","toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes");
+                    break;	
+case "16":
+	window.open( "http://recherche.toile.qc.ca/cgi-bin/recherche?lang=fr&query="+form.q.value,"","toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes");
+                    break;
+case "18":
+	window.open( "http://r.voila.fr/se?dblg=fr&ctx=voila&lg=FR&sev=2&ref=ext&db=web&kw="+form.q.value+"&","","toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes");
+                    break;
+case "19":
+	window.open( "http://fr.search.yahoo.com/search/fr?p="+form.q.value+"&y=y","","toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes");
+                    break;
+case "20":
+	window.open( "http://search.yahoo.com/bin/search?p="+form.q.value,"","toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes");
+                    break;
+case "21":
+	window.open( "http://www.google.fr/search?lr=&cr=&q="+form.q.value+"&hl=fr&ie=UTF-8&oe=UTF-8","","toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes");
+                    break;
+case "22":
+	window.open( "http://fr.altavista.com/image/results?pg=q&stype=simage&imgset=2&q="+form.q.value+"&avkw=xytx","","toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes");
+                    break;	
+case "23":
+	window.open( "http://www.alltheweb.com/search?query="+form.q.value+"&cat=mp3&charset=utf-8&submit=MP3+Search","","toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes");
+                    break;
+case "24":
+	window.open( "http://www.google.com/search?hl=fr&ie=UTF-8&oe=UTF-8&q="+form.q.value +"+site%3A"+monsite+"&btnG=Recherche+Google&lr=","","toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes");
+                    break;					
+case "25":
+	window.open( "moteur.html","","toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes");
+                    break;
+	
+}}
+//-->
+</script>
+</head>
+<body bgcolor="#FFFFFF">
+<table width="1100" border="0" align="center" bgcolor="#9966FF">
+  <tr>    <td ><table width="1100" border="0" background="im/header_tile.gif">
+      <tr> 
+    <td width="240" ><font face="Verdana, Arial, Helvetica, sans-serif"><a href="index.html"><img src="im/mjs160x60_2.gif" alt="http://www.monjavascript.net" width="160" height="60" border="0"></a></font></td>
+    <td valign="middle"> 
+      	 <div align="right"><br>
+<!--Code à insérer jjspub --><script type="text/javascript"><!--
+google_ad_client = "pub-2085185646476169";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text_image";
+//2007-05-06: jjshaut
+google_ad_channel = "0643568426";
+google_color_border = "9966FF";
+google_color_bg = "9966FF";
+google_color_link = "FFFFFF";
+google_color_text = "000000";
+google_color_url = "err404.html";
+//-->
+</script>
+<script type="text/javascript"
+  src="../pagead2.googlesyndication.com/pagead/f.txt">
+</script><!--Code à insérer jjspub -->
+		</div>
+    </td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr> 
+    <td> 
+      <table width="1100" border="0" align="center">
+        <tr> 
+          <td width="162" valign="top"> 
+<script language="JavaScript">
+<!--
+//PLF-http://www.monjavascript.net/
+  function fenetreCentre(url,largeur,hauteur,options) {
+  var haut=(screen.height -(hauteur+130));
+  var Gauche=(screen.width-(largeur+30));
+  window.open(url,"","top="+haut+",left="+Gauche+",width="+largeur+",height="+hauteur+","+options);
+  }
+  adfav = "'index.html', 'Mon javascript : Programation en javascript et autres...'"
+  adreco = "'recomail.html',400,520,'menubar=no,scrollbars=yes,statusbar=no'"
+  adcont = "'contact.html',600,600,'menubar=no,scrollbars=yes,statusbar=no'" 
+  //-->
+</script>
+
+  
+<div align="center">
+  <table width="160" border="0" align="center" bordercolor="#9966FF">
+    <tr><td>
+    <div align="center">
+	<a href="index.html"><img src="menujs/menuaccu.gif" border="0" width="139" height="24"></a></div>
+    <table border="1" width="160"><tr><td align="left" ><p><font size="1"><img src="im/flechep.gif" width="7" height="7"><a href="index.html">ACCUEIL</a>
+	  </font></font><br>
+	  
+	<font size="1">
+	  <img src="im/flechep.gif" width="7" height="7"><a href='javascript:fenetreCentre("contact.html",600,400,"menubar=no,scrollbars=yes,statusbar=no")'>Contact</a>	<br>
+	  <img src="im/flechep.gif" width="7" height="7"><a href="acmoteujjs.html">Rechercher </a><br>
+      <img src="im/flechep.gif" width="7" height="7"><a href='javascript:window.external.addfavorite("index.html", "Mon JavaScript : Programation en javascript et autres...")'>Insérez
+      dans vos<br>
+&nbsp; favoris</a></font> <br>
+<!-- Placez cette balise où vous souhaitez faire apparaître le gadget Bouton +1. -->
+</p>
+          <div class="g-plusone" data-size="medium"></div>
+          <!-- Placez cette ballise après la dernière balise Bouton +1. -->
+          <script type="text/javascript">
+  window.___gcfg = {lang: 'fr'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = '../apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+          </script>
+</td>
+    </tr></table>
+    <div align="center">
+		<a href="somscript.html"><img src="menujs/menuscrpt.gif" border="0" width="139" height="24"></a></div>
+    <table border="1" width="160"><tr><td align="left" ><font size="1">
+		<img src="im/flechep.gif" width="7" height="7"><a href="somac_visit.html">ACCUEIL DES<br>&nbsp;  VISITEURS </a> <br>
+      <img src="im/flechep.gif" width="7" height="7"><a href="somdat_h.html">DATE & HEURE </a><br>
+      <img src="im/flechep.gif" width="7" height="7"><a href="somtexte.html">EFFETS
+    DE TEXTE </a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="somfenetres.html">FENETRES </a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="somform.html">FORMULAIRES </a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="somimages.html">IMAGES </a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="sommenus.html">MENUS</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="sompratique.html">PRATIQUE</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="sompopup.html">POP UP </a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="somdivers.html">DIVERS</a><br>
+    <br>
+    <!--
+	<img src="http://www.monjavascript.net/im/flechep.gif" width="7" height="7"><a href="http://www.monjavascript.net/section_php/index.php">PHP</a>
+	  //-->
+		</font></td>
+    </tr></table>
+	
+    <div align="center">  <img src="menujs/menuplus.gif" width="139" height="24"></div>
+	    <table border="1" width="160"><tr><td align="left" ><font size="1">
+		
+	<img src="im/flechep.gif" width="7" height="7"><a href="cours_jjs/index.html" >Cours de javascript</a><br>
+		<img src="im/flechep.gif" width="7" height="7"><a href="http://www.jecreemonsite.net/html_css/gencss.php" target="_blank">Générer vos Fichiers<br>&nbsp; 
+	
+	CSS</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="http://www.jecreemonsite.net/html_css/genmetatag.php" target="_blank">Générer vos Meta-Tags</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="metadescp.html">Description des Balises<br>&nbsp;  Meta</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="couleurs.html">Les Codes Couleur</a> <br>
+	<img src="im/flechep.gif" width="7" height="7"><a href="math.html">L'objet Math</a><br>
+	<img src="im/flechep.gif" width="7" height="7"><a href="li/lissage.html">Lissage De Pr&ecirc;t</a><br>
+	<img src="im/flechep.gif" width="7" height="7"><a href="li/ta.html">Tableau
+	d'Amortissement</a><br>
+		
+    <img src="im/flechep.gif" width="7" height="7"><a href="moteur.html">un Multi-Moteurs de recherche sur Votre Site</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="mailcryp.html">Cryptez votre e-mail<br>&nbsp;  pour contrer le Spam</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="scriptcryp.html">Cryptez vos Scripts</a><br>
+    <img src="im/flechep.gif" width="7" height="7"><A href="acmoteu.html">Moteurs de recherches </A><br>
+    <img src="im/flechep.gif" width="7" height="7"><A href="acmoteu.html">Référencement </A><br>
+    <img src="im/flechep.gif" width="7" height="7"><a href="http://www.jecreemonsite.net/" target="_blank" title="javascript, HTML, PHP, tout pour le webmaster">Je
+    Cr&eacute;e Mon Site</a>
+    <br>
+	<img src="im/flechep.gif" width="7" height="7"><A HREF=http://www.editeurjavascript.com/partenaires/concours.php?id=mjs TARGET=_blank>L'éditeur JavaScript</A>
+    </font></td>
+    </tr></table>
+	
+	
+	
+	
+	
+	<br>
+
+  <div align="center">
+<!--Code à insérer jjspub --><script type="text/javascript"><!--
+google_ad_client = "pub-2085185646476169";
+google_ad_width = 160;
+google_ad_height = 600;
+google_ad_format = "160x600_as";
+google_ad_type = "text_image";
+//2006-11-24: jjsmenu
+google_ad_channel = "6413686093";
+google_color_border = "9966FF";
+google_color_bg = "9966FF";
+google_color_link = "FFFFFF";
+google_color_text = "000000";
+google_color_url = "err404.html";
+//--></script>
+<script type="text/javascript"
+  src="../pagead2.googlesyndication.com/pagead/f.txt">
+</script><!--Code à insérer jjspub -->
+
+
+
+
+  </div>
+ <table width="160" border="0" align="center" bordercolor="#9966FF">
+<tr><td>
+
+    <div align="center">	</div>
+    <div align="center">  </div>
+<div align="center"></div>
+
+
+
+
+
+<div align="center">
+<a href="http://www.xiti.com/xiti.asp?s=504527" title="WebAnalytics" target="_top">
+<script type="text/javascript">
+<!--
+Xt_param = 's=504527&p=';
+try {Xt_r = top.document.referrer;}
+catch(e) {Xt_r = document.referrer; }
+Xt_h = new Date();
+Xt_i = '<img width="39" height="25" border="0" alt="" ';
+Xt_i += 'src="http://logv17.xiti.com/hit.xiti?'+Xt_param;
+Xt_i += '&hl='+Xt_h.getHours()+'x'+Xt_h.getMinutes()+'x'+Xt_h.getSeconds();
+if(parseFloat(navigator.appVersion)>=4)
+{Xt_s=screen;Xt_i+='&r='+Xt_s.width+'x'+Xt_s.height+'x'+Xt_s.pixelDepth+'x'+Xt_s.colorDepth;}
+document.write(Xt_i+'&ref='+Xt_r.replace(/[<>"]/g, '').replace(/&/g, '$')+'" title="Internet Audience">');
+//-->
+</script>
+<noscript>
+Mesure d'audience ROI statistique webanalytics par <img width="39" height="25" src="http://logv17.xiti.com/hit.xiti?s=504527&amp;p=" alt="WebAnalytics" />
+</noscript></a>
+</div>
+
+</td></tr></table>
+ 
+  
+    </td></tr>
+  </table>
+</div>
+
+                
+		  </td>          <td valign="top" bgcolor="#CC99FF" colspan="2"> 
+            <div align="center"> 
+              <p align="center"> 
+                <br>
+                Le Multi-Moteurs de recherche<br>
+                </b></font> Offrez &agrave; vos visiteurs la possibilit&eacute; 
+                de faire une recherche &agrave; partir votre site sur une vingtaine 
+                de Moteurs de Recherche</p>
+              <p align="center">Vous pouvez modifier les <a href="couleurs.html">couleurs</a> 
+                en changeant les valeur de <br>
+                bgcolor= &amp; bordercolor=</p>
+              <p align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="3"><a href='javascript:fenetreCentre("moteurcode.html",600,300,"menubar=no,scrollbars=yes,statusbar=no")'> 
+                Code 
+                &agrave; coller entre &lt;head&gt; &amp; &lt;/head&gt;</a>
+				<br>
+                <strong><font color="#FF0000">ATTENTION : Il faut installer le code du lien Ci-Dessus<br>
+                Puis le code du moteur de votre choix.</font></strong></font></p>
+              
+              <form>
+                <div align="center">
+                  <table border="0" cellpadding="5" cellspacing="0" bgcolor="#9966FF" width="560">
+                    <tr>
+                      <td bgcolor="#003399" height="2" colspan="2"></td>
+                      <td bgcolor="#003399" height="2"></td>
+                      <td bgcolor="#003399" height="2"></td>
+                    </tr>
+                    <tr valign="middle">
+                      <td colspan="2" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><strong>Mots à Rechercher
+                            : </strong> </font></td>
+                      <td><font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                        <input type="text" name="q" size="35">
+                      </font></td>
+                      <td>
+                        <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#FFFFFF"><a href="moteur.html" target="_blank">Ce
+                              Service sur Votre Site</a></font></div>
+                      </td>
+                    </tr>
+                    <tr valign="middle">
+                      <td colspan="2">
+                        <div align="center">
+                          <div align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><strong>Rechercher
+                                sur :</strong></font></div>
+                        </div>
+                      </td>
+                      <td> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                        <script language="JavaScript">
+						<!--
+						document.write('<select name="moteur">'+
+                          '<option selected value="0">--- Choisisez votre moteur --- '+
+                          '<option value="0"> '+
+						  '<option value="25">ce moteur sur votre site '+
+                          '<option value="1">Google '+
+                          '<option value="2">All the Web '+
+                          '<option value="3">Alta Vista '+
+                          '<option value="4">AOL.FR '+
+                          '<option value="5">Caloga.com '+
+                          '<option value="6">dmoz'+ 
+                          '<option value="7">Excite '+
+                          '<option value="8">Francité '+
+                          '<option value="9">HotBot '+
+                          '<option value="10">Lycos '+
+                          '<option value="11">Metacrawler '+
+                          '<option value="12">MSN Search '+
+                          '<option value="14">Overture '+
+                          '<option value="15">ShareLook '+
+                          '<option value="16">La toile du quebec '+
+                          '<option value="18">Voila '+
+                          '<option value="19">Yahoo France '+
+                          '<option value="20">Yahoo international '+
+                          '<option value="21">Google international '+
+                          '<option value="22">Alta Vista Image '+
+                          '<option value="23">All the Web MP3 '+
+						  '<option value="24">Sur mon site avec Google'+
+						  '<option value="25">Service Mon javascript.net '+
+                        '</select>')
+						//-->
+						</script>
+                      </font></td>
+                      <td>
+                        <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                          <input onClick=multi(this.form) type=button value="Rechercher" name=button>
+                        </font></div>
+                      </td>
+                    </tr>
+                    <tr align="center">
+                      <td bgcolor="#003399" height="2" colspan="2"></td>
+                      <td bgcolor="#003399" height="2"></td>
+                      <td bgcolor="#003399" height="2"></td>
+                    </tr>
+                  </table>
+                </div>
+              </form>
+              <br>
+              <a href='javascript:fenetreCentre("moteurcode1.html",600,300,"menubar=no,scrollbars=yes,statusbar=no")'>Le 
+              Code pour ce Moteur</a> 
+              <p>&nbsp;</p>
+              <p align="center"><!--Code à insérer jjspub --><script type="text/javascript"><!--
+google_ad_client = "pub-2085185646476169";
+google_ad_width = 468;
+google_ad_height = 60;
+google_ad_format = "468x60_as";
+google_ad_type = "text_image";
+//2006-11-23: jjscentre
+google_ad_channel = "2311992272";
+google_color_border = "CC99FF";
+google_color_bg = "CC99FF";
+google_color_link = "FFFFFF";
+google_color_text = "000000";
+google_color_url = "err404.html";
+//--></script>
+<script type="text/javascript"
+  src="../pagead2.googlesyndication.com/pagead/f.txt">
+</script><!--Code à insérer jjspub -->
+</p>
+
+              <form>
+                <div align="center">
+                  <table border="0" cellpadding="5" cellspacing="0" bgcolor="#9966FF" width="300">
+                    <tr>
+                      <td bgcolor="#003399" height="2"></td>
+                    </tr>
+                    <tr valign="middle" bordercolor="#00CCFF">
+                      <td>
+                        <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><strong>Mots à Rechercher
+                              :</strong> <br>
+                              <input type="text" name="q" size="40">
+                              <strong><br>
+            Rechercher sur :</strong><br>
+            <script language="JavaScript">
+						<!--
+						document.write('<select name="moteur">'+
+                          '<option selected value="0">--- Choisisez votre moteur --- '+
+                          '<option value="0"> '+
+						  '<option value="25">ce moteur sur votre site '+
+                          '<option value="1">Google '+
+                          '<option value="2">All the Web '+
+                          '<option value="3">Alta Vista '+
+                          '<option value="4">AOL.FR '+
+                          '<option value="5">Caloga.com '+
+                          '<option value="6">dmoz'+ 
+                          '<option value="7">Excite '+
+                          '<option value="8">Francité '+
+                          '<option value="9">HotBot '+
+                          '<option value="10">Lycos '+
+                          '<option value="11">Metacrawler '+
+                          '<option value="12">MSN Search '+
+                          '<option value="14">Overture '+
+                          '<option value="15">ShareLook '+
+                          '<option value="16">La toile du quebec '+
+                          '<option value="18">Voila '+
+                          '<option value="19">Yahoo France '+
+                          '<option value="20">Yahoo international '+
+                          '<option value="21">Google international '+
+                          '<option value="22">Alta Vista Image '+
+                          '<option value="23">All the Web MP3 '+
+						  '<option value="24">Sur mon site avec Google'+
+						  '<option value="25">Service Mon javascript.net '+
+                        '</select>')
+						//-->
+						</script>
+            <input onClick=multi(this.form) type=button value="OK" name=button2>
+            <br>
+                          </font><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#FFFFFF"><a href="moteur.html" target="_blank">Ce
+                          Service sur Votre Site</a></font></div>
+                      </td>
+                    </tr>
+                    <tr align="center">
+                      <td bgcolor="#003399" height="2"></td>
+                    </tr>
+                  </table>
+                </div>
+              </form>
+              <br>
+              <a href='javascript:fenetreCentre("moteurcode2.html",600,300,"menubar=no,scrollbars=yes,statusbar=no")'>Le 
+              Code pour ce Moteur</a> 
+              <p align="left"><font color="#0000CC" size="2" face="Verdana, Arial, Helvetica, sans-serif">Pour
+                  supprimer un choix :</font><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><br>
+                  Dans
+                  le second script supprimer la ligne correspondant au moteur
+                  a supprimer<br>
+                  ex:'&lt;option value=&quot;3&quot;&gt;Alta
+                  Vista '+<br>
+                  Dans le premier script supprimer les trois lignes correspondant
+                  au num&eacute;ro de &quot;option value&quot;<br>
+                  <font size="1">case &quot;3&quot;:<br>
+           	  	  window.open( &quot;http://www.altavista.com/web/results?itag=ody&amp;q=&quot;+form.q.value+&quot;&amp;kgs=1&amp;kls=0&quot;,&quot;t
+           	  	  ...ect<br>
+break;</font><br>
+                  </font><font color="#0000CC" size="2" face="Verdana, Arial, Helvetica, sans-serif">Pour
+                  Ajouter un choix :</font><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><br>
+Dans le second script inserer une ligne &quot;option value&quot; n'existant pas<br>
+ex:'&lt;option value=&quot;33&quot;&gt;Alta Vista '+<br>
+<br>
+Faites une recherche sur le moteur &agrave; ajouter, avec un mot de votre choix. ex:toto<br>
+Copier coller le r&eacute;sultat de la barre d'adresse de votre navigateur
+<br>
+http://www.altavista.com/web/results?itag=ody&amp;q=<font color="#00FFFF">toto</font>&amp;kgs=1&amp;kls=0<br>
+remplacer toto par &quot;+form.q.value+&quot; comme ceci :<br>
+                  http://www.altavista.com/web/results?itag=ody&amp;q=<font color="#00FFFF">&quot;+form.q.value+&quot;</font>&amp;kgs=1&amp;kls=0<br>
+                  <br>
+                </font><font size="2" face="Verdana, Arial, Helvetica, sans-serif"> Dans
+                le premier script inserer les trois lignes suivantes :<br>
+                <font size="1">case &quot;33&quot;:<br>
+               	window.open( &quot;<font color="#99FFFF">adresse </font>&quot;,&quot;toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes&quot;);               	<br>
+        break;</font> </font></p>
+              <p align="center"> </p>
+              <p align="center"><a href="fairelien.html">Ce site vous a plu ?
+                  Vous avez trouv&eacute; le script que vous cherchiez ?<br>
+                  Faites en profiter vos visiteurs : ins&eacute;rez un lien sur
+                  votre site</a></p>
+            </div>
+          </td>
+          <td width="6" valign="top">
+            <div align="center">
+<table width="6" border="0" align="center" bordercolor="#9966FF">
+<tr><td>
+
+    <div align="center">	</div>
+    <div align="center">  </div>
+<div align="center"></div>
+<div align="center">&nbsp;</div>
+
+</td></tr></table>
+            </div>
+          </td>
+        </tr>
+        <tr valign="middle"> 
+          <td>&nbsp;</td>
+          <td align="center">
+
+
+                  <table border="0" cellspacing="0" width="700">
+                    <tr bordercolor="#00CCFF"> 
+                      <td width="280">
+					  <div align="center">
+<font color="#FFFFFF" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+<a href='http://www.jecreemonsite.net/php/jcmscompteur.php'>Il y a 3 Visiteurs</a> sur <a href='index.html'>Mon JavaScript</a><noscript><a href="http://www.jecreemonsite.net/">javascript php html</a></noscript>
+</font>					  </div></td>
+                      <td><div align="center">
+					  
+					   <img src="im/mjs-minilogo.gif"></div></td>
+                      <td width="280"> 
+                      <div align="center"><font color="#FFFFFF" size="1" face="Verdana, Arial, Helvetica, sans-serif"><a href="index.html">Mon javascript</a> </font>
+					  &nbsp;&nbsp;<font color="#FFFFFF" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              10-08-2015          
+			  </font>
+					  </div>
+                      </td>
+                    </tr>
+                    <tr align="center"> 
+                      <td bgcolor="#003399" height="2" colspan="2"></td>
+                      <td bgcolor="#003399" height="2"></td>
+                    </tr>
+                  </table>
+				  <br>
+
+          </td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+
+<!-- Mirrored from www.monjavascript.net/moteur.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Aug 2015 20:24:16 GMT -->
+</html>

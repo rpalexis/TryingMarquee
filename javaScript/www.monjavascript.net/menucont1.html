@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<!-- Mirrored from www.monjavascript.net/menucont1.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Aug 2015 20:25:46 GMT -->
+<head>
+<title>Document sans titre</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+//PLF- http://www.monjavascript.net/
+var colorbg = "#CCCCCC"; //couleur de fond
+var colorlien = "#000000"; //couleur du texte
+var colorsel = "#0000CC"; //couleur selection
+var taillebg = 150 //largeur du menu
+menutexte = new Array;
+menulien = new Array;
+menutarget = new Array;
+// MENU
+menutexte[0]= "<img src='im/flecheg.gif' border='0' width='11' height='11'>Page pr&eacute;c&eacute;dente"
+menulien[0]= "javascript:history.go(-1)"
+menutarget[0]="_self" //ouverture même page
+menutexte[1]= "<img src='im/fleche.gif' border='0' width='11' height='11'>Page suivante"
+menulien[1]= "javascript:history.go(1)"
+menutarget[1]="_self"
+menutexte[2]= ""
+menulien[2]= ""
+menutarget[2]=""
+menutexte[3]= "Menus"
+menulien[3]= ""
+menutarget[3]=""
+menutexte[4]= "PAGE1 A GAUCHE"
+menulien[4]= "menucont1.html"
+menutarget[4]="gauche"
+menutexte[5]= "PAGE2 A GAUCHE"
+menulien[5]= "menucont2.html"
+menutarget[5]="gauche"
+menutexte[6]= "PAGE3 A GAUCHE"
+menulien[6]= "menucont3.html"
+menutarget[6]="gauche"
+menutexte[7]= "PAGE1 A DROITE"
+menulien[7]= "menucont1.html"
+menutarget[7]="droite"
+menutexte[8]= "PAGE2 A DROITE"
+menulien[8]= "menucont2.html"
+menutarget[8]="droite"
+menutexte[9]= "PAGE3 A DROITE"
+menulien[9]= "menucont3.html"
+menutarget[9]="droite"
+function position(p)
+{
+position_x = (navigator.appName.substring(0,3) == "Net") ? p.pageX : event.x+document.body.scrollLeft;
+position_y = (navigator.appName.substring(0,3) == "Net") ? p.pageY : event.y+document.body.scrollTop;
+}
+function ouvrir_menu()
+{
+document.getElementById("menu_context").style.top = position_y;
+document.getElementById("menu_context").style.left = position_x;
+document.getElementById("menu_context").style.visibility = "visible";
+return(false);
+}
+function fermer_menu()
+{
+if (document.getElementById)
+{
+document.getElementById("menu_context").style.top = 0;
+document.getElementById("menu_context").style.left = 0;
+document.getElementById("menu_context").style.visibility = "hidden";
+}
+}
+function menu_sel(selec, lienmenu)
+{
+if(selec == 1)
+{
+lienmenu.style.background = colorsel;
+lienmenu.style.color = colorbg;
+}
+else
+{
+lienmenu.style.background =colorbg;
+lienmenu.style.color = colorlien;
+}
+}
+if(navigator.appName.substring(0,3) == "Net")
+document.captureEvents(Event.MOUSEMOVE);
+//-->
+</script>
+</head>
+
+<body bgcolor="#9999FF">
+<p align="center">PAGE 1</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center"><!--Code à insérer jjspub --><script type="text/javascript"><!--
+google_ad_client = "pub-2085185646476169";
+google_ad_width = 468;
+google_ad_height = 60;
+google_ad_format = "468x60_as";
+google_ad_type = "text_image";
+//2006-11-23: jjscentre
+google_ad_channel = "2311992272";
+google_color_border = "CC99FF";
+google_color_bg = "CC99FF";
+google_color_link = "FFFFFF";
+google_color_text = "000000";
+google_color_url = "err404.html";
+//--></script>
+<script type="text/javascript"
+  src="../pagead2.googlesyndication.com/pagead/f.txt">
+</script><!--Code à insérer jjspub -->
+</p>
+<p>&nbsp;</p>
+<script language="JavaScript">
+<!--
+//PLF- http://www.monjavascript.net/
+document.write('<div id=menu_context style="z-index:500;position:absolute;width:'+taillebg+'px; border:2px solid #9D9DA1; background-color:'+colorbg+'; font-family:Verdana; font-size:10px; cursor:default; visibility:hidden;padding:3">');
+document.onmousemove = position;
+document.oncontextmenu = ouvrir_menu;
+document.onclick = fermer_menu;
+for(a=0;a<menulien.length;a++)
+{
+if(menutexte[a].length > 0)
+{
+if(menulien[a].length > 0)
+{
+document.write('<div onMouseOver="menu_sel(1, this)" onMouseOut="menu_sel(0, this)"><A HREF="'+menulien[a]+'" TARGET="'+menutarget[a]+'" STYLE="text-decoration:none;color:'+colorlien+'">'+menutexte[a]+'</A></div>');
+}
+else
+{
+document.write('<div align="center" onMouseOver="menu_sel(1, this)" onMouseOut="menu_sel(0, this)">'+menutexte[a]+'</div>');
+}
+}
+else
+{
+document.write('<div onMouseOver="menu_sel(1, this)" onMouseOut="menu_sel(0, this)"><hr width="'+(taillebg-5)+'" size="1" color="9D9DA1" /></div>');
+}
+}
+//-->
+</script>
+</body>
+
+<!-- Mirrored from www.monjavascript.net/menucont1.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Aug 2015 20:25:46 GMT -->
+</html>
